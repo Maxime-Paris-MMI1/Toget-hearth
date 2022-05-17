@@ -20,7 +20,8 @@
         intro="90% de la faune marine est impactée par la pollution du plastique ! "/>  
     </div>
     <div>
-        <p class=" font-poppins text-xs ">Face à cette situation, nous pouvons agir avec des petits gestes au quotidien. Lors de vos courses, optez pour des sacs en toile pour éviter l’utilisation de sachet plastique.</p>
+        <p class="mt-[370px] ml-5 mr-6 font-poppins text-xs ">Face à cette situation, nous pouvons agir avec des petits gestes au quotidien. Lors de vos courses, optez pour <span class="font-medium text-vert-kaki-elements-importants">des sacs en toile</span> pour éviter l’utilisation de sachet plastique.</p>
+        
     </div>
 </template>
 
