@@ -1,0 +1,39 @@
+<template>
+    <svg
+  width="36"
+  height="21"
+  viewBox="0 0 36 21"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  class="w-9 h-[15px]"
+  preserveAspectRatio="none"
+>
+  <line
+    x1="11.5"
+    y1="1.5"
+    x2="25.5"
+    y2="1.5"
+    stroke="black"
+    stroke-width="3"
+    stroke-linecap="round"
+  ></line>
+  <line
+    x1="34.5"
+    y1="10.5"
+    x2="1.5"
+    y2="10.5"
+    stroke="black"
+    stroke-width="3"
+    stroke-linecap="round"
+  ></line>
+  <line
+    x1="25.5"
+    y1="19.5"
+    x2="11.5"
+    y2="19.5"
+    stroke="black"
+    stroke-width="3"
+    stroke-linecap="round"
+  ></line>
+</svg>
+</template>
