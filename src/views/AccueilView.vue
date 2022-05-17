@@ -12,6 +12,12 @@
       <logo-grand/>
     </div>
   </header>
+
+  <main>
+
+
+    <drop-down/>
+  </main>
 </template>
 
 <script>
@@ -19,8 +25,13 @@ import IconConnexion from "../components/icons/IconConnexion.vue"
 import MenuHamburger from "../components/icons/MenuHamburger.vue" 
 import LogoSite from "../components/icons/LogoSite.vue" 
 import LogoGrand from "../components/icons/LogoGrand.vue" 
+import DropDown from "../components/icons/DropDown.vue" 
+
 export default {
   name: "Header",
-  components: {IconConnexion, MenuHamburger, LogoSite, LogoGrand}
+  components: {IconConnexion, MenuHamburger, LogoSite, LogoGrand},
+  name:"ContenuAccueil",
+  components:{DropDown, }
 };
+
 </script>
