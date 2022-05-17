@@ -1,9 +1,13 @@
 <template>
   <main>
-    <h1 class="text-2xl text-vert-fonce-typographie">Bonjour</h1>
+    <IconConnexion/>
   </main>
 </template>
 
 <script>
-export default {};
+import IconConnexion from "../components/icons/IconConnexion.vue" 
+export default {
+  name: "Header",
+  components: {IconConnexion}
+};
 </script>
