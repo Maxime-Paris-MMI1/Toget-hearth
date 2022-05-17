@@ -1,5 +1,11 @@
 <template>
-    <VignetteArticle />
+    <div>
+        <VignetteArticle 
+        image="/images/photo_dechet.webp"
+        titre1="Éviter les"
+        titre2="déchets plastiques"/>
+        
+        </div>
 </template>
 
 <script>
