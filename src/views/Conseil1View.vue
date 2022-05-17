@@ -24,6 +24,10 @@
         <div class="flex justify-center">
         <img class="mt-8 " src="/images/dechet1.webp" alt="">
         </div>
+        <p class="mt-8 ml-5 mr-6 font-poppins text-xs ">Du côté des cosmétiques de nombreux produits sont emballés dans du plastique mais aujourd’hui il existe des alternatives comme des <span class="font-medium text-vert-kaki-elements-importants">savonnettes</span>, la création de <span class="font-medium text-vert-kaki-elements-importants">shampoing solide</span> ou encore <span class="font-medium text-vert-kaki-elements-importants">du dentifrice solide</span>. Nous devons changer notre confort, nos habitudes du quotidien pour pouvoir limiter notre impact sur l’environnement.</p>
+         <div class="flex justify-center">
+        <img class="mt-8 " src="/images/dechet2.webp" alt="">
+        </div>
     </div>
 </template>
 
