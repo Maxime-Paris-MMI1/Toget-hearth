@@ -21,7 +21,9 @@
     </div>
     <div>
         <p class="mt-[370px] ml-5 mr-6 font-poppins text-xs ">Face à cette situation, nous pouvons agir avec des petits gestes au quotidien. Lors de vos courses, optez pour <span class="font-medium text-vert-kaki-elements-importants">des sacs en toile</span> pour éviter l’utilisation de sachet plastique.</p>
-        
+        <div class="flex justify-center">
+        <img class="mt-8 " src="/images/dechet1.webp" alt="">
+        </div>
     </div>
 </template>
 
