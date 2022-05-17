@@ -17,10 +17,11 @@
         image="/images/photo_dechet.webp"
         titre1="Éviter les"
         titre2="déchets plastiques"
-        intro="90% de la faune marine est impactée par la pollution du plastique ! "/>
-        <p>Face à cette situation, nous pouvons agir avec des petits gestes au quotidien. Lors de vos courses, optez pour des sacs en toile pour éviter l’utilisation de sachet plastique.</p>
-        
-        </div>
+        intro="90% de la faune marine est impactée par la pollution du plastique ! "/>  
+    </div>
+    <div>
+        <p class=" font-poppins text-xs ">Face à cette situation, nous pouvons agir avec des petits gestes au quotidien. Lors de vos courses, optez pour des sacs en toile pour éviter l’utilisation de sachet plastique.</p>
+    </div>
 </template>
 
 <script>
