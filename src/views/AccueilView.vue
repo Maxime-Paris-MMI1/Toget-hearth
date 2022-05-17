@@ -28,10 +28,10 @@ import LogoGrand from "../components/icons/LogoGrand.vue"
 import DropDown from "../components/icons/DropDown.vue" 
 
 export default {
-  name: "Header",
-  components: {IconConnexion, MenuHamburger, LogoSite, LogoGrand},
-  name:"ContenuAccueil",
-  components:{DropDown, }
+  name: "Accueil",
+  components: {IconConnexion, MenuHamburger, LogoSite, LogoGrand,DropDown, },
+
+
 };
 
 </script>
