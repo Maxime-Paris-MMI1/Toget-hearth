@@ -28,6 +28,7 @@
          <div class="flex justify-center">
         <img class="mt-8 " src="/images/dechet2.webp" alt="">
         </div>
+        <p class="mt-8 ml-5 mr-6 font-poppins text-xs ">Nous devons renoncer aux produits jetables, en adoptant <span class="font-medium text-vert-kaki-elements-importants">des produits réutilisables</span> nous sommes conscient qu’il est difficile de renoncer entièrement au plastique mais nous devons opter pour la meilleur version réutilisable comme <span class="font-medium text-vert-kaki-elements-importants">des éco-cup</span> au lieu des gobelets en plastique.</p>
     </div>
 </template>
 
