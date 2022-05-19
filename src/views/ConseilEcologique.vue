@@ -31,6 +31,7 @@
     titre1="Réduire sa"
     titre2="consommation d'énergie"
     intro="De nos jours la consommation d’énergie impacte très fortement l’écologie et pourtant c’est elle qui est la plus simple à corriger !"/>
+    <RouterLink to="/conseil5">Consommation</RouterLink>
     <CarrouselConseil class="mt-8" 
     image="/images/carroussel6.webp"
     titre2="Recycler"

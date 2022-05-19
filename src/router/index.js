@@ -5,6 +5,7 @@ import ConseilEco from '../views/ConseilEcologique.vue'
 import Conseil2 from  '../views/Conseil2View.vue'
 import Conseil3 from '../views/Conseil3View.vue'
 import Conseil4 from '../views/Conseil4View.vue'
+import Conseil5 from '../views/Conseil5View.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,6 +16,8 @@ const router = createRouter({
     { path: '/conseil2', name: 'Conseil2', component: Conseil2 },
     { path: '/conseil3', name: 'Conseil3', component: Conseil3 },
     { path: '/conseil4', name: 'Conseil4', component: Conseil4 },
+    { path: '/conseil5', name: 'Conseil5', component: Conseil5 },
+
   ]
 })
 
