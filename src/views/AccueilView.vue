@@ -1,4 +1,5 @@
 <template>
+  <!-- Le header de cette page est unique c'est pour cela que nous l'avons pas crée dans les composants -->
   <header>
     <div class="flex justify-between">
       <div class="pt-8 pl-6">
@@ -24,6 +25,11 @@
 
     <drop-down/>
   </main>
+
+  <footer>
+    <FooterPage/>
+  </footer>
+  
 </template>
 
 <script>
@@ -32,10 +38,11 @@ import MenuHamburger from "../components/icons/MenuHamburger.vue"
 import LogoSite from "../components/icons/LogoSite.vue" 
 import LogoGrand from "../components/icons/LogoGrand.vue" 
 import DropDown from "../components/icons/DropDown.vue" 
+import FooterPage from "../components/FooterPage.vue" 
 
 export default {
   name: "Accueil",
-  components: {IconConnexion, MenuHamburger, LogoSite, LogoGrand,DropDown, },
+  components: {IconConnexion, MenuHamburger, LogoSite, LogoGrand,DropDown, FooterPage },
 
 
 };
