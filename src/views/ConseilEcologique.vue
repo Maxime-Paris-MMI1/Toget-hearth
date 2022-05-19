@@ -14,15 +14,18 @@
     titre1="Adopter une"
     titre2="alimentation durable"
     intro="En France, 20% des émissions de gaz à effet de serre sont dues à l’agriculture et principalement à cause de notre alimentation."/>
+    <RouterLink to="/conseil2">Alimentation durable</RouterLink>
     <CarrouselConseil class="mt-8" 
     image="/images/carroussel3.webp"
     titre1="Adopter un"
     titre2="transport écologique"
     intro="D’après une étude de l'ADEME, le moyen de transport le plus écologique et le moins polluant est le train."/>
+    <RouterLink to="/conseil3">Transports Écologiques</RouterLink>
     <CarrouselConseil class="mt-8" 
     image="/images/carroussel4.webp"
     titre2="Éviter le gaspillage"
     intro="10 millions de tonnes de nourriture sont gaspillées chaque année en France ! "/>
+    <RouterLink to="/conseil4">Gaspillage</RouterLink>
     <CarrouselConseil class="mt-8" 
     image="/images/carroussel5.webp"
     titre1="Réduire sa"
@@ -41,9 +44,14 @@
   <footer>
     <FooterPage/>
   </footer>
+
+ 
+        
+        
 </template>
 
 <script>
+import { RouterLink, RouterView } from "vue-router";
 import HeaderClair from "../components/HeaderClair.vue" 
 import CarrouselConseil from "../components/CarrouselConseil.vue"
 import FooterPage from "../components/FooterPage.vue" 
