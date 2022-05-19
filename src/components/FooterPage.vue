@@ -6,12 +6,23 @@
             <InstagramLogo/>
             <TwitterLogo/>
         </div>
-        <div class="bg-vert-moyen-deco flex-col justify-center">
+        <div class=
+        "flex
+        flex-col
+        pt-5 
+        text-center
+        gap-1
+        pb-11
+        font-poppins
+        text-white 
+        text-base
+        font-normal
+        bg-vert-moyen-deco ">
          <a href="">Défis</a>
          <a href="">Accueil</a>
          <a href="">À propos</a>
          <a href="">Nous contacter</a>
-         <a href="">Mention légales/politique de confidentialité</a>
+         <a class="text-sm pt-2" href="">Mention légales/politique de confidentialité</a>
         </div>
     </div>
 </template>
