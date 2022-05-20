@@ -22,7 +22,7 @@
         <div class="flex justify-center">
     <img class="w-100 -m-10" src="../../public/images/plante_accueil.webp">
    
- <main>
+ 
     <h2 class="text-center font-poppins p-10 font-medium text-2xl ">Changer votre quotidien pour aider 
         notre planete</h2>
         <div class="flex justify-center">
