@@ -3,6 +3,7 @@
    <nav>
         <RouterLink to="/">Accueil</RouterLink>
         <RouterLink to="/conseileco">Conseils Écologiques</RouterLink>
+        <RouterLink to="/conseilecoco">Connecté</RouterLink>
     </nav>
   </header>
 

@@ -26,12 +26,12 @@
 </template>
 
 <script>
-import VignetteArticle from "../components/VignetteArticle.vue"
-import FlecheGauche from "../components/icons/FlecheGauche.vue"
-import LogoSite from "../components/icons/LogoSite.vue"
-import IconConnexion from "../components/icons/IconConnexion.vue"
-import FooterPage from "../components/FooterPage.vue"
-import HeaderFonce from "../components/HeaderFonce.vue"
+import VignetteArticle from "../../components/VignetteArticle.vue"
+import FlecheGauche from "../../components/icons/FlecheGauche.vue"
+import LogoSite from "../../components/icons/LogoSite.vue"
+import IconConnexion from "../../components/icons/IconConnexion.vue"
+import FooterPage from "../../components/FooterPage.vue"
+import HeaderFonce from "../../components/HeaderFonce.vue"
 
 export default {
    components: { VignetteArticle, FlecheGauche, LogoSite, IconConnexion, FooterPage, HeaderFonce } 

@@ -54,9 +54,9 @@
 
 <script>
 import { RouterLink, RouterView } from "vue-router";
-import HeaderClair from "../components/HeaderClair.vue" 
-import CarrouselConseil from "../components/CarrouselConseil.vue"
-import FooterPage from "../components/FooterPage.vue" 
+import HeaderClair from "../../components/HeaderClair.vue" 
+import CarrouselConseil from "../../components/CarrouselConseil.vue"
+import FooterPage from "../../components/FooterPage.vue" 
 
 export default {
   name: "Header",
