@@ -5,7 +5,7 @@
         <a href="javascript:history.back()"><FlecheGauche/></a>
       </div>
       <div class="pt-3">
-        <LogoSite/>
+        <a href="/"><LogoSite/></a>
       </div>
       <div class="pt-6 pr-5">
         <IconConnexion/>

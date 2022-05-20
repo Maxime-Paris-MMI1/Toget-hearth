@@ -5,7 +5,7 @@
         <IconConnexion/>
       </div>
       <div class="pt-5">
-        <LogoSite/>
+        <a href="/"><LogoSite/></a>
       </div>
       <div class="pt-12 pr-7">
         <MenuHamburger/>
