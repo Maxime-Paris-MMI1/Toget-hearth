@@ -3,7 +3,7 @@
         <img class="rounded-13xl absolute w-full h-[313px] object-cover" :src="image" alt="">
         <div>
             <a href="">
-              <RouterLink to="/conseil1">
+              <RouterLink :to="lien">
                 <button class="w-[158px] h-11 absolute left-[139.5px] top-[290.5px] rounded-18xl bg-vert-fluo-bouton">
                   <p class="absolute text-lg ml-8 -mt-3 font-medium text-blanc-background">Lire la suite</p>
                 </button>
@@ -21,6 +21,10 @@ export default {
     titre1: String,
     titre2: String,
     intro: String,
+    lien:{
+      type: String,
+      default:"/"
+    },
   }
 }
 </script>

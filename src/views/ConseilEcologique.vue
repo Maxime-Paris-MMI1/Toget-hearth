@@ -8,7 +8,8 @@
     image="/images/carroussel1.webp"
     titre1="Éviter les"
     titre2="déchets plastiques"
-    intro="90% de la faune marine est impactée par la pollution du plastique ! "/>
+    intro="90% de la faune marine est impactée par la pollution du plastique ! "
+    lien="/conseil1"/>
     <CarrouselConseil class="mt-8" 
     image="/images/carroussel2.webp"
     titre1="Adopter une"

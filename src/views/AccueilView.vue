@@ -36,7 +36,7 @@
     <drop-down/>
 
     <section class="bg-vert-moyen-deco">
-      <img class=" object-cover w-screen" src="public\images\rectangledegrade.webp" alt="degradé">
+      <img class=" object-cover w-screen" src="public\images\rectangledegrade.webp" alt="degradé">  
 
       <p>
         construction
