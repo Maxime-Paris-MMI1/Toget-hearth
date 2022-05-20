@@ -38,12 +38,13 @@
     image="/images/carroussel6.webp"
     titre2="Recycler"
     intro="90% de la faune marine est impactée par la pollution du plastique !"
-    lien="/conseil6"/>/>
+    lien="/conseil6"/>
     <CarrouselConseil class="mt-8" 
     image="/images/carroussel7.webp"
     titre1="Autosuffisance"
     titre2="individuelle"
-    intro="En 2020, notre consommation individuelle a été multiplié par 7 ! "/>
+    intro="En 2020, notre consommation individuelle a été multiplié par 7 ! "
+    lien="/conseil7"/>
   </main>
   <footer>
     <FooterPage/>
