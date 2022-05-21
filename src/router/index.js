@@ -12,6 +12,7 @@ import Conseil5 from '../views/espace_connecte/Conseil5View.vue'
 import Conseil6 from '../views/espace_connecte/Conseil6View.vue'
 import Conseil7 from '../views/espace_connecte/Conseil7View.vue'
 import Conseilramassage from '../views/Conseilramassage.vue'
+import MentionLegales from '../views/MentionLegales.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -29,6 +30,7 @@ const router = createRouter({
     { path: '/conseil6', name: 'Conseil6', component: Conseil6 },
     { path: '/conseil7', name: 'Conseil7', component: Conseil7 },
     { path: '/ConseilRamassage', name: 'Conseilramassage', component: Conseilramassage },
+    { path: '/MentionLegales', name: 'Mentionlegales', component: MentionLegales },
 
   ]
 })
