@@ -53,6 +53,43 @@
 
 
 
+<div class="flex flex-col items-center mb-16">
+  <div class="flex flex-col items-center">
+    <div class=" flex overflow-x-scroll  gap-5 ">
+
+     <a href="./Conseil2View.vue"> <img class="w-full  object-cover" src="../../public/images/accueil_conseil1.webp" id="slide1"></a>
+      <a href="./Conseil3View.vue"> <img class="w-full  object-cover" src="../../public/images/accueil_conseil2.webp" id="slide2"> </a>
+      <a href="./Conseil5View.vue"> <img class="w-full  object-cover" src="../../public/images/accueil_conseil3.webp" id="slide3"></a>
+    </div>
+  </div>
+
+</div>
+
+      <div class="flex justify-center mb-16">
+      <drop-down/>
+      </div>
+
+ <div class="flex justify-center">
+
+      <h2 class="font-poppins pl-8 pr-8 font-medium text-4xl mb-5 text-white drop-shadow-lg">
+     Les actualités dans une Newsletter
+      </h2>
+
+    </div>
+
+    <div class="flex justify-center">
+
+      <p class=" font-poppins pl-10 pr-10 font-extralight text-xl mb-20 text-white drop-shadow-lg">
+        Rester au courant des dernieres informations sur ce qui se passe en therme d’écologie dans le monde.
+
+      </p>
+
+      </div>
+
+    
+
+
+
 
 
 
