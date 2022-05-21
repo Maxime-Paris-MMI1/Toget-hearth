@@ -11,8 +11,9 @@
             </p>
         </div>
         <div>
+            <div class="flex flex-row">    
             <h3 class="font-asap font-semibold text-lg mt-12 ml-8 ">Collecte de l’information</h3>
-
+            </div>
             <p class="font-poppins font-normal text-xs mr-3 ml-8 mt-8">
                 Nous recueillons des informations lorsque vous nous contacter via le formulaire
                 de contact de notre site. Les informations recueillies incluent votre nom et votre
@@ -107,8 +108,9 @@
 <script>
 import HeaderClair from "../components/HeaderClair.vue"
 import FooterPage from "../components/FooterPage.vue"
+import RondMention from "../components/icons/RondMention.vue"
 
 export default {
-   components: { HeaderClair, FooterPage } 
+   components: { HeaderClair, FooterPage, RondMention} 
 }
 </script>
