@@ -11,7 +11,7 @@ import Conseil4 from '../views/espace_connecte/Conseil4View.vue'
 import Conseil5 from '../views/espace_connecte/Conseil5View.vue'
 import Conseil6 from '../views/espace_connecte/Conseil6View.vue'
 import Conseil7 from '../views/espace_connecte/Conseil7View.vue'
-import ConseilRamassage from '../views/ConseilRamassage.vue'
+import Conseilramassage from '../views/Conseilramassage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,7 +28,7 @@ const router = createRouter({
     { path: '/conseil5', name: 'Conseil5', component: Conseil5 },
     { path: '/conseil6', name: 'Conseil6', component: Conseil6 },
     { path: '/conseil7', name: 'Conseil7', component: Conseil7 },
-    { path: '/ConseilRamassage', name: 'ConseilRamassage', component: ConseilRamassage },
+    { path: '/ConseilRamassage', name: 'Conseilramassage', component: Conseilramassage },
 
   ]
 })

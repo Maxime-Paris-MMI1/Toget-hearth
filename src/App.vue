@@ -4,6 +4,7 @@
         <RouterLink to="/">Accueil</RouterLink>
         <RouterLink to="/conseileco">Conseils Écologiques</RouterLink>
         <RouterLink to="/conseilecoco">Connecté</RouterLink>
+        <RouterLink to="/Conseilramassage">Ramassage des déchets</RouterLink>
     </nav>
   </header>
 
