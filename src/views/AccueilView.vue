@@ -44,6 +44,6 @@ import DropDown from "../components/icons/DropDown.vue"
 import FooterPage from "../components/FooterPage.vue" 
 export default {
   name: "Accueil",
-  components: {IconConnexion, MenuHamburger, LogoSite, LogoGrand,DropDown, FooterPage },
+  components: {IconConnexion, MenuHamburger, LogoSite, LogoGrand, DropDown, FooterPage },
 };
 </script>
