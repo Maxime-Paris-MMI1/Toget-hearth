@@ -20,7 +20,7 @@
         image="/images/news_carroussel3.webp"
         title="L’Europe et la biodiversité"
         intro="L’Europe s’engage à renforcer la protection de la biodiversité."
-        lien="/"/>
+        lien="/news3"/>
     </div>
     <h2 class="mt-9 ml-5 font-poppins text-sm font-medium text-vert-fonce-typographie">D’autres articles :</h2>
     <p class="mt-4 mx-5 font-poppins text-sm font-light text-vert-fonce-typographie">Pour pouvoir accéder aux autres articles veuillez-vous inscrire.</p>
