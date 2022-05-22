@@ -5,7 +5,7 @@
   viewBox="0 0 58 56"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
-  class="w-[76px] h-[72px]"
+  class="w-[66px] h-[62px]"
   preserveAspectRatio="none"
 >
   <g filter="url(#filter0_d_611_1707)">

@@ -35,7 +35,7 @@
       </div>
     <div class="flex justify-center">
 
-      <h2 class="font-poppins pl-10 pr-10 font-medium text-4xl mb-5 text-white drop-shadow-lg">
+      <h2 class="font-poppins pl-20 pr-10 font-medium text-4xl mb-5 text-white drop-shadow-lg">
         Des conseils
         écologiques
       </h2>
@@ -44,7 +44,7 @@
 
     <div class="flex justify-center">
 
-      <p class=" font-poppins pl-10 pr-10 font-extralight text-xl mb-20 text-white drop-shadow-lg">
+      <p class=" font-poppins pl-20 pr-10 font-extralight text-xl mb-20 text-white drop-shadow-lg">
         Ces conseils vous permettront d’appliquer au quotidien des bons gestes et ainsi agir pour notre planète.
 
       </p>
@@ -71,7 +71,7 @@
 
  <div class="flex justify-center">
 
-      <h2 class="font-poppins pl-8 pr-8 font-medium text-4xl mb-5 text-white drop-shadow-lg">
+      <h2 class="font-poppins  pl-20 pr-10 font-medium text-4xl mb-5 text-white drop-shadow-lg">
      Les actualités dans une Newsletter
       </h2>
 
@@ -79,7 +79,7 @@
 
     <div class="flex justify-center">
 
-      <p class=" font-poppins pl-10 pr-10 font-extralight text-xl mb-20 text-white drop-shadow-lg">
+      <p class=" font-poppins  pl-20 pr-10 font-extralight text-xl mb-20 text-white drop-shadow-lg">
         Rester au courant des dernieres informations sur ce qui se passe en therme d’écologie dans le monde.
 
       </p>
@@ -98,10 +98,36 @@
     </div>
 
    
-        
+        <div class="mb-16">
         <BoutonAction
         titrebouton="Découvrir" />
+        </div>
+
+              <div class="flex justify-center mb-16">
+      <drop-down/>
+      </div>
     
+ <div class="flex justify-center">
+
+      <h2 class="font-poppins  pl-20 pr-10 font-medium text-4xl mb-5 text-white drop-shadow-lg">
+     Des défis 
+exclusifs !
+      </h2>
+
+    </div>
+
+    <div class="flex justify-center">
+
+      <p class=" font-poppins  pl-20 pr-10 font-extralight text-xl mb-20 text-white drop-shadow-lg">
+        Réalisez une multitude de défis au quotidien afin d’obtenir des points
+
+      </p>
+
+      </div>
+
+      <img src="../../public/images/exempledefi_accueil.webp" alt="">
+
+  
     
 
 
