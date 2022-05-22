@@ -15,7 +15,7 @@
         image="/images/news_carroussel2.webp"
         title="Pic de pollution à Paris"
         intro="Prévision d’ une concentration en particules fines entre 45 et 55 µg/m³."
-        lien="/"/>
+        lien="/news2"/>
         <CarrouselNews  
         image="/images/news_carroussel3.webp"
         title="L’Europe et la biodiversité"

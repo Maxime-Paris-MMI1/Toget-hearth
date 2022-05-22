@@ -14,6 +14,7 @@ import Conseil7 from '../views/espace_connecte/Conseil7View.vue'
 import Conseilramassage from '../views/Conseilramassage.vue'
 import MentionLegales from '../views/MentionLegales.vue'
 import Newsletter from '../views/NewsletterView.vue'
+import News2 from '../views/News2View.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,6 +34,7 @@ const router = createRouter({
     { path: '/ConseilRamassage', name: 'Conseilramassage', component: Conseilramassage },
     { path: '/MentionLegales', name: 'Mentionlegales', component: MentionLegales },
     { path: '/newsletter', name: 'Newsletter', component: Newsletter },
+    { path: '/news2', name: 'News2', component: News2 },
 
   ]
 })
