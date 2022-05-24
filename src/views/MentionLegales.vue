@@ -11,8 +11,9 @@
             </p>
         </div>
         <div>
-            <div class="flex flex-row">    
-            <h3 class="font-asap font-semibold text-lg mt-12 ml-8 ">Collecte de l’information</h3>
+            <div class="flex flex-row mt-12 ml-8">    
+            <h3 class="font-asap font-semibold text-lg  ">Collecte de l’information</h3>
+            <RondMention class="ml-2"/>
             </div>
             <p class="font-poppins font-normal text-xs mr-3 ml-8 mt-8">
                 Nous recueillons des informations lorsque vous nous contacter via le formulaire
@@ -24,7 +25,10 @@
             </p>
         </div>
         <div>
-            <h3 class="font-asap font-semibold text-lg mt-12 ml-8 ">Utilisation des informations</h3>
+            <div class="flex flex-row mt-12 ml-8"> 
+                <h3 class="font-asap font-semibold text-lg">Utilisation des informations</h3>
+                <RondMention class="ml-2"/>
+            </div>
 
             <p class="font-poppins font-normal text-xs mr-3 ml-8 mt-8">
                 Toute les informations que nous recueillons auprès de vous peuvent être utilisées pour :
@@ -33,7 +37,11 @@
             </p>
         </div>
         <div>
-            <h3 class="font-asap font-semibold text-lg mt-12 ml-8 ">Divulgation à des tiers</h3>
+            <div class="flex flex-row mt-12 ml-8">
+                <h3 class="font-asap font-semibold text-lg">Divulgation à des tiers</h3>
+                <RondMention class="ml-2"/>
+            </div>
+
 
             <p class="font-poppins font-normal text-xs mr-3 ml-8 mt-8">
                 Nous ne vendons, n’échangeons et ne transférons pas vos informations personnelles
@@ -45,21 +53,33 @@
             </p>
         </div>
         <div>
-            <h3 class="font-asap font-semibold text-lg mt-12 ml-8 ">Est-ce que nous utilisons des cookies ?</h3>
+            <div class="flex flex-row mt-12 ml-8">
+                <h3 class="font-asap font-semibold text-lg">Est-ce que nous utilisons des cookies ?</h3>
+                <RondMention class="ml-2"/>
+            </div>
+
 
             <p class="font-poppins font-normal text-xs mr-3 ml-8 mt-8">
                 Oui Toget’heart utilise Google Analytics afin de mesurer l’audience de son site.
             </p>
         </div>
         <div>
-            <h3 class="font-asap font-semibold text-lg mt-12 ml-8 ">Consentement</h3>
+            <div class="flex flex-row mt-12 ml-8">
+                <h3 class="font-asap font-semibold text-lg">Consentement</h3>
+                <RondMention class="ml-2"/>
+            </div>
+
 
             <p class="font-poppins font-normal text-xs mr-3 ml-8 mt-8">
                 En utilisant notre site, vous consentez à notre politique de confidentialité.
             </p>
         </div>
         <div>
-            <h3 class="font-asap font-semibold text-lg mt-12 ml-8 ">Exercer vos droits</h3>
+            <div class="flex flex-row mt-12 ml-8">
+                <h3 class="font-asap font-semibold text-lg">Exercer vos droits</h3>
+                <RondMention class="ml-2"/>
+            </div>
+
 
             <p class="font-poppins font-normal text-xs mr-3 ml-8 mt-8">
                 Pour toute information ou exercice de vos droits Informatique et Libertés
@@ -78,7 +98,11 @@
 
         </div>
         <div>
-            <h3 class="font-asap font-semibold text-lg mt-12 ml-8 ">Contact</h3>
+            <div class="flex flex-row mt-12 ml-8">
+                <h3 class="font-asap font-semibold text-lg">Contact</h3>
+                <RondMention class="ml-2"/>
+            </div>
+
             <p class="font-poppins font-normal text-xs mr-3 ml-8 mt-5">
                 Contact des contributeurs du site: <br>
                 Bryan Ferry
