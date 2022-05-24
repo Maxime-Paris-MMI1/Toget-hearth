@@ -9,9 +9,12 @@
         <div class="absolute mt-48 mx-7">
             <h2 class="font-poppins font-medium text-2xl text-center mx-10 text-white">Vous souhaitez faire un geste pour aider notre planète ? </h2>
         </div>
+
+        <div class="flex justify-center">
         <div class="absolute mt-96 mx-7">
             <BoutonAction 
             titrebouton= "Faire un don"/>
+        </div>
         </div>
         <p class="absolute font-poppins font-medium text-white mt-[655px] text-xl ml-3">
             En faisant un don de 2€ vous aidez la planète a replanter 2 arbres
