@@ -126,7 +126,7 @@ exclusifs !
       </div>
 
 
-      <div class="flex justify-center">
+      <div class="flex justify-center mb-16">
 
       <img src="../../public/images/imagedefi.webp" alt="image de defi en exemple">
 
@@ -156,7 +156,7 @@ exclusifs !
 
       </div>
 
-      <div>
+      <div class="mb-16">
 
         <div class="flex justify-center">
         <div class=" mt-60 absolute">
@@ -170,29 +170,41 @@ exclusifs !
 
       </div>
 
-    <p class=" mt-15  font-poppins pl-20 pr-10 text-lg mb-20 text-white drop-shadow-lg">
-      Vous souhaitez aider la planète par le biais d’un dons ? 
+<p class=" font-poppins pl-10 pr-10 text-lg mb-9 text-white  font-semibold"> Vous souhaitez aider la planète par le biais d’un dons ?  </p>
 
-Vous pouvez faire un don qui sera retransmis à une associations dans le but d’aider notre planète et 10% seront retransmis à notre site afin de le développer d’avntage pour avancer dans ce mouvement écologique.
+    <p class=" font-poppins pl-10 pr-10 text-lg mb-20 text-white  font-extralight">
+    
+
+     Vous pouvez faire un don qui sera retransmis à une associations dans le but d’aider notre planète et 10% seront retransmis à notre site afin de le développer d’avntage pour avancer dans ce mouvement écologique.
     </p>
 
+    <div class="flex justify-center mb-14">
 
-     
+      <img src="../../public/images/accueil_don.webp" alt="image de defi en exemple">
 
+      </div>
+          <div >
+        <BoutonAction
+        titrebouton="Faire un don" />
+        </div>
+        
+<div class="bg-gradient-to-b from-vert-moyen-deco to-vert-pastel-deco p-10"></div>
+   
 
-
+    </section>
     
 
 
 
 
-
-    </section>
   </main>
-  <footer>
+  
+
+
+  <footer class=" -mt-14" >
     <FooterPage/>
   </footer>
-  
+       
 </template>
 <script>
 import IconConnexion from "../components/icons/IconConnexion.vue" 
