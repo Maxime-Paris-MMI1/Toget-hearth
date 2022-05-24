@@ -17,6 +17,7 @@ import Newsletter from '../views/NewsletterView.vue'
 import News2 from '../views/News2View.vue'
 import News3 from '../views/News3View.vue'
 import Connexion from '../views/ConnexionView.vue'
+import Dons from '../views/DonsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -39,6 +40,7 @@ const router = createRouter({
     { path: '/news2', name: 'News2', component: News2 },
     { path: '/news3', name: 'News3', component: News3 },
     { path: '/connexion', name: 'Connexion', component: Connexion},
+    { path: '/dons', name: 'Dons', component: Dons},
 
   ]
 })

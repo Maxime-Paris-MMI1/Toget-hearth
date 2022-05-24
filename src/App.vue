@@ -6,6 +6,7 @@
         <RouterLink to="/conseilecoco">Connecté</RouterLink>
         <RouterLink to="/Conseilramassage">Ramassage des déchets</RouterLink>
         <RouterLink to="/newsletter">Newsletter</RouterLink>
+        <RouterLink to="/dons">Dons</RouterLink>
     </nav>
   </header>
 
