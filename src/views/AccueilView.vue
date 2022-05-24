@@ -132,10 +132,6 @@ exclusifs !
 
       </div>
 
-             <div class="mb-16">
-        <BoutonAction
-        titrebouton="Réaliser des défis" />
-        </div>
 
 
       <div class="flex justify-center mb-16">
@@ -160,25 +156,32 @@ exclusifs !
 
       </div>
 
-<div>
- <img class="absolute cover " src="../../public/images/image_accueil_evenement.jpg" alt="fer">
-             <div class="mb-16">
+      <div>
+
+        <div class="flex justify-center">
+        <div class=" mt-60 absolute">
         <BoutonAction
-        titrebouton="Réaliser des défis" />
+        titrebouton="Trouver un évènement" />
         </div>
-</div>
-        <div>
-          <p>dzdz</p>
         </div>
 
+<img src="../../public/images/image_accueil_evenement.jpg" class="w-full h-[477px] object-cover " />
+
+
+      </div>
+
+    <p class=" mt-15  font-poppins pl-20 pr-10 text-lg mb-20 text-white drop-shadow-lg">
+      Vous souhaitez aider la planète par le biais d’un dons ? 
+
+Vous pouvez faire un don qui sera retransmis à une associations dans le but d’aider notre planète et 10% seront retransmis à notre site afin de le développer d’avntage pour avancer dans ce mouvement écologique.
+    </p>
+
+
+     
+
+
+
     
-  
-  
-    
-
-
-
-
 
 
 
