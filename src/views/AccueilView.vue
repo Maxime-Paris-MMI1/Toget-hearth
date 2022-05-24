@@ -125,8 +125,54 @@ exclusifs !
 
       </div>
 
-      <img src="../../public/images/exempledefi_accueil.webp" alt="">
 
+      <div class="flex justify-center">
+
+      <img src="../../public/images/imagedefi.webp" alt="image de defi en exemple">
+
+      </div>
+
+             <div class="mb-16">
+        <BoutonAction
+        titrebouton="Réaliser des défis" />
+        </div>
+
+
+      <div class="flex justify-center mb-16">
+      <drop-down/>
+      </div>
+
+ <div class="flex justify-center">
+
+      <h2 class="font-poppins  pl-20 pr-10 font-medium text-4xl mb-5 text-white drop-shadow-lg">
+     Des évènements
+écologiques
+      </h2>
+
+    </div>
+
+    <div class="flex justify-center">
+
+      <p class=" font-poppins  pl-20 pr-10 font-extralight text-xl mb-20 text-white drop-shadow-lg">
+        Trouvez ou organisez des rassemblements proche de chez vous pour participer à des collectes de déchets et bien d’autres !
+
+      </p>
+
+      </div>
+
+<div>
+ <img class="absolute cover " src="../../public/images/image_accueil_evenement.jpg" alt="fer">
+             <div class="mb-16">
+        <BoutonAction
+        titrebouton="Réaliser des défis" />
+        </div>
+</div>
+        <div>
+          <p>dzdz</p>
+        </div>
+
+    
+  
   
     
 
