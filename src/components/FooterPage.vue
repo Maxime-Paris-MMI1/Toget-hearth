@@ -18,18 +18,20 @@
         text-base
         font-normal
         bg-vert-moyen-deco ">
-         <a href="">Défis</a>
-         <a href="">Accueil</a>
-         <a href="">À propos</a>
-         <a href="">Nous contacter</a>
-         <a class="text-sm pt-2" href="">Mention légales/politique de confidentialité</a>
+        <RouterLink to="/">Défis</RouterLink>
+        <RouterLink to="/">Accueil</RouterLink>
+        <RouterLink to="/">À propos</RouterLink>
+        <RouterLink to="/">Nous contacter</RouterLink>
+        <RouterLink class="text-sm pt-2" to="/MentionLegales">Mention légales/politique de confidentialité</RouterLink>
         </div>
     </div>
 </template>
 
 
 
+
 <script>
+import { RouterLink, RouterView } from "vue-router";
 import InstagramLogo from "../components/icons/InstagramLogo.vue" 
 import FacebookLogo from "../components/icons/FacebookLogo.vue" 
 import TwitterLogo from "../components/icons/TwitterLogo.vue" 
