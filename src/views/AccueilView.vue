@@ -57,9 +57,9 @@
   <div class="flex flex-col items-center">
     <div class=" flex overflow-x-scroll  gap-5 ">
 
-     <a href="./Conseil2View.vue"> <img class="w-full  object-cover" src="../../public/images/accueil_conseil1.webp" id="slide1"></a>
-      <a href="./Conseil3View.vue"> <img class="w-full  object-cover" src="../../public/images/accueil_conseil2.webp" id="slide2"> </a>
-      <a href="./Conseil5View.vue"> <img class="w-full  object-cover" src="../../public/images/accueil_conseil3.webp" id="slide3"></a>
+     <a href="./conseil2"> <img class="w-full  object-cover" src="../../public/images/accueil_conseil1.webp" id="slide1"></a>
+      <a href="./conseil3"> <img class="w-full  object-cover" src="../../public/images/accueil_conseil2.webp" id="slide2"> </a>
+      <a href="./connexion"> <img class="w-full  object-cover" src="../../public/images/accueil_conseil3.webp" id="slide3"></a>
     </div>
   </div>
 
@@ -100,7 +100,8 @@
    
         <div class="mb-16">
         <BoutonAction
-        titrebouton="Découvrir" />
+        titrebouton="Découvrir"
+        lien= "/Newsletter" />
         </div>
 
               <div class="flex justify-center mb-16">
@@ -185,7 +186,8 @@ exclusifs !
       </div>
           <div >
         <BoutonAction
-        titrebouton="Faire un don" />
+        titrebouton="Faire un don"
+        lien= "/dons" />
         </div>
         
 <div class="bg-gradient-to-b from-vert-moyen-deco to-vert-pastel-deco p-10"></div>
