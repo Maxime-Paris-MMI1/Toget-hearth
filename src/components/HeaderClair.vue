@@ -23,7 +23,7 @@
         <div class="flex flex-row justify-between">
           <DecoHG/>
           <button class="relative z-50 mr-8 -mt-20" aria-haspopup="true" aria-controls="menu" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">
-            <CroixMenu :class="{'motion-safe:animate-bounce' : menuOuvert}"/>
+            <CroixMenu :class="{'motion-safe:animate-[BackInRight_2s_cubic-bezier(0,1,.24,1)]' : menuOuvert}"/>
           </button>
         </div>
 

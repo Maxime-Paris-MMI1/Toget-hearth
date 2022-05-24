@@ -64,7 +64,13 @@ module.exports = {
         "22xl": "3.375rem",
         "23xl": "4.325874328613281rem",
         "24xl": "5.976675510406494rem"
-       }
+       },
+       keyframes: {
+        BackInRight: {
+          '0%, 100%': { transform: 'translate(100px)'},
+          '100%': { transform: 'translate(0px)' },
+        }
+      }
     },
 
   },
