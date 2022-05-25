@@ -15,24 +15,24 @@
           <div class="box-border rounded-10xl bg-vert-pastel-deco p-8  w-full max-w-lg shadow-lg ">
 
 
-            <form  class=" font-poppins font-medium">
+            <form method="post" action="../contact.php"  class=" font-poppins font-medium" id="form">
               <label for="fname" class="ml-0 mr-0 w-full font-poppins font-medium text-lg">Nom </label>
-              <input type="text" id="fname" name="firstname" placeholder="Votre nom" class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-4 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl">
+              <input type="text" id="fname" name="name" placeholder="Votre nom" class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-4 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl">
           
               <label for="sujet" class="ml-0 mr-0 w-full font-poppins font-medium text-lg">Prénom</label>
-              <input type="text" id="sujet" name="sujet" placeholder="Votre prénom" class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-4 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl">
+              <input type="text" id="sujet" name="prenom" placeholder="Votre prénom" class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-4 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl">
           
               <label for="emailAddress" class="ml-0 mr-0 w-full font-poppins font-medium text-lg">Email</label>
               <input id="emailAddress" type="email" name="email" placeholder="Votre email" required class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-4 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl">
           
           
               <label for="subject" class="ml-0 mr-0 w-full font-poppins font-medium text-lg ">Message</label>
-              <textarea id="subject" name="subject" placeholder="Votre message" style="height:150px" class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-4 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl"></textarea>
+              <textarea id="subject" name="message" placeholder="Votre message" style="height:150px" class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-4 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl"></textarea>
 
               <input class="mb-7" type="checkbox" required> 
               <span class="font-poppins font-normal text-sm"> J’accepte les conditions d’utilisations </span>
               <div class=" text-center">
-              <input type="submit" value="Envoyer" class=" bg-vert-fluo-bouton text-white px-16 py-3 rounded-3xl border-none cursor-pointer shadow-lg text-lg font-poppins font-medium hover:bg-[#1fa126]">
+              <input type="submit" value="Envoyer" name="submit" class=" bg-vert-fluo-bouton text-white px-16 py-3 rounded-3xl border-none cursor-pointer shadow-lg text-lg font-poppins font-medium hover:bg-[#1fa126]">
               </div>
             </form>
           </div>
