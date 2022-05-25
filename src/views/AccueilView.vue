@@ -100,6 +100,7 @@
    
         <div class="mb-16">
         <BoutonAction
+        :fluo="true"
         titrebouton="Découvrir"
         lien= "/Newsletter" />
         </div>
@@ -162,6 +163,7 @@ exclusifs !
         <div class="flex justify-center">
         <div class=" mt-60 absolute">
         <BoutonAction
+        :fluo="true"
         titrebouton="Trouver un évènement" />
         </div>
         </div>
@@ -184,10 +186,12 @@ exclusifs !
       <img src="../../public/images/accueil_don.webp" alt="image de defi en exemple">
 
       </div>
-          <div >
+        <div>
         <BoutonAction
+        :fluo="true"
         titrebouton="Faire un don"
-        lien= "/dons" />
+        lien= "/dons"
+        />
         </div>
         
 <div class="bg-gradient-to-b from-vert-moyen-deco to-vert-pastel-deco p-10"></div>
@@ -216,8 +220,9 @@ import LogoGrand from "../components/icons/LogoGrand.vue"
 import DropDown from "../components/icons/DropDown.vue" 
 import FooterPage from "../components/FooterPage.vue" 
 import BoutonAction from "../components/BoutonAction.vue"
+import FondBouton from "../components/icons/FondBouton.vue"
 export default {
   name: "Accueil",
-  components: {IconConnexion, MenuHamburger, LogoSite, LogoGrand, DropDown, FooterPage, BoutonAction, },
+  components: {IconConnexion, MenuHamburger, LogoSite, LogoGrand, DropDown, FooterPage, BoutonAction,FondBouton, },
 };
 </script>
