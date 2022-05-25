@@ -23,15 +23,29 @@
         <div class="flex flex-row justify-between">
           <DecoHG/>
           <button class="relative z-50 mr-8 -mt-20" aria-haspopup="true" aria-controls="menu" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">
-            <CroixMenu :class="{'motion-safe:animate-[BackInRight_2s_cubic-bezier(0,1,.24,1)]' : menuOuvert}"/>
+            <CroixMenu :class="{'motion-safe:animate-[BackInRight_1s_cubic-bezier(0,1,.24,1)]' : menuOuvert}"/>
           </button>
         </div>
 
-        <ul>
-          <li><router-link to="/">Un</router-link></li>
-          <li><router-link to="/">Deux</router-link></li>
-          <li><router-link to="/">Trois</router-link></li>
-        </ul>
+        <nav>
+          <ul class="flex flex-col text-center gap-9 font-poppins font-medium text-xl">
+           <RouterLink to="/">Accueil</RouterLink>
+           <RouterLink to="../conseileco">Conseils Écologiques</RouterLink>
+           <RouterLink to="../Conseilramassage">Ramassage des déchets</RouterLink>
+           <RouterLink to="../newsletter">Newsletter</RouterLink>
+           <RouterLink to="../NousContacter">Nous contacter</RouterLink>
+           <RouterLink to="../NousContacter">À propos</RouterLink>
+           <RouterLink to="../connexion">Inscription / Connexion</RouterLink>
+          </ul>
+          <RouterLink to="../conseilecoco">Connecté</RouterLink>
+          <div class="flex flex-row justify-between ">
+            <RouterLink to="../dons"><PieceDon class="mt-20"/></RouterLink>
+            <DecoHG class="rotate-180 h-56 -mt-[67px]"/>
+          </div>
+          
+          
+          
+        </nav>
       </div>
     </div>
   </header>
@@ -44,9 +58,10 @@ import MenuHamburger from "../components/icons/MenuHamburger.vue"
 import LogoSite from "../components/icons/LogoSite.vue" 
 import CroixMenu from "../components/icons/CroixMenu.vue" 
 import DecoHG from "../components/icons/DecoHG.vue" 
+import PieceDon from "../components/icons/PieceDon.vue" 
 export default {
   name: "Header",
-  components: {IconConnexion, MenuHamburger, LogoSite, CroixMenu, DecoHG},
+  components: {IconConnexion, MenuHamburger, LogoSite, CroixMenu, DecoHG, PieceDon},
   data() {
     return {
       menuOuvert: false,
