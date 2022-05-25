@@ -29,18 +29,18 @@
 
         <nav>
           <ul class="flex flex-col text-center gap-9 font-poppins font-medium text-xl">
-           <RouterLink to="/">Accueil</RouterLink>
-           <RouterLink to="../conseileco">Conseils Écologiques</RouterLink>
-           <RouterLink to="../Conseilramassage">Ramassage des déchets</RouterLink>
-           <RouterLink to="../newsletter">Newsletter</RouterLink>
-           <RouterLink to="../NousContacter">Nous contacter</RouterLink>
-           <RouterLink to="../NousContacter">À propos</RouterLink>
-           <RouterLink to="../connexion">Inscription / Connexion</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.05s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="/">Accueil</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.1s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../conseileco">Conseils Écologiques</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.2s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../newsletter">Newsletter</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.3s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../NousContacter">Nous contacter</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.4s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../Conseilramassage">Ramassage des déchets</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.5s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../NousContacter">À propos</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.6s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../connexion">Inscription / Connexion</RouterLink>
           </ul>
           <RouterLink to="../conseilecoco">Connecté</RouterLink>
           <div class="flex flex-row justify-between ">
-            <RouterLink to="../dons"><PieceDon class="mt-20"/></RouterLink>
-            <DecoHG class="rotate-180 h-56 -mt-[67px]"/>
+            <RouterLink to="../dons"><PieceDon class="mt-[127px]"/></RouterLink>
+            <DecoHG class="rotate-180 h-56 -mt-[17px] -mr-[1px]"/>
           </div>
           
           

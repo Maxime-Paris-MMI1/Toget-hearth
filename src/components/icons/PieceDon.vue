@@ -53,7 +53,7 @@
     <path d="M35 0.553223H35.5H36L35 7.05312L34 6.98672L35 0.553223Z" fill="#EDC228"></path>
     <path d="M46 1.55322H46.5H47L46 7.95734L45 7.85088L46 1.55322Z" fill="#EDC228"></path>
   </svg>
-  <p class="absolute font-poppins left-[7px] top-[805px] text-lg font-semibold text-center text-black">
+  <p class="absolute font-poppins left-[7px] top-[855px] text-lg font-semibold text-center text-black">
     Faire un don
   </p>
 </div>
