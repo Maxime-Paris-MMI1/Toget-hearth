@@ -19,6 +19,7 @@ import News3 from '../views/News3View.vue'
 import Connexion from '../views/ConnexionView.vue'
 import Dons from '../views/DonsView.vue'
 import NousContacter from '../views/NousContacter.vue'
+import ListeDefis from '../views/espace_connecte/ListeDefis.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -43,6 +44,7 @@ const router = createRouter({
     { path: '/connexion', name: 'Connexion', component: Connexion},
     { path: '/dons', name: 'Dons', component: Dons},
     { path: '/NousContacter', name: 'NousContacter', component: NousContacter},
+    { path: '/ListeDefis', name: 'ListeDefis', component: ListeDefis},
 
   ]
 })

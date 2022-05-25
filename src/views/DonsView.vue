@@ -13,6 +13,7 @@
         <div class="flex justify-center">
         <div class="absolute mt-96 mx-7">
             <BoutonAction 
+            :fluo="true"
             titrebouton= "Faire un don"/>
         </div>
         </div>
