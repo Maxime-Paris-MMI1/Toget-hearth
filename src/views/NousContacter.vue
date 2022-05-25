@@ -11,29 +11,31 @@
 
       </p>
 
+    <div class=" flex justify-center p-4">
+          <div class="box-border rounded-10xl bg-vert-pastel-deco p-8  w-full max-w-lg shadow-lg ">
 
-          <div class="box-border rounded-3xl bg-vert-pastel-deco p-12 w-full max-w-lg shadow-lg ">
 
+            <form  class=" font-poppins font-medium">
+              <label for="fname" class="ml-0 mr-0 w-full font-poppins font-medium text-lg">Nom </label>
+              <input type="text" id="fname" name="firstname" placeholder="Votre nom" class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-4 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl">
+          
+              <label for="sujet" class="ml-0 mr-0 w-full font-poppins font-medium text-lg">Prénom</label>
+              <input type="text" id="sujet" name="sujet" placeholder="Votre prénom" class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-4 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl">
+          
+              <label for="emailAddress" class="ml-0 mr-0 w-full font-poppins font-medium text-lg">Email</label>
+              <input id="emailAddress" type="email" name="email" placeholder="Votre email" required class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-4 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl">
+          
+          
+              <label for="subject" class="ml-0 mr-0 w-full font-poppins font-medium text-lg ">Message</label>
+              <textarea id="subject" name="subject" placeholder="Votre message" style="height:150px" class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-4 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl"></textarea>
 
-            <form action="/action_page.php" class=" font-poppins font-medium">
-              <label for="fname">Nom </label>
-              <input type="text" id="fname" name="firstname" placeholder="Votre nom" class="w-full p-3 border border-b-vert-moyen-deco rounded box-border mt-1.5 mb-4 mr-0 ml-0 resize-y">
-          
-              <label for="sujet">Prénom</label>
-              <input type="text" id="sujet" name="sujet" placeholder="Votre prénom">
-          
-              <label for="emailAddress">Email</label>
-              <input id="emailAddress" type="email" name="email" placeholder="Votre email" required>
-          
-          
-              <label for="subject">Message</label>
-              <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
-
-              <input class="condutilisation" type="checkbox" required> J’accepte les conditions d’utilisations 
-              <div class="sendbutton">
-              <input type="submit" value="Envoyer">
+              <input class="mb-7" type="checkbox" required> 
+              <span class="font-poppins font-normal text-sm"> J’accepte les conditions d’utilisations </span>
+              <div class=" text-center">
+              <input type="submit" value="Envoyer" class=" bg-vert-fluo-bouton text-white px-16 py-3 rounded-3xl border-none cursor-pointer shadow-lg text-lg font-poppins font-medium hover:bg-[#1fa126]">
               </div>
             </form>
+          </div>
           </div>
 
 
@@ -41,73 +43,8 @@
 
 
 
-}
-  
-  input[type=text], textarea, input[type=email] {
 
 
-
-
-
- 
-
-
-    background-color: #F4FAF3;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 0.8rem;
-    border-radius:20px;
-    
-  }
-  label{margin-right: 0px;
-    margin-left: 0px;
-    width: 100%;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 1.2rem;
-    
-   }
-  
-  input[type=submit] {
-    background-color: #45D475;
-    color: white;
-    padding: 12px 45px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    color: #F4FCEE;
-
-    text-shadow: 0px 0px 4.77931px #FFFFFF;
-    font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    box-shadow: 0px 3.34821px 3.34821px rgba(0, 0, 0, 0.25);
-    
-    
-  }
-  
-.sendbutton{
-    text-align: center;
-}
-
-  input[type=submit]:hover {
-    background-color: #1fa126;
-  }
-  
-
-  }
- .condutilisation{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-
- }
-
-
- .condutilisation{
-    scale: 1.5;
-    margin: 5vh 2vh ;
-
-}
 
       <footer>
     <FooterPage/>
