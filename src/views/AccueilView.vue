@@ -211,7 +211,7 @@ exclusifs !
     <p class=" font-poppins pl-10 pr-10 text-lg mb-20 text-white  font-extralight">
     
 
-     Vous pouvez faire un don qui sera retransmis à une associations dans le but d’aider notre planète et 10% seront retransmis à notre site afin de le développer d’avntage pour avancer dans ce mouvement écologique.
+     Vous pouvez faire un don qui sera retransmis à une associations dans le but d’aider notre planète et 10% seront retransmis à notre site afin de le développer d’avantage pour avancer dans ce mouvement écologique.
     </p>
 
     <div class="flex justify-center mb-14">
