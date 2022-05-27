@@ -20,6 +20,7 @@ import Connexion from '../views/ConnexionView.vue'
 import Dons from '../views/DonsView.vue'
 import NousContacter from '../views/NousContacter.vue'
 import ListeDefis from '../views/espace_connecte/ListeDefis.vue'
+import Defis1 from '../views/espace_connecte/Defis1.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -45,6 +46,7 @@ const router = createRouter({
     { path: '/dons', name: 'Dons', component: Dons},
     { path: '/NousContacter', name: 'NousContacter', component: NousContacter},
     { path: '/ListeDefis', name: 'ListeDefis', component: ListeDefis},
+    { path: '/Defis1', name: 'Defis1', component: Defis1},
 
   ]
 })

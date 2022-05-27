@@ -15,6 +15,7 @@
           <BoutonAction
         :kaki="true"
         titrebouton="Ramasser des déchets"
+        lien= "/Defis1"
         />
 
         <BoutonAction
