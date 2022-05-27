@@ -40,7 +40,7 @@
           <RouterLink to="../conseilecoco">Connecté</RouterLink>
           <div class="flex flex-row justify-between ">
             <RouterLink to="../dons"><PieceDon class="mt-[127px]"/></RouterLink>
-            <DecoHG class="rotate-180 h-56 -mt-[17px] -mr-[1px]"/>
+            <DecoHG class="rotate-180 h-56 -mt-[10px] -mr-[1px]"/>
           </div>
           
           

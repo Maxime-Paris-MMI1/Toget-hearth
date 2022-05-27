@@ -1,16 +1,49 @@
 <template>
   <!-- Le header de cette page est unique c'est pour cela que nous l'avons pas crée dans les composants -->
   <header>
-    <div class="flex justify-between">
-      <div class="pt-8 pl-6">
-        <IconConnexion/>
+    <div class="pb-6">
+      <div class="flex justify-between pt-8 pl-6">
+        <RouterLink to="/connexion">
+          <IconConnexion/>
+        </RouterLink>
+        <div class="pt-3 pr-6">
+          <button class="relative z-50 text-xl" aria-haspopup="true" aria-controls="menu" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">
+          <div>
+            <MenuHamburger :class="{'hidden' : menuOuvert}" />
+          </div>
+          <span class="sr-only">Menu</span>
+          </button>
+        </div>
       </div>
-      <div class="pt-12 pr-7">
-        <MenuHamburger/>
+      <div class="flex justify-center cursor-se-resize">
+        <a href="/"><LogoGrand/></a>
       </div>
-    </div>
-    <div class="flex justify-center cursor-se-resize">
-      <logo-grand/>
+      <div id="menu" class="z-50 fixed inset-0 translate-x-full bg-white motion-safe:duration-1000 motion-safe:transition-transform" v-if="menuOuvert"
+      :class="{ 'translate-x-0': menuOuvert }">
+        <div class="flex flex-row justify-between">
+          <DecoHG/>
+          <button class="relative z-50 mr-8 -mt-20" aria-haspopup="true" aria-controls="menu" :aria-expanded="menuOuvert" @click="menuOuvert = !menuOuvert">
+            <CroixMenu :class="{'motion-safe:animate-[BackInRight_1s_cubic-bezier(0,1,.24,1)]' : menuOuvert}"/>
+          </button>
+        </div>
+
+        <nav>
+          <ul class="flex flex-col text-center gap-9 font-poppins font-medium text-xl">
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.05s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="/">Accueil</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.1s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../conseileco">Conseils Écologiques</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.2s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../newsletter">Newsletter</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.3s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../NousContacter">Nous contacter</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.4s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../Conseilramassage">Ramassage des déchets</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.5s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../NousContacter">À propos</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.6s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../connexion">Inscription / Connexion</RouterLink>
+          </ul>
+          <RouterLink to="../conseilecoco">Connecté</RouterLink>
+          <div class="flex flex-row justify-between ">
+            <RouterLink to="../dons"><PieceDon class="mt-[127px]"/></RouterLink>
+            <DecoHG class="rotate-180 h-56 -mt-[10px] -mr-[1px]"/>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
@@ -221,8 +254,20 @@ import DropDown from "../components/icons/DropDown.vue"
 import FooterPage from "../components/FooterPage.vue" 
 import BoutonAction from "../components/BoutonAction.vue"
 import FondBouton from "../components/icons/FondBouton.vue"
+import CroixMenu from "../components/icons/CroixMenu.vue"
+import DecoHG from "../components/icons/DecoHG.vue"
+import PieceDon from "../components/icons/PieceDon.vue"
 export default {
   name: "Accueil",
-  components: {IconConnexion, MenuHamburger, LogoSite, LogoGrand, DropDown, FooterPage, BoutonAction,FondBouton, },
+  components: {IconConnexion, MenuHamburger, LogoSite, LogoGrand, DropDown, FooterPage, BoutonAction,FondBouton, CroixMenu,
+                DecoHG, PieceDon },
+  data() {
+    return {
+      menuOuvert: false,
+    };
+  },
+  beforeMount(){
+    this.$router.afterEach(() => (this.menuOuvert = false));
+  }
 };
 </script>

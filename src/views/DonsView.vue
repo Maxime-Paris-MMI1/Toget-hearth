@@ -12,9 +12,11 @@
 
         <div class="flex justify-center">
         <div class="absolute mt-96 mx-7">
-            <BoutonAction 
-            :fluo="true"
-            titrebouton= "Faire un don"/>
+            <a href="https://www.paypal.com/fr/home">
+                <BoutonAction 
+                :fluo="true"
+                titrebouton= "Faire un don"/>
+            </a>
         </div>
         </div>
         <p class="absolute font-poppins font-medium text-white mt-[655px] text-xl ml-3">
