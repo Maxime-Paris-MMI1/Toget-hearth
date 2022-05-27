@@ -7,8 +7,10 @@
       <div class="pt-3">
         <a href="/"><LogoSite/></a>
       </div>
-      <div class="pt-6 pr-5">
-        <IconConnexion/>
+      <div class="pt-7 pr-5">
+        <RouterLink to="/connexion">
+          <IconConnexion/>
+        </RouterLink>
       </div>
     </div>
   </header>
