@@ -22,6 +22,7 @@
         <div class="alert alert-warning text-center mb-3" v-if="message!=null">
             {{ message }}
         </div>
+        <p class="text-vert-moyen-deco font-poppins text-right font-medium mb-10 mr-6 text-sm mt-10">Mot de passe oublié ?</p>
         <div class="flex justify-center items-center relative gap-2 px-7 py-2 rounded-22xl bg-vert-fluo-bouton mx-[88px]"
             style="box-shadow: 0px 1.5600000619888306px 1.5600000619888306px 2.017021417617798px rgba(0,0,0,0.25);">
             <button variant="dark" class="flex-grow-0 flex-shrink-0 text-base font-poppins font-medium text-left text-blanc-background drop-shadow-sm" type="submit">
@@ -29,6 +30,12 @@
             </button>
         </div>
     </form>
+    <div class="flex flex-row justify-center gap-1">
+        <p class="font-poppins text-center font-medium mt-10">Pas encore inscrit ?</p>
+        <RouterLink to="/">
+            <p class="text-vert-moyen-deco font-poppins text-center font-medium mt-10">S’inscrire</p>
+        </RouterLink>
+    </div>
 </template>
 <script>
 import { RouterLink, RouterView } from "vue-router";
