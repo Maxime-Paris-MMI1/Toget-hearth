@@ -29,6 +29,12 @@
                 Se connecter
             </button>
         </div>
+        <div>
+            <button type="button"
+            @click="onDcnx()" >
+            Deconnexion
+            </button>
+        </div>
     </form>
     <div class="flex flex-row justify-center gap-1">
         <p class="font-poppins text-center font-medium mt-10">Pas encore inscrit ?</p>
@@ -44,6 +50,9 @@ import {
     signInWithEmailAndPassword,     // Se connecter avec un email + mot de passe
     signOut                         // Se deconnecter
 } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js'
+
+//Import de l'emetteur depuis main.js
+import { emitter } from '../main.js';
  
 import DecoHG from '../components/icons/DecoHG.vue'
 import LogoSite from '../components/icons/LogoSite.vue'
@@ -71,6 +80,7 @@ export default {
                 console.log('user connecté', response.user);
                 this.user = response.user;
                 // Emission evenement de connexion
+                emitter.emit('connectUser', { user: this.user });
                 console.log("user",this.user);                
                 // Mise à jour du message
                 this.message = "User connecté : "+this.user.email;
@@ -79,6 +89,24 @@ export default {
                 // Erreur de connexion
                 console.log('Erreur connexion', error);
                 this.message = "Erreur d'authentification";
+            })
+        },
+        onDcnx(){
+            // Se déconnecter
+            signOut(getAuth())
+            .then(response =>{
+                // Mise à jour du message
+                this.message = "User non connecté";
+                // Ré initialisation des champs
+                this.user = {
+                    email:null,
+                    password:null
+                };
+                // Emission évènement de déconnexion
+                emitter.emit('deConnectUser', { user: this.user });
+            })
+            .catch(error=>{
+                console.log('erreur deconnexion ', error);
             })
         },
     }
