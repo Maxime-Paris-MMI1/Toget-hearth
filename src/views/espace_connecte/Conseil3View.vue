@@ -1,6 +1,6 @@
 <template>
   <header>
-    <HeaderFonce/>
+    <HeadercoFonce/>
   </header>
     <div>
         <VignetteArticle class="-z-10"
@@ -36,7 +36,7 @@
                D’après une étude réalisée par l'INSEE, moins de 3% des actifs réalisent le vélotaf et cela leur permet de réaliser une activité sportive chaque jour ! Alors pourquoi pas commencer dès aujourd’hui ?</p>
     </div>
     <footer>
-      <FooterPage/>
+      <FootercoPage/>
     </footer>
 </template>
 
@@ -45,10 +45,10 @@ import VignetteArticle from "../../components/VignetteArticle.vue"
 import FlecheGauche from "../../components/icons/FlecheGauche.vue"
 import LogoSite from "../../components/icons/LogoSite.vue"
 import IconConnexion from "../../components/icons/IconConnexion.vue"
-import FooterPage from "../../components/FooterPage.vue"
-import HeaderFonce from "../../components/HeaderFonce.vue"
+import FootercoPage from "../../components/FootercoPage.vue"
+import HeadercoFonce from "../../components/HeadercoFonce.vue"
 
 export default {
-   components: { VignetteArticle, FlecheGauche, LogoSite, IconConnexion, FooterPage, HeaderFonce } 
+   components: { VignetteArticle, FlecheGauche, LogoSite, IconConnexion, FootercoPage, HeadercoFonce } 
 }
 </script>

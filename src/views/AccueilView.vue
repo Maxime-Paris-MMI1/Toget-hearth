@@ -37,7 +37,6 @@
            <RouterLink :class="{' motion-safe:animate-[Depart_0.5s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../NousContacter">À propos</RouterLink>
            <RouterLink :class="{' motion-safe:animate-[Depart_0.6s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../connexion">Inscription / Connexion</RouterLink>
           </ul>
-          <RouterLink to="../conseilecoco">Connecté</RouterLink>
           <div class="flex flex-row justify-between ">
             <RouterLink to="../dons"><PieceDon class="mt-[127px]"/></RouterLink>
             <DecoHG class="rotate-180 h-56 -mt-[10px] -mr-[1px]"/>
@@ -91,7 +90,7 @@
     <div class=" flex overflow-x-scroll  gap-5 ">
 
      <a href="./conseil2"> <img class="w-full  object-cover" src="../../public/images/accueil_conseil1.webp" id="slide1"></a>
-      <a href="./conseil3"> <img class="w-full  object-cover" src="../../public/images/accueil_conseil2.webp" id="slide2"> </a>
+      <a href="./connexion"> <img class="w-full  object-cover" src="../../public/images/accueil_conseil2.webp" id="slide2"> </a>
       <a href="./connexion"> <img class="w-full  object-cover" src="../../public/images/accueil_conseil3.webp" id="slide3"></a>
     </div>
   </div>
@@ -161,10 +160,17 @@ exclusifs !
       </div>
 
 
-      <div class="flex justify-center mb-16">
+      <div class="flex justify-center mb-10">
 
       <img src="../../public/images/imagedefi.webp" alt="image de defi en exemple">
 
+      </div>
+
+      <div class="mb-8">
+        <BoutonAction
+        :fluo="true"
+        titrebouton="Réaliser des défis"
+        lien="/connexion"/>
       </div>
 
 

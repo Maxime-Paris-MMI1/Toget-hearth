@@ -1,6 +1,6 @@
 <template>
   <header>
-    <HeaderClair/>
+    <HeadercoClair/>
   </header>
   <main>
     <h1 class="mt-10 ml-5 font-poppins text-2xl text-vert-fonce-typographie ">Conseils et Astuces écologiques</h1>
@@ -47,7 +47,7 @@
     lien="/conseil7"/>
   </main>
   <footer>
-    <FooterPage/>
+    <FootercoPage/>
   </footer>
 
  
@@ -57,12 +57,12 @@
 
 <script>
 import { RouterLink, RouterView } from "vue-router";
-import HeaderClair from "../../components/HeaderClair.vue" 
+import HeadercoClair from "../../components/HeadercoClair.vue" 
 import CarrouselConseil from "../../components/CarrouselConseil.vue"
-import FooterPage from "../../components/FooterPage.vue" 
+import FootercoPage from "../../components/FootercoPage.vue" 
 
 export default {
   name: "Header",
-  components: {HeaderClair, FooterPage, CarrouselConseil }
+  components: {HeadercoClair, FootercoPage, CarrouselConseil }
 };
 </script>

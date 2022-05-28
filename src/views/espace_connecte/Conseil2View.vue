@@ -1,6 +1,6 @@
 <template>
     <header>
-      <HeaderFonce/>
+      <HeadercoFonce/>
     </header>
     <div>
         <VignetteArticle 
@@ -21,7 +21,7 @@
         <p class="mt-8 ml-5 mr-6 font-poppins text-xs ">Il faut donc privilégier les <span class="font-medium text-vert-kaki-elements-importants">produits locaux</span> et de saison et remplacer notre consommation de viande par la consommation de légumes ou <span class="font-medium text-vert-kaki-elements-importants">de poissons</span> de la pêche durable.</p>
     </div>
     <footer>
-        <FooterPage/>
+        <FootercoPage/>
     </footer>
 </template>
 
@@ -30,10 +30,10 @@ import VignetteArticle from "../../components/VignetteArticle.vue"
 import FlecheGauche from "../../components/icons/FlecheGauche.vue"
 import LogoSite from "../../components/icons/LogoSite.vue"
 import IconConnexion from "../../components/icons/IconConnexion.vue"
-import HeaderFonce from "../../components/HeaderFonce.vue"
-import FooterPage from "../../components/FooterPage.vue"
+import HeadercoFonce from "../../components/HeadercoFonce.vue"
+import FootercoPage from "../../components/FootercoPage.vue"
 
 export default {
-   components: { VignetteArticle, FlecheGauche, LogoSite, IconConnexion, HeaderFonce, FooterPage } 
+   components: { VignetteArticle, FlecheGauche, LogoSite, IconConnexion, HeadercoFonce, FootercoPage } 
 }
 </script>

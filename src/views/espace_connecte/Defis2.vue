@@ -1,7 +1,7 @@
 <template>
 <div class="bg-gradient-to-b from-vert-moyen-deco to-vert-pastel-deco">
 <header>
-    <HeaderClair/>
+    <HeadercoClair/>
 </header>
 
 <main>
@@ -33,7 +33,7 @@
 </main>
 
 <footer>
-    <FooterPage/>
+    <FootercoPage/>
 </footer>
 </div>
 
@@ -41,10 +41,10 @@
 
 <script>
 import { RouterLink, RouterView } from "vue-router";
-import HeaderClair from "../../components/HeaderClair.vue" 
+import HeadercoClair from "../../components/HeadercoClair.vue" 
 
-import FooterPage from "../../components/FooterPage.vue" 
-import BoutonAction from "../../components/Boutonaction.vue" 
+import FootercoPage from "../../components/FootercoPage.vue" 
+import BoutonAction from "../../components/BoutonAction.vue" 
 import BackDefis from "../../components/BackDefis.vue" 
 import stars1 from "../../components/icons/stars1.vue" 
 import stars2 from "../../components/icons/stars2.vue" 
@@ -52,10 +52,10 @@ import stars3 from "../../components/icons/stars3.vue"
 import stars4 from "../../components/icons/stars4.vue" 
 import stars5 from "../../components/icons/stars5.vue" 
 import StatsDefi from "../../components/StatsDefi.vue" 
-import UserLogo from "../../components/icons/UserLogo.vue" 
+import UserLogo from "../../components/icons/Userlogo.vue" 
 
 export default {
   name: "Header",
-  components: {HeaderClair, FooterPage, BoutonAction, BackDefis, stars1, stars2, stars3, stars4, stars5, StatsDefi,UserLogo,   }
+  components: {HeadercoClair, FootercoPage, BoutonAction, BackDefis, stars1, stars2, stars3, stars4, stars5, StatsDefi,UserLogo,   }
 };
 </script>

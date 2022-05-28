@@ -3,7 +3,7 @@
   <header>
     <div class="pb-6">
       <div class="flex justify-between pt-8 pl-6">
-        <RouterLink to="/connexion">
+        <RouterLink to="/">
           <IconConnexion/>
         </RouterLink>
         <div class="pt-3 pr-6">
@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="flex justify-center cursor-se-resize">
-        <a href="/"><LogoGrand/></a>
+        <LogoGrand/>
       </div>
       <div id="menu" class="z-50 fixed inset-0 translate-x-full bg-white motion-safe:duration-1000 motion-safe:transition-transform" v-if="menuOuvert"
       :class="{ 'translate-x-0': menuOuvert }">
@@ -29,23 +29,24 @@
 
         <nav>
           <ul class="flex flex-col text-center gap-9 font-poppins font-medium text-xl">
-           <RouterLink :class="{' motion-safe:animate-[Depart_0.05s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="/">1</RouterLink>
-           <RouterLink :class="{' motion-safe:animate-[Depart_0.1s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../conseileco">2</RouterLink>
-           <RouterLink :class="{' motion-safe:animate-[Depart_0.2s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../newsletter">3</RouterLink>
-           <RouterLink :class="{' motion-safe:animate-[Depart_0.3s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../NousContacter">4</RouterLink>
-           <RouterLink :class="{' motion-safe:animate-[Depart_0.4s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../Conseilramassage">5</RouterLink>
-           <RouterLink :class="{' motion-safe:animate-[Depart_0.5s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../NousContacter">6</RouterLink>
-           <RouterLink :class="{' motion-safe:animate-[Depart_0.6s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../connexion">7</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.05s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="/">Accueil</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.1s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../conseileco">Conseils Ecologiques</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.2s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../newsletter">Ramassage des déchets</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.3s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../NousContacter">Défis</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.4s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../Conseilramassage">Calendrier</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.5s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../NousContacter">Newsletter</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.6s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../connexion">Mon compte</RouterLink>
           </ul>
-          <RouterLink to="../conseilecoco">Connecté</RouterLink>
           <div class="flex flex-row justify-between ">
-            <RouterLink to="../../dons"><PieceDon class="mt-[127px]"/></RouterLink>
+            <RouterLink to="/dons_co"><PieceDon class="mt-[127px]"/></RouterLink>
             <DecoHG class="rotate-180 h-56 -mt-[10px] -mr-[1px]"/>
           </div>
         </nav>
       </div>
     </div>
   </header>
+
+
   <main>
     <h2 class="text-center font-poppins p-10 font-medium text-2xl mb-20">Changer votre quotidien pour aider 
         notre planete</h2>
@@ -90,9 +91,9 @@
   <div class="flex flex-col items-center">
     <div class=" flex overflow-x-scroll  gap-5 ">
 
-     <a href="./conseil2"> <img class="w-full  object-cover" src="../../../public/images/accueil_conseil1.webp" id="slide1"></a>
+     <a href="./conseil2co"> <img class="w-full  object-cover" src="../../../public/images/accueil_conseil1.webp" id="slide1"></a>
       <a href="./conseil3"> <img class="w-full  object-cover" src="../../../public/images/accueil_conseil2.webp" id="slide2"> </a>
-      <a href="./connexion"> <img class="w-full  object-cover" src="../../../public/images/accueil_conseil3.webp" id="slide3"></a>
+      <a href="./conseil5"> <img class="w-full  object-cover" src="../../../public/images/accueil_conseil3.webp" id="slide3"></a>
     </div>
   </div>
 
@@ -135,7 +136,7 @@
         <BoutonAction
         :fluo="true"
         titrebouton="Découvrir"
-        lien= "/Newsletter" />
+        lien= "/newsletterco" />
         </div>
 
               <div class="flex justify-center mb-16">
@@ -161,12 +162,18 @@ exclusifs !
       </div>
 
 
-      <div class="flex justify-center mb-16">
+      <div class="flex justify-center mb-10">
 
       <img src="../../../public/images/imagedefi.webp" alt="image de defi en exemple">
 
       </div>
 
+      <div class="mb-8">
+        <BoutonAction
+        :fluo="true"
+        titrebouton="Réaliser des défis"
+        lien="/ListeDefis"/>
+      </div>
 
 
       <div class="flex justify-center mb-16">
@@ -197,7 +204,8 @@ exclusifs !
         <div class=" mt-60 absolute">
         <BoutonAction
         :fluo="true"
-        titrebouton="Trouver un évènement" />
+        titrebouton="Trouver un évènement"
+        lien="/calendrier" />
         </div>
         </div>
 
@@ -223,7 +231,7 @@ exclusifs !
         <BoutonAction
         :fluo="true"
         titrebouton="Faire un don"
-        lien= "/dons"
+        lien= "/dons_co"
         />
         </div>
         
@@ -231,9 +239,6 @@ exclusifs !
    
 
     </section>
-    
-
-
 
 
   </main>
@@ -241,7 +246,7 @@ exclusifs !
 
 
   <footer class=" -mt-14" >
-    <FooterPage/>
+    <FootercoPage/>
   </footer>
        
 </template>
@@ -251,7 +256,7 @@ import MenuHamburger from "../../components/icons/MenuHamburger.vue"
 import LogoSite from "../../components/icons/LogoSite.vue" 
 import LogoGrand from "../../components/icons/LogoGrand.vue" 
 import DropDown from "../../components/icons/DropDown.vue" 
-import FooterPage from "../../components/FooterPage.vue" 
+import FootercoPage from "../../components/FootercoPage.vue" 
 import BoutonAction from "../../components/BoutonAction.vue"
 import FondBouton from "../../components/icons/FondBouton.vue"
 import CroixMenu from "../../components/icons/CroixMenu.vue"
@@ -259,7 +264,7 @@ import DecoHG from "../../components/icons/DecoHG.vue"
 import PieceDon from "../../components/icons/PieceDon.vue"
 export default {
   name: "Accueil",
-  components: {IconConnexion, MenuHamburger, LogoSite, LogoGrand, DropDown, FooterPage, BoutonAction,FondBouton, CroixMenu,
+  components: {IconConnexion, MenuHamburger, LogoSite, LogoGrand, DropDown, FootercoPage, BoutonAction,FondBouton, CroixMenu,
                 DecoHG, PieceDon },
   data() {
     return {

@@ -1,6 +1,6 @@
 <template>
   <header>
-    <HeaderFonce/>
+    <HeadercoFonce/>
   </header>
     <div>
         <VignetteArticle 
@@ -21,7 +21,7 @@
         <p class="mt-8 ml-5 mr-6 font-poppins text-xs ">Nous devons renoncer aux produits jetables, en adoptant <span class="font-medium text-vert-kaki-elements-importants">des produits réutilisables</span> nous sommes conscient qu’il est difficile de renoncer entièrement au plastique mais nous devons opter pour la meilleur version réutilisable comme <span class="font-medium text-vert-kaki-elements-importants">des éco-cup</span> au lieu des gobelets en plastique.</p>
     </div>
     <footer>
-      <FooterPage/>
+      <FootercoPage/>
     </footer>
 </template>
 
@@ -30,10 +30,10 @@ import VignetteArticle from "../../components/VignetteArticle.vue"
 import FlecheGauche from "../../components/icons/FlecheGauche.vue"
 import LogoSite from "../../components/icons/LogoSite.vue"
 import IconConnexion from "../../components/icons/IconConnexion.vue"
-import FooterPage from "../../components/FooterPage.vue"
-import HeaderFonce from "../../components/HeaderFonce.vue"
+import FootercoPage from "../../components/FootercoPage.vue"
+import HeadercoFonce from "../../components/HeadercoFonce.vue"
 
 export default {
-   components: { VignetteArticle, FlecheGauche, LogoSite, IconConnexion, FooterPage, HeaderFonce } 
+   components: { VignetteArticle, FlecheGauche, LogoSite, IconConnexion, FootercoPage, HeadercoFonce } 
 }
 </script>

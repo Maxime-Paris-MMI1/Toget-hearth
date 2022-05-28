@@ -1,6 +1,6 @@
 <template>
   <header>
-    <HeaderFonce/>
+    <HeadercoFonce/>
   </header>
     <div>
         <VignetteArticle class="-z-10"
@@ -45,7 +45,7 @@
                qui sont une énergie propre et durable. Si nous faisons tous des efforts pour y parvenir, la planète se portera mieux.</p>
     </div>
     <footer>
-      <FooterPage/>
+      <FootercoPage/>
     </footer>
 </template>
 
@@ -54,10 +54,10 @@ import VignetteArticle from "../../components/VignetteArticle.vue"
 import FlecheGauche from "../../components/icons/FlecheGauche.vue"
 import LogoSite from "../../components/icons/LogoSite.vue"
 import IconConnexion from "../../components/icons/IconConnexion.vue"
-import FooterPage from "../../components/FooterPage.vue"
-import HeaderFonce from "../../components/HeaderFonce.vue"
+import FootercoPage from "../../components/FootercoPage.vue"
+import HeadercoFonce from "../../components/HeadercoFonce.vue"
 
 export default {
-   components: { VignetteArticle, FlecheGauche, LogoSite, IconConnexion, FooterPage, HeaderFonce } 
+   components: { VignetteArticle, FlecheGauche, LogoSite, IconConnexion, FootercoPage, HeadercoFonce } 
 }
 </script>

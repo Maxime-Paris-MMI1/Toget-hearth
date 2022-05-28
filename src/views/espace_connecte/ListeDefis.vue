@@ -1,7 +1,7 @@
 <template>
 <div class="bg-vert-pastel-deco">
   <header>
-    <HeaderClair/>
+    <HeadercoClair/>
   </header>
 
 <main>
@@ -51,20 +51,20 @@
         
 </main>
   <footer>
-    <FooterPage/>
+    <FootercoPage/>
   </footer>
 </div>
 </template>
 
 <script>
 import { RouterLink, RouterView } from "vue-router";
-import HeaderClair from "../../components/HeaderClair.vue" 
+import HeadercoClair from "../../components/HeadercoClair.vue" 
 
-import FooterPage from "../../components/FooterPage.vue" 
+import FootercoPage from "../../components/FootercoPage.vue" 
 import BoutonAction from "../../components/BoutonAction.vue" 
 
 export default {
   name: "Header",
-  components: {HeaderClair, FooterPage, BoutonAction, }
+  components: {HeadercoClair, FootercoPage, BoutonAction, }
 };
 </script>
