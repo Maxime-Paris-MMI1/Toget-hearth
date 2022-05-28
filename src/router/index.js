@@ -1,3 +1,17 @@
+
+// Fonction d'authentification
+import { getAuth } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js'
+
+// Fonctions Firestore
+import { 
+  getFirestore, 
+  collection, 
+  onSnapshot, 
+  query,
+  where
+} from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js'
+
+
 import { createRouter, createWebHistory } from 'vue-router'
 import AccueilView from '../views/AccueilView.vue'
 import Conseil1 from '../views/Conseil1View.vue'
@@ -29,14 +43,14 @@ const router = createRouter({
     { path: '/conseil1', name: 'Conseil1', component: Conseil1 },
     { path: '/conseileco', name: 'ConseilEco', component: ConseilEco },
     { path: '/conseil2', name: 'Conseil2', component: Conseil2 },
-    { path: '/conseil1co', name: 'Conseil1Co', component: Conseil1Co },
-    { path: '/conseilecoco', name: 'ConseilEcoCo', component: ConseilEcoCo },
-    { path: '/conseil2co', name: 'Conseil2Co', component: Conseil2Co },
-    { path: '/conseil3', name: 'Conseil3', component: Conseil3 },
-    { path: '/conseil4', name: 'Conseil4', component: Conseil4 },
-    { path: '/conseil5', name: 'Conseil5', component: Conseil5 },
-    { path: '/conseil6', name: 'Conseil6', component: Conseil6 },
-    { path: '/conseil7', name: 'Conseil7', component: Conseil7 },
+    { path: '/conseil1co', name: 'Conseil1Co', component: Conseil1Co, beforeEnter:guard  },
+    { path: '/conseilecoco', name: 'ConseilEcoCo', component: ConseilEcoCo, beforeEnter:guard },
+    { path: '/conseil2co', name: 'Conseil2Co', component: Conseil2Co, beforeEnter:guard },
+    { path: '/conseil3', name: 'Conseil3', component: Conseil3, beforeEnter:guard },
+    { path: '/conseil4', name: 'Conseil4', component: Conseil4, beforeEnter:guard },
+    { path: '/conseil5', name: 'Conseil5', component: Conseil5, beforeEnter:guard },
+    { path: '/conseil6', name: 'Conseil6', component: Conseil6, beforeEnter:guard },
+    { path: '/conseil7', name: 'Conseil7', component: Conseil7, beforeEnter:guard },
     { path: '/ConseilRamassage', name: 'Conseilramassage', component: Conseilramassage },
     { path: '/MentionLegales', name: 'Mentionlegales', component: MentionLegales },
     { path: '/newsletter', name: 'Newsletter', component: Newsletter },
@@ -45,10 +59,46 @@ const router = createRouter({
     { path: '/connexion', name: 'Connexion', component: Connexion},
     { path: '/dons', name: 'Dons', component: Dons},
     { path: '/NousContacter', name: 'NousContacter', component: NousContacter},
-    { path: '/ListeDefis', name: 'ListeDefis', component: ListeDefis},
-    { path: '/Defis1', name: 'Defis1', component: Defis1},
+    { path: '/ListeDefis', name: 'ListeDefis', component: ListeDefis, beforeEnter:guard},
+    { path: '/Defis1', name: 'Defis1', component: Defis1, beforeEnter:guard},
 
   ]
 })
+
+function guard(to, from, next) {
+  // recherche utilisateur connecté
+  getAuth().onAuthStateChanged(function(user) {
+    if(user) {
+      // User connecté
+      console.log('router OK => user ', user);
+      // Obtenir Firestore
+      const firestore = getFirestore();
+      // Base de données (collection)  document participant
+      const dbUsers = collection(firestore, "users");
+      // Recherche du user par son uid
+      const q = query(dbUsers, where("uid", "==", user.uid));
+      onSnapshot(q, (snapshot) => {
+          let userInfo = snapshot.docs.map(doc => ( {id:doc.id, ...doc.data()}));
+          // userInfo étant un tableau, on récupère
+          // ses informations dans la 1° cellule du tableau : 0
+          let isAdmin=userInfo[0].admin;
+          if(isAdmin){
+            // Utilisateur administrateur, on autorise la page/vue
+            next(to.params.name);
+            return;
+          }else{
+            // Utilisateur non administrateur, renvoi sur accueil
+            alert("Vous n'avez pas l'autorisation pour cette fonction");
+            next({name: "AccueilView"});
+            return;
+          }
+      })
+    }else {
+      // Utilisateur non connecté, renvoi sur accueil
+      console.log('router NOK => user ', user);
+      next({name: "AccueilView"});
+    }
+  });
+}
 
 export default router

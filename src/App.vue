@@ -1,7 +1,5 @@
 <template>
-  <header>
-  </header>
-
+  <RouterLink to="/">{{name}}</RouterLink>
   <RouterView />
 </template>
 
@@ -31,7 +29,23 @@ import { getAuth } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.
 
 export default{
 
+  data() {
+    return {
+      user:{              // User connecté
+        email:null,
+        password:null
+      },
+      userInfo:null,      // Informations complémentaires user connecté
+      name:"Vidéo",       // Titre de l'application ou nom du user
+      isAdmin:false       // Si l'utilisateur est ou non administrateur
+    }
+  },
+
     mounted(){
+    // Vérifier si un user connecté existe déjà
+    // Au lancement de l'application
+    this.getUserConnect();
+
     // Ecoute de l'évènement de connexion
     emitter.on('connectUser', e => {
       // Récupération du user
@@ -48,8 +62,7 @@ export default{
       console.log('App => Reception user deconnecté', this.user);
       // Réinitialisation infos complémentaires user
       this.userInfo   = null;
-      this.name       = 'Vidéo';
-      this.avatar     = null;
+      this.name       = 'connectez-vous';
       this.isAdmin    = false;
     })
   },
