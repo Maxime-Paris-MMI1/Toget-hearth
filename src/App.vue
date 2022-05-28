@@ -36,7 +36,7 @@ export default{
         password:null
       },
       userInfo:null,      // Informations complémentaires user connecté
-      name:"Vidéo",       // Titre de l'application ou nom du user
+      name:"Connectez-vous",       // Titre de l'application ou nom du user
       isAdmin:false       // Si l'utilisateur est ou non administrateur
     }
   },

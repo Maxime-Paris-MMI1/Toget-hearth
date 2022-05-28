@@ -59,7 +59,7 @@ import { RouterLink, RouterView } from "vue-router";
 import HeaderClair from "../../components/HeaderClair.vue" 
 
 import FooterPage from "../../components/FooterPage.vue" 
-import BoutonAction from "../../components/Boutonaction.vue" 
+import BoutonAction from "../../components/BoutonAction.vue" 
 
 export default {
   name: "Header",
