@@ -35,6 +35,8 @@ import Dons from '../views/DonsView.vue'
 import NousContacter from '../views/NousContacter.vue'
 import ListeDefis from '../views/espace_connecte/ListeDefis.vue'
 import Defis1 from '../views/espace_connecte/Defis1.vue'
+import Defis2 from '../views/espace_connecte/Defis2.vue'
+import Defis3 from '../views/espace_connecte/Defis3.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -61,6 +63,8 @@ const router = createRouter({
     { path: '/NousContacter', name: 'NousContacter', component: NousContacter},
     { path: '/ListeDefis', name: 'ListeDefis', component: ListeDefis, beforeEnter:guard},
     { path: '/Defis1', name: 'Defis1', component: Defis1, beforeEnter:guard},
+    { path: '/Defis2', name: 'Defis2', component: Defis2, beforeEnter:guard},
+    { path: '/Defis3', name: 'Defis3', component: Defis3, beforeEnter:guard},
 
   ]
 })

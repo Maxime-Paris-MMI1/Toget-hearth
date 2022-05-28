@@ -21,11 +21,13 @@
         <BoutonAction
         :kaki="true"
         titrebouton="Venir en vélo au travail"
+        lien= "/Defis2"
         />
 
         <BoutonAction
         :kaki="true"
         titrebouton="Organiser une collecte"
+        lien= "/Defis3"
         />
 
         <BoutonAction
