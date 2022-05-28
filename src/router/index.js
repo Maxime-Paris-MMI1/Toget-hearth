@@ -25,6 +25,7 @@ import News3 from '../views/News3View.vue'
 import Connexion from '../views/ConnexionView.vue'
 import Dons from '../views/DonsView.vue'
 import NousContacter from '../views/NousContacter.vue'
+import APropos from '../views/APropos.vue'
 
 
 
@@ -63,6 +64,7 @@ const router = createRouter({
     { path: '/connexion', name: 'Connexion', component: Connexion},
     { path: '/dons', name: 'Dons', component: Dons},
     { path: '/NousContacter', name: 'NousContacter', component: NousContacter},
+    { path: '/APropos', name: 'APropos', component: APropos},
 
 
 
