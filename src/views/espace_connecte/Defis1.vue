@@ -44,7 +44,7 @@ import { RouterLink, RouterView } from "vue-router";
 import HeaderClair from "../../components/HeaderClair.vue" 
 
 import FooterPage from "../../components/FooterPage.vue" 
-import BoutonAction from "../../components/Boutonaction.vue" 
+import BoutonAction from "../../components/BoutonAction.vue" 
 import BackDefis from "../../components/BackDefis.vue" 
 import stars1 from "../../components/icons/stars1.vue" 
 import stars2 from "../../components/icons/stars2.vue" 
@@ -52,7 +52,7 @@ import stars3 from "../../components/icons/stars3.vue"
 import stars4 from "../../components/icons/stars4.vue" 
 import stars5 from "../../components/icons/stars5.vue" 
 import StatsDefi from "../../components/StatsDefi.vue" 
-import UserLogo from "../../components/icons/UserLogo.vue" 
+import UserLogo from "../../components/icons/Userlogo.vue" 
 
 export default {
   name: "Header",

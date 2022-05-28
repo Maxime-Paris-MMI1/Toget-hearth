@@ -17,14 +17,6 @@ import AccueilView from '../views/AccueilView.vue'
 import Conseil1 from '../views/Conseil1View.vue'
 import ConseilEco from '../views/ConseilEcologique.vue'
 import Conseil2 from  '../views/Conseil2View.vue'
-import ConseilEcoCo from '../views/espace_connecte/ConseilEcologique.vue'
-import Conseil1Co from '../views/espace_connecte/Conseil1View.vue'
-import Conseil2Co from  '../views/espace_connecte/Conseil2View.vue'
-import Conseil3 from '../views/espace_connecte/Conseil3View.vue'
-import Conseil4 from '../views/espace_connecte/Conseil4View.vue'
-import Conseil5 from '../views/espace_connecte/Conseil5View.vue'
-import Conseil6 from '../views/espace_connecte/Conseil6View.vue'
-import Conseil7 from '../views/espace_connecte/Conseil7View.vue'
 import Conseilramassage from '../views/Conseilramassage.vue'
 import MentionLegales from '../views/MentionLegales.vue'
 import Newsletter from '../views/NewsletterView.vue'
@@ -33,6 +25,18 @@ import News3 from '../views/News3View.vue'
 import Connexion from '../views/ConnexionView.vue'
 import Dons from '../views/DonsView.vue'
 import NousContacter from '../views/NousContacter.vue'
+
+
+
+import Accueilco from '../views/espace_connecte/AccueilcoView.vue'
+import ConseilEcoCo from '../views/espace_connecte/ConseilEcologique.vue'
+import Conseil1Co from '../views/espace_connecte/Conseil1View.vue'
+import Conseil2Co from  '../views/espace_connecte/Conseil2View.vue'
+import Conseil3 from '../views/espace_connecte/Conseil3View.vue'
+import Conseil4 from '../views/espace_connecte/Conseil4View.vue'
+import Conseil5 from '../views/espace_connecte/Conseil5View.vue'
+import Conseil6 from '../views/espace_connecte/Conseil6View.vue'
+import Conseil7 from '../views/espace_connecte/Conseil7View.vue'
 import ListeDefis from '../views/espace_connecte/ListeDefis.vue'
 import Defis1 from '../views/espace_connecte/Defis1.vue'
 import Defis2 from '../views/espace_connecte/Defis2.vue'
@@ -45,14 +49,6 @@ const router = createRouter({
     { path: '/conseil1', name: 'Conseil1', component: Conseil1 },
     { path: '/conseileco', name: 'ConseilEco', component: ConseilEco },
     { path: '/conseil2', name: 'Conseil2', component: Conseil2 },
-    { path: '/conseil1co', name: 'Conseil1Co', component: Conseil1Co, beforeEnter:guard  },
-    { path: '/conseilecoco', name: 'ConseilEcoCo', component: ConseilEcoCo, beforeEnter:guard },
-    { path: '/conseil2co', name: 'Conseil2Co', component: Conseil2Co, beforeEnter:guard },
-    { path: '/conseil3', name: 'Conseil3', component: Conseil3, beforeEnter:guard },
-    { path: '/conseil4', name: 'Conseil4', component: Conseil4, beforeEnter:guard },
-    { path: '/conseil5', name: 'Conseil5', component: Conseil5, beforeEnter:guard },
-    { path: '/conseil6', name: 'Conseil6', component: Conseil6, beforeEnter:guard },
-    { path: '/conseil7', name: 'Conseil7', component: Conseil7, beforeEnter:guard },
     { path: '/ConseilRamassage', name: 'Conseilramassage', component: Conseilramassage },
     { path: '/MentionLegales', name: 'Mentionlegales', component: MentionLegales },
     { path: '/newsletter', name: 'Newsletter', component: Newsletter },
@@ -61,6 +57,18 @@ const router = createRouter({
     { path: '/connexion', name: 'Connexion', component: Connexion},
     { path: '/dons', name: 'Dons', component: Dons},
     { path: '/NousContacter', name: 'NousContacter', component: NousContacter},
+
+
+
+    { path: '/accueilco', name: 'Accueilco', component: Accueilco, beforeEnter:guard  },
+    { path: '/conseil1co', name: 'Conseil1Co', component: Conseil1Co, beforeEnter:guard  },
+    { path: '/conseilecoco', name: 'ConseilEcoCo', component: ConseilEcoCo, beforeEnter:guard },
+    { path: '/conseil2co', name: 'Conseil2Co', component: Conseil2Co, beforeEnter:guard },
+    { path: '/conseil3', name: 'Conseil3', component: Conseil3, beforeEnter:guard },
+    { path: '/conseil4', name: 'Conseil4', component: Conseil4, beforeEnter:guard },
+    { path: '/conseil5', name: 'Conseil5', component: Conseil5, beforeEnter:guard },
+    { path: '/conseil6', name: 'Conseil6', component: Conseil6, beforeEnter:guard },
+    { path: '/conseil7', name: 'Conseil7', component: Conseil7, beforeEnter:guard },
     { path: '/ListeDefis', name: 'ListeDefis', component: ListeDefis, beforeEnter:guard},
     { path: '/Defis1', name: 'Defis1', component: Defis1, beforeEnter:guard},
     { path: '/Defis2', name: 'Defis2', component: Defis2, beforeEnter:guard},

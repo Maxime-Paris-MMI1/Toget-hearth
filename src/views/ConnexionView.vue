@@ -84,7 +84,7 @@ export default {
                 console.log("user",this.user);                
                 // Mise à jour du message
                 this.message = "User connecté : "+this.user.email;
-                window.location.pathname = '/'
+                window.location.pathname = '/accueilco'
             })
             .catch((error) =>{
                 // Erreur de connexion
@@ -105,6 +105,7 @@ export default {
                 };
                 // Emission évènement de déconnexion
                 emitter.emit('deConnectUser', { user: this.user });
+                window.location.pathname = '/'
             })
             .catch(error=>{
                 console.log('erreur deconnexion ', error);
