@@ -7,7 +7,9 @@
         </RouterLink>
       </div>
       <div class="pt-5">
-        <a href="../views/espace_connecte/AccueilcoView.vue"><LogoSite/></a>
+        <Routerlink to="/accueilco">
+          <LogoSite/>
+        </Routerlink>
       </div>
 
       <div class="pt-12 pr-7">

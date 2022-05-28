@@ -36,7 +36,7 @@ import FlecheGauche from "../../components/icons/FlecheGauche.vue"
 import LogoSite from "../../components/icons/LogoSite.vue"
 import IconConnexion from "../../components/icons/IconConnexion.vue"
 import FootercoPage from "../../components/FootercoPage.vue"
-import HeaderFonce from "../../components/HeadercoFonce.vue"
+import HeadercoFonce from "../../components/HeadercoFonce.vue"
 
 export default {
    components: { VignetteArticle, FlecheGauche, LogoSite, IconConnexion, FootercoPage, HeadercoFonce } 
