@@ -18,10 +18,10 @@
         text-base
         font-normal
         bg-vert-moyen-deco ">
-        <RouterLink to="/">Défis</RouterLink>
+        <RouterLink to="/connexion">Défis</RouterLink>
         <RouterLink to="/">Accueil</RouterLink>
-        <RouterLink to="/">À propos</RouterLink>
-        <RouterLink to="/">Nous contacter</RouterLink>
+        <RouterLink to="/APropos">À propos</RouterLink>
+        <RouterLink to="/NousContacter">Nous contacter</RouterLink>
         <RouterLink class="text-sm pt-2" to="/MentionLegales">Mention légales/politique de confidentialité</RouterLink>
         </div>
     </div>

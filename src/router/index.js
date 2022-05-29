@@ -115,7 +115,7 @@ function guard(to, from, next) {
           }else{
             // Utilisateur non administrateur, renvoi sur accueil
             alert("Vous n'avez pas l'autorisation pour cette fonction");
-            next({name: "AccueilView"});
+            next({name: "accueilview"});
             return;
           }
       })

@@ -7,9 +7,11 @@
         </RouterLink>
       </div>
       <div class="pt-5">
-        <Routerlink to="/accueilco">
-          <LogoSite/>
-        </Routerlink>
+        <a href="">
+          <RouterLink to="/accueilco">
+            <LogoSite/>
+          </RouterLink>
+        </a>
       </div>
 
       <div class="pt-12 pr-7">

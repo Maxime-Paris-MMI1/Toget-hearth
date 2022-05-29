@@ -3,7 +3,7 @@
   <header>
     <div class="pb-6">
       <div class="flex justify-between pt-8 pl-6">
-        <RouterLink to="/">
+        <RouterLink to="/profil">
           <IconConnexion/>
         </RouterLink>
         <div class="pt-3 pr-6">
