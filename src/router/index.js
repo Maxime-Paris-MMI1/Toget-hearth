@@ -23,6 +23,7 @@ import Newsletter from '../views/NewsletterView.vue'
 import News2 from '../views/News2View.vue'
 import News3 from '../views/News3View.vue'
 import Connexion from '../views/ConnexionView.vue'
+import Inscription from '../views/InscriptionView.vue'
 import Dons from '../views/DonsView.vue'
 import NousContacter from '../views/NousContacter.vue'
 import APropos from '../views/APropos.vue'
@@ -61,7 +62,7 @@ const router = createRouter({
     { path: '/newsletter', name: 'Newsletter', component: Newsletter },
     { path: '/news2', name: 'News2', component: News2 },
     { path: '/news3', name: 'News3', component: News3 },
-    { path: '/connexion', name: 'Connexion', component: Connexion},
+    { path: '/inscription', name: 'Inscription', component: Inscription},
     { path: '/dons', name: 'Dons', component: Dons},
     { path: '/NousContacter', name: 'NousContacter', component: NousContacter},
     { path: '/APropos', name: 'APropos', component: APropos},

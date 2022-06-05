@@ -38,7 +38,7 @@
     </form>
     <div class="flex flex-row justify-center gap-1">
         <p class="font-poppins text-center font-medium mt-10">Pas encore inscrit ?</p>
-        <RouterLink to="/">
+        <RouterLink to="/inscription">
             <p class="text-vert-moyen-deco font-poppins text-center font-medium mt-10">S’inscrire</p>
         </RouterLink>
     </div>
