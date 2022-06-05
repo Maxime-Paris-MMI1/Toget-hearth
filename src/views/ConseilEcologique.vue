@@ -6,7 +6,7 @@
     <h1 class="mt-10 ml-5 font-poppins text-2xl text-vert-fonce-typographie ">Conseils et Astuces écologiques</h1>
     <div class="w-full flex gap-5 snap-x overflow-x-auto">
       <div class="snap-center shrink-0 first:pl-5 last:pr-5">
-        <CarrouselConseil class="mt-16 shrink-0" 
+        <CarrouselConseil class="mt-16 shrink-0" id="1"
         image="/images/carroussel1.webp"
         titre1="Éviter les"
         titre2="déchets plastiques"
@@ -14,7 +14,7 @@
         lien="/conseil1"/>
       </div>
       <div class="snap-center shrink-0 first:pl-5 last:pr-5">
-         <CarrouselConseil class="mt-16" 
+         <CarrouselConseil class="mt-16" id="2"
         image="/images/carroussel2.webp"
         titre1="Adopter une"
         titre2="alimentation durable"
@@ -22,7 +22,7 @@
         lien="/conseil2"/>
       </div>
       <div class="snap-center shrink-0 first:pl-5 last:pr-5">
-        <CarrouselConseil class="mt-16" 
+        <CarrouselConseil class="mt-16" id="3"
         image="/images/carroussel3.webp"
         titre1="Adopter un"
         titre2="transport écologique"
@@ -30,14 +30,14 @@
         lien="/conseileco"/>
       </div>
       <div class="snap-center shrink-0 first:pl-5 last:pr-5">
-        <CarrouselConseil class="mt-16" 
+        <CarrouselConseil class="mt-16"  id="4"
         image="/images/carroussel4.webp"
         titre2="Éviter le gaspillage"
         intro="10 millions de tonnes de nourriture sont gaspillées chaque année en France ! "
         lien="/conseileco"/>
       </div>
       <div class="snap-center shrink-0 first:pl-5 last:pr-5">
-        <CarrouselConseil class="mt-16" 
+        <CarrouselConseil class="mt-16" id="5"
         image="/images/carroussel5.webp"
         titre1="Réduire sa"
         titre2="consommation d'énergie"
@@ -45,20 +45,34 @@
         lien="/conseileco"/>
       </div>
       <div class="snap-center shrink-0 first:pl-5 last:pr-5">
-        <CarrouselConseil class="mt-16" 
+        <CarrouselConseil class="mt-16" id="6"
         image="/images/carroussel6.webp"
         titre2="Recycler"
         intro="90% de la faune marine est impactée par la pollution du plastique !"
         lien="/conseileco"/>
       </div>
       <div class="snap-center shrink-0 first:pl-5 last:pr-5">
-        <CarrouselConseil class="mt-16" 
+        <CarrouselConseil class="mt-16 " id="7"
         image="/images/carroussel7.webp"
         titre1="Autosuffisance"
         titre2="individuelle"
         intro="En 2020, notre consommation individuelle a été multiplié par 7 ! "
         lien="/conseileco"/>
       </div>
+    </div>
+    <div class="motion-safe:animate-bounce ">
+      <a  href="#7">
+        <svg
+  width="11"
+  height="11"
+  viewBox="0 0 11 11"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="xMidYMid meet"
+>
+  <circle cx="5.5" cy="5.5" r="5.5" fill="black"></circle>
+</svg>
+      </a>
     </div>
     
   </main>
