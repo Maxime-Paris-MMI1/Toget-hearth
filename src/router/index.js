@@ -62,6 +62,7 @@ const router = createRouter({
     { path: '/newsletter', name: 'Newsletter', component: Newsletter },
     { path: '/news2', name: 'News2', component: News2 },
     { path: '/news3', name: 'News3', component: News3 },
+    { path: '/connexion', name: 'Connexion', component: Connexion},
     { path: '/inscription', name: 'Inscription', component: Inscription},
     { path: '/dons', name: 'Dons', component: Dons},
     { path: '/NousContacter', name: 'NousContacter', component: NousContacter},
