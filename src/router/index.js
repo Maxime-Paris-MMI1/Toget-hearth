@@ -50,6 +50,7 @@ import Profil from '../views/espace_connecte/ProfilView.vue'
 import NousContacterco from '../views/espace_connecte/NousContacterco.vue'
 import MentionLegalesco from '../views/espace_connecte/MentionLegalesco.vue'
 import RassemblementInfo from '../views/espace_connecte/RassemblementInfo.vue'
+import RassemblementOff from '../views/espace_connecte/RassemblementOff.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -91,6 +92,7 @@ const router = createRouter({
     { path: '/nouscontacterco', name: 'NousContacterco', component: NousContacterco, beforeEnter:guard},
     { path: '/mentionlegalesco', name: 'MentionLegalesco', component: MentionLegalesco, beforeEnter:guard},
     { path: '/RassemblementInfo', name: 'RassemblementInfo', component: RassemblementInfo, beforeEnter:guard},
+    { path: '/RassemblementOff', name: 'RassemblementOff', component: RassemblementOff, beforeEnter:guard},
 
   ]
 })
