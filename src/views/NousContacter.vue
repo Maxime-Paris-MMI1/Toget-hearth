@@ -18,7 +18,7 @@
             <form method="post" action="../contact.php"  class=" font-poppins font-medium" id="form">
               <label for="fname" class="ml-0 mr-0 w-full font-poppins font-medium text-lg">Nom </label>
               <input type="text" id="fname" name="name" placeholder="Votre nom" class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-4 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl">
-          
+
               <label for="sujet" class="ml-0 mr-0 w-full font-poppins font-medium text-lg">Prénom</label>
               <input type="text" id="sujet" name="prenom" placeholder="Votre prénom" class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-4 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl">
           

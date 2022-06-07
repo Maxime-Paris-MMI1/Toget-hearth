@@ -11,13 +11,13 @@
             <div class="input-group-prepend">
                 <button class="mt-9 mb-2 ml-6 font-poppins text-sm font-medium text-vert-fonce-typographie">Adresse-email</button>
             </div>
-            <input class="w-[327px] h-12 mx-6 form-control bg-blanc-vert-title rounded-3xl" type="text" v-model="user.email" required />
+            <input class="w-[327px] h-12 mx-6 form-control bg-blanc-vert-title rounded-3xl pl-3" type="text" v-model="user.email" required />
         </div>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <button class="mt-9 mb-2 ml-6 font-poppins text-sm font-medium text-vert-fonce-typographie">Mot de passe</button>
             </div>
-            <input class="w-[327px] h-12 mx-6 form-control bg-blanc-vert-title rounded-3xl" type="password" v-model="user.password" required/>
+            <input class="w-[327px] h-12 mx-6 form-control bg-blanc-vert-title rounded-3xl pl-3" type="password" v-model="user.password" required/>
         </div>
         <div class="alert alert-warning text-center mb-3" v-if="message!=null">
             {{ message }}

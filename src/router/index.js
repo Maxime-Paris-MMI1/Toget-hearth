@@ -113,22 +113,22 @@ function guard(to, from, next) {
           let userInfo = snapshot.docs.map(doc => ( {id:doc.id, ...doc.data()}));
           // userInfo étant un tableau, on récupère
           // ses informations dans la 1° cellule du tableau : 0
-          let isAdmin=userInfo[0].admin;
-          if(isAdmin){
+          let isConnecte=userInfo[0].connecte;
+            if(isConnecte){
             // Utilisateur administrateur, on autorise la page/vue
             next(to.params.name);
             return;
           }else{
             // Utilisateur non administrateur, renvoi sur accueil
             alert("Vous n'avez pas l'autorisation pour cette fonction");
-            next({name: "accueilview"});
+            next({name: ""});
             return;
           }
       })
     }else {
       // Utilisateur non connecté, renvoi sur accueil
       console.log('router NOK => user ', user);
-      next({name: "AccueilView"});
+      next({name: ""});
     }
   });
 }
