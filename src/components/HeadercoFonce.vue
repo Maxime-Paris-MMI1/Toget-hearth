@@ -5,7 +5,11 @@
         <a href="javascript:history.back()"><FlecheGauche/></a>
       </div>
       <div class="pt-3">
-        <a href="../views/espace_connecte/AccueilcoView.vue"><LogoSite/></a>
+        <a href="">
+          <RouterLink to="/accueilco">
+            <LogoSite/>
+          </RouterLink>
+        </a>
       </div>
       <div class="pt-7 pr-5">
         <RouterLink to="/profil">
