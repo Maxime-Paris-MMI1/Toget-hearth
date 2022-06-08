@@ -39,5 +39,3 @@ export default {
   }
 }
 </script>
-
-// style="box-shadow: 0px 1.5600000619888306px 1.5600000619888306px 2.017021417617798px rgba(0,0,0,0.25);"
