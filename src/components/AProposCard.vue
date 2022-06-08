@@ -14,7 +14,7 @@
 
 </div>
 
-<h2 class=" font-asap text-2xl  ">{{nom}}</h2>
+<h2 class=" font-asap text-2xl font-medium  ">{{nom}}</h2>
 <h3 class="font-poppins text-lg   ">{{formation}} </h3>
 
 
