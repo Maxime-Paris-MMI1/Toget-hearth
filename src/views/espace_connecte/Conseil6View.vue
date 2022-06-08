@@ -14,7 +14,7 @@
             <span class="font-medium text-vert-kaki-elements-importants">d’optimiser l’utilisation des matières premières</span> 
              puisque ces déchets peuvent être recyclés et réutilisés.</p>
         <div class="flex justify-center">
-        <img class="mt-8 " src="/images/recycler1.webp" alt="">
+        <img class="mt-8 " src="/public/images/recycler1.webp" alt="">
         </div>
         <p class="mt-8 ml-5 mr-6 font-poppins text-xs ">
             De plus, le recyclage permet de promouvoir 

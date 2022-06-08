@@ -1,6 +1,6 @@
 <template>
     <div class="mt-6">
-        <img class="w-screen max-h-20 -mb-1" src="../../public/images/Vecteur_Footer.webp" alt="">
+        <img class="w-screen max-h-20 -mb-1" src="/public/images/Vecteur_Footer.webp" alt="">
         <div class="flex justify-center gap-10 pt-1 pb-2 bg-vert-moyen-deco">
             <a href="https://www.facebook.com/togetheartoff"><FacebookLogo/></a>
             <a href="https://www.instagram.com/toget.heart_/"><InstagramLogo/></a>

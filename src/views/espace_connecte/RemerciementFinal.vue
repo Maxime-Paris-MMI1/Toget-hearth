@@ -11,7 +11,7 @@ Grâce à vous vous aider un peu plus la planète à se sentir mieux !</h4>
 
 
 <div class=" flex justify-center w/75">
-   <img src="../../../public/images/remerciement_figure.webp" alt="remiercement figure">
+   <img src="/public/images/remerciement_figure.webp" alt="remiercement figure">
 </div>
 
 <h4 class="font-asap text-lg p-11">Votre date est désormais inscrite dans le calendrier ainsi que le lieu. En ésperant que beaucoup de monde participent à votre rammassage !</h4>

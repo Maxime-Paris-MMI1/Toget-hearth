@@ -9,7 +9,7 @@
     <BackDefis/>
 
 <div class="flex justify-center mt-8">
-    <img src="../../../public/images/defi3.webp" alt=" defi 3 image">
+    <img src="/public/images/defi3.webp" alt=" defi 3 image">
     </div>
     <div class=" bg-vert-fonce-typographie opacity-80 p-3 ml-14 mr-14 rounded-20xl -mt-14 mb-10 ">
         <p class=" text-center font-poppins text-white text-xl font-medium">Niveau de difficultés</p>

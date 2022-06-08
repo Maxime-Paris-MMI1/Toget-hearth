@@ -21,7 +21,7 @@
 </div>
 </div>
 
-    <img class=" object-cover mx-auto my-auto w-full pl-10 pr-10 pt-16 max-w-[700px] " src="../../public/images/rectangle1_apropos.jpg" alt="fond a propos">
+    <img class=" object-cover mx-auto my-auto w-full pl-10 pr-10 pt-16 max-w-[700px] " src="/public/images/rectangle1_apropos.jpg" alt="fond a propos">
 
 </div>
 
@@ -30,7 +30,7 @@
 <p class="font-poppins text-sm p-20 absolute z-20 mt-20 break-words w-[400px] overflow-hidden pl-22 ">{{texte_description}}</p>
 
 
-    <img class=" object-cover mx-auto my-auto w-full p-10 max-w-[700px] -mt-40  " src="../../public/images/rectangle2_apropos.webp" alt="fond a propos"
+    <img class=" object-cover mx-auto my-auto w-full p-10 max-w-[700px] -mt-40  " src="/public/images/rectangle2_apropos.webp" alt="fond a propos"
     style="filter: drop-shadow(0px 8px 10px rgba(0,0,0,0.5));">
 
     
@@ -39,8 +39,8 @@
 
 <div class=" flex justify-center space-x-10 w-full">
 
-<a :href="lienlinkedin">  <img src="../../public/images/linkedin.webp" alt="linkedin"> </a>
-<a :href="lieninsta"> <img src="../../public/images/instagram.webp" alt="instagram"> </a> 
+<a :href="lienlinkedin">  <img src="/public/images/linkedin.webp" alt="linkedin"> </a>
+<a :href="lieninsta"> <img src="/public/images/instagram.webp" alt="instagram"> </a> 
 
 </div>
 

@@ -17,7 +17,7 @@
              vos repas et réalisez une liste de courses que vous devez respecter. Il faut éviter au maximum 
             <span class="font-medium text-vert-kaki-elements-importants">les achats compulsifs !</span></p>
         <div class="flex justify-center">
-        <img class="mt-8 " src="/images/gaspillage1.webp" alt="">
+        <img class="mt-8 " src="/public/images/gaspillage1.webp" alt="">
         </div>
         <p class="mt-8 ml-5 mr-6 font-poppins text-xs ">
             Au niveau des repas, commencez doucement avec des proportions   
@@ -26,7 +26,7 @@
             <span class="font-medium text-vert-kaki-elements-importants">conservez les</span>
              et vous pourrez vous en resservir plus tard ! </p>
         <div class="flex justify-center">
-        <img class="mt-8 " src="/images/gaspillage2.webp" alt="">
+        <img class="mt-8 " src="/public/images/gaspillage2.webp" alt="">
         </div>
         <p class="mt-8 ml-5 mr-6 font-poppins text-xs ">
             Du côté des déchets, au lieu de réaliser des déchets alimentaires,   

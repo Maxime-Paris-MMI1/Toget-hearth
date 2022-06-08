@@ -15,7 +15,7 @@
              en utilisant les moyens de transports jugés moins nuisibles pour l’environnement notamment au niveau des 
             <span class="font-medium text-vert-kaki-elements-importants">émissions de gaz à effet de serre.</span> </p>
         <div class="flex justify-center">
-        <img class="mt-8 " src="/images/transport1.webp" alt="">
+        <img class="mt-8 " src="/public/images/transport1.webp" alt="">
         </div>
         <p class="mt-8 ml-5 mr-6 font-poppins text-xs ">
             D’après une étude de l'ADEME, le moyen de transport le plus écologique et  
@@ -26,7 +26,7 @@
              <span class="font-medium text-vert-kaki-elements-importants">du covoiturage.</span>
              Aujourd’hui de nombreuses applications pour réaliser du covoiturage existent comme “Blablacar” ou encore “Citygo”.</p>
          <div class="flex justify-center">
-        <img class="mt-8 " src="/images/transport2.webp" alt="">
+        <img class="mt-8 " src="/public/images/transport2.webp" alt="">
         </div>
         <p class="mt-8 ml-5 mr-6 font-poppins text-xs ">
             Pour les trajets  
