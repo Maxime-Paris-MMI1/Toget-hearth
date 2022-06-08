@@ -7,47 +7,71 @@
             Les précautions à adopter avant et pendant la récolte de déchets 
         </h2>
 
-<img class=" mt-8 object-contain absolute" src="../../../public/images/fond_precaution1.webp" alt="">
-        <div class="flex flex-row gap-4 mt-6 z-30 ">
-            <p class="w-52 mt-[60px] ml-5 font-poppins leading-6 font-semibold">
+<!-- partie -->
+<div>
+
+        <div class=" flex absolute mt-[50px] leading-6 p-10 ">
+            <p class="  font-poppins  font-semibold ml-5">
                 Triez vos déchets dans plusieurs bacs différents pour faciliter le travail
             </p>
-
-       <img src="../../../public\images\conseil_img1.webp" alt="Poubelle">
-            
+<img class=" w-20 h-20" src="/public/images/Validation.svg" alt=" validation checkbox">             
         </div>
 
 
+        <div class=" flex justify-center ">
+<img class=" absolute mt-44 ml-10 w-24 " src="/public\images\conseil_img1.webp" alt="Poubelle">
+</div>
+<img class=" mt-8 object-cover w-screen max-w-xl mr-auto mb-16" src="/public/images/fond_precaution1.webp" alt=" image precaution">
+
+</div>
 
 
-        <div>
-            <p class="font-poppins text-xs font-medium ml-5 mr-14 mt-7">
-                En effet lors d’un ramassage vous allez être confronter a plusieurs type de dechets
-                dans la nature; verre, carton, mégots... Il faudra donc trier ces déchets pour faciliter
-                le travail dans les endroits de recyclage 
-            </p>
-        </div>
-        <div>
-            <h3 class="font-poppins leading-6 font-semibold mt-7 ml-28">
+<!-- partie -->
+<div>
+
+        <div class=" flex absolute mt-[50px] leading-6 p-10 z-10 items-center gap-3 ">
+            <p class="  font-poppins  font-semibold ml-5">
                 Respectez la nature !!
-            </h3>
-            <div class="flex justify-center">
-                <img class="mt-3" src="../../../public\images\conseil_img2.webp" alt="Promeneur">
-            </div>
-            <p class="font-poppins text-xs font-medium ml-5 mt-4 mr-4">
-                Ne dégradez pas la nature! Si vous participez à un rammassage collectif,
-                ce n’est pas pour dégrader mais pour aider la nature.
-                Alors soyez indulgent et ne rammassez pas n’importe quel fleur,
-                ne déranger pas les animaux... En adoptant ces gestes simples vous aidez et respectez la planète
-                :)
             </p>
+<img class=" w-20 h-20" src="/public/images/Validation.svg" alt=" validation checkbox">             
         </div>
+
+
+        <div class=" flex justify-center ">
+<img class=" absolute mt-44 ml-10 w-52 z-10 " src="/public\images\conseil_img2.webp" alt="Nature">
+</div>
+<img class=" mt-8 object-cover w-screen max-w-xl mr-auto mb-16 rotate-180" src="/public/images/fond_precaution1.webp" alt=" image precaution">
+
+</div>
+
+
+<!-- partie -->
+<div>
+
+        <div class=" flex absolute mt-[50px] leading-6 p-10 z-10 items-center gap-3 ">
+            <p class="  font-poppins  font-semibold ml-5">
+               Portez des protections 
+            </p>
+<img class=" w-20 h-20" src="/public/images/Validation.svg" alt=" validation checkbox">             
+        </div>
+
+
+        <div class=" flex justify-center ">
+<img class=" absolute mt-44 ml-10 w-52 z-10 " src="/public\images\conseil_img2.webp" alt="Nature">
+</div>
+<img class=" mt-8 object-cover w-screen max-w-xl mr-auto mb-16 " src="/public/images/fond_precaution2.webp" alt=" image precaution">
+
+</div>
+
+
+
+
         <div>
             <h3 class="font-poppins leading-6 font-semibold mt-7 ml-28">
                 Portez des protections 
             </h3>
             <div class="flex justify-center">
-                <img class="mt-3 " src="../../../public\images\conseil_img3.webp" alt="Protections">
+                <img class="mt-3 " src="/public\images\conseil_img3.webp" alt="Protections">
             </div>
             
             <p class="font-poppins text-xs font-medium ml-5 mt-4 mr-4">
@@ -62,7 +86,7 @@
                 Ne prenez aucun risque 
             </h3>
             <div class="flex justify-center">
-                <img class="mt-3" src="../../../public\images\conseil_img4.webp" alt="Croix">
+                <img class="mt-3" src="/public\images\conseil_img4.webp" alt="Croix">
             </div>
             
             <p class="font-poppins text-xs font-medium ml-5 mt-7 mr-4 mb-14">
