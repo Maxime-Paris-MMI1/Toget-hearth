@@ -58,6 +58,7 @@ import news2co from '../views/espace_connecte/News2co.vue'
 import news3co from '../views/espace_connecte/News3co.vue'
 import Aproposco from '../views/espace_connecte/Aproposco.vue'
 import Precaution from '../views/espace_connecte/Precaution.vue'
+import PrecautionParticip from '../views/espace_connecte/PrecautionParticip.vue'
 import conseilramassageco from '../views/espace_connecte/Conseilramassageco.vue'
 import organisationramassage from '../views/espace_connecte/OrganisationRamassage.vue'
 
@@ -109,6 +110,9 @@ const router = createRouter({
     { path: '/news3co', name: 'news3co', component: news3co, beforeEnter:guard},
     { path: '/Aproposco', name: 'Aproposco', component: Aproposco, beforeEnter:guard},
     { path: '/Precaution', name: 'Precaution', component: Precaution, beforeEnter:guard},
+    { path: '/PrecautionParticip', name: 'PrecautionParticip', component: PrecautionParticip, beforeEnter:guard},
+
+
     { path: '/conseilramassageco', name: 'conseilramassageco', component: conseilramassageco, beforeEnter:guard},
     { path: '/organisationramassage', name: 'organisationramassage', component: organisationramassage, beforeEnter:guard},
 
