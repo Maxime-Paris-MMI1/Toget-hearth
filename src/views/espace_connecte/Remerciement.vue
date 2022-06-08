@@ -22,7 +22,7 @@ Grâce à vous vous aider un peu plus la planète à se sentir mieux !</h4>
 <BoutonAction
         :fluo="true"
         titrebouton="Lire nos conseils "
-        lien= "/"
+        lien= "/conseilecoco"
 />
 
 

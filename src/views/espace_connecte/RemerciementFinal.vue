@@ -20,7 +20,7 @@ Grâce à vous vous aider un peu plus la planète à se sentir mieux !</h4>
 
 <p class=" text-center font-asap text-sm p-8">P.S: N’oubliez pas les consignes de précautions pour le ramassage de déchets. Toutes les informations se trouvent </p>
 
-<RouterLink to="/ ">
+<RouterLink to="/conseilramassageco">
 <div class=" px-32 ">
     <p class=" text-center font-asap text-lg text-white bg-black rounded-full p-5 ">ICI</p>
 </div>
