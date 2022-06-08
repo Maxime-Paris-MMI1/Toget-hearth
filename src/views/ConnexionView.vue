@@ -84,12 +84,13 @@ export default {
                 console.log("user",this.user);                
                 // Mise à jour du message
                 this.message = "User connecté : "+this.user.email;
-                window.location.pathname = '/accueilco'
+                this.$router.push('/accueilco');
             })
             .catch((error) =>{
                 // Erreur de connexion
                 console.log('Erreur connexion', error);
                 this.message = "Erreur d'authentification";
+                this.$router.push('/accueilco');
             })
         },
         onDcnx(){
