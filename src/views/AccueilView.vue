@@ -34,7 +34,7 @@
            <RouterLink :class="{' motion-safe:animate-[Depart_0.2s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../newsletter">Newsletter</RouterLink>
            <RouterLink :class="{' motion-safe:animate-[Depart_0.3s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../NousContacter">Nous contacter</RouterLink>
            <RouterLink :class="{' motion-safe:animate-[Depart_0.4s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../Conseilramassage">Ramassage des déchets</RouterLink>
-           <RouterLink :class="{' motion-safe:animate-[Depart_0.5s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../NousContacter">À propos</RouterLink>
+           <RouterLink :class="{' motion-safe:animate-[Depart_0.5s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../Apropos">À propos</RouterLink>
            <RouterLink :class="{' motion-safe:animate-[Depart_0.6s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="../connexion">Inscription / Connexion</RouterLink>
           </ul>
           <div class="flex flex-row justify-between ">
