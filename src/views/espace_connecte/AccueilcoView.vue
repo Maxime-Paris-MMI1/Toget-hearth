@@ -124,9 +124,9 @@
   <div class="flex flex-col items-center">
     <div class=" flex overflow-x-scroll  gap-5  ">
 
-     <a href="./Conseil2View.vue"> <img class=" object-cover w-screen" src="../../../public/images/newsletter_accueil1.webp" id="slide1"> </a>
-      <a href="./Conseil3View.vue"> <img class="  object-cover w-screen" src="../../../public/images/newsletter_accueil2.webp" id="slide2"> </a>
-      <a href="./Conseil5View.vue"> <img class="  object-cover w-screen" src="../../../public/images/newsletter_accueil3.webp" id="slide3"> </a>
+     <a href=""> <RouterLink to="/News1co"> <img class=" object-cover w-screen" src="../../../public/images/newsletter_accueil1.webp" id="slide1"> </RouterLink> </a>
+      <a href=""> <RouterLink to="/News2co"> <img class="  object-cover w-screen" src="../../../public/images/newsletter_accueil2.webp" id="slide2"> </RouterLink> </a>
+      <a href=""> <RouterLink to="/News3co"> <img class="  object-cover w-screen" src="../../../public/images/newsletter_accueil3.webp" id="slide3"> </RouterLink> </a>
     </div>
   </div>
     </div>
