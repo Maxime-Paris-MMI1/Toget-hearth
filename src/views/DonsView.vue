@@ -4,7 +4,7 @@
     </header>
     <main>
         <div>
-            <img class=" absolute w-full h-[797px] object-cover" src="../../public/images/don.webp" alt="pollution">
+            <img class=" absolute w-full h-[797px] object-cover" src="/public/images/don.webp" alt="pollution">
         </div>
         <div class="absolute mt-48 mx-7">
             <h2 class="font-poppins font-medium text-2xl text-center mx-10 text-white">Vous souhaitez faire un geste pour aider notre planète ? </h2>

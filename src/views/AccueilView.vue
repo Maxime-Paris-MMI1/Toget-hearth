@@ -49,14 +49,14 @@
     <h2 class="text-center font-poppins p-10 font-medium text-2xl mb-20">Changer votre quotidien pour aider 
         notre planete </h2>
     <div class="flex justify-center">
-      <img class="w-100 " src="../../public/images/plante_accueil.webp">
+      <img class="w-100 " src="/public/images/plante_accueil.webp">
     </div>
 
 
     
 
     <section class="bg-vert-moyen-deco">
-      <img class=" object-cover w-screen" src="public\images\rectangledegrade.webp" alt="degradé">
+      <img class=" object-cover w-screen" src="/public/images/rectangledegrade.webp" alt="degradé">
 
       <h3 class="text-center font-poppins pl-10 pr-10 font-medium text-2xl mb-20 text-white drop-shadow-lg">
         Avec Toget'Hearth <br> Venez découvrir
@@ -89,9 +89,9 @@
   <div class="flex flex-col items-center">
     <div class=" flex overflow-x-scroll  gap-5 ">
 
-     <a href="./conseil2"> <img class="w-full  object-cover" src="../../public/images/accueil_conseil1.webp" id="slide1"></a>
-      <a href="./connexion"> <img class="w-full  object-cover" src="../../public/images/accueil_conseil2.webp" id="slide2"> </a>
-      <a href="./connexion"> <img class="w-full  object-cover" src="../../public/images/accueil_conseil3.webp" id="slide3"></a>
+     <a href="./conseil2"> <img class="w-full  object-cover" src="/public/images/accueil_conseil1.webp" id="slide1"></a>
+      <a href="./connexion"> <img class="w-full  object-cover" src="/public/images/accueil_conseil2.webp" id="slide2"> </a>
+      <a href="./connexion"> <img class="w-full  object-cover" src="/public/images/accueil_conseil3.webp" id="slide3"></a>
     </div>
   </div>
 
@@ -122,9 +122,9 @@
   <div class="flex flex-col items-center">
     <div class=" flex overflow-x-scroll  gap-5  ">
 
-     <a href="./Conseil2View.vue"> <img class=" object-cover w-screen" src="../../public/images/newsletter_accueil1.webp" id="slide1"> </a>
-      <a href="./Conseil3View.vue"> <img class="  object-cover w-screen" src="../../public/images/newsletter_accueil2.webp" id="slide2"> </a>
-      <a href="./Conseil5View.vue"> <img class="  object-cover w-screen" src="../../public/images/newsletter_accueil3.webp" id="slide3"> </a>
+     <a href="./Conseil2View.vue"> <img class=" object-cover w-screen" src="/public/images/newsletter_accueil1.webp" id="slide1"> </a>
+      <a href="./Conseil3View.vue"> <img class="  object-cover w-screen" src="/public/images/newsletter_accueil2.webp" id="slide2"> </a>
+      <a href="./Conseil5View.vue"> <img class="  object-cover w-screen" src="/public/images/newsletter_accueil3.webp" id="slide3"> </a>
     </div>
   </div>
     </div>
@@ -162,7 +162,7 @@ exclusifs !
 
       <div class="flex justify-center mb-10">
 
-      <img src="../../public/images/imagedefi.webp" alt="image de defi en exemple">
+      <img src="/public/images/imagedefi.webp" alt="image de defi en exemple">
 
       </div>
 
@@ -207,7 +207,7 @@ exclusifs !
         </div>
         </div>
 
-<img src="../../public/images/image_accueil_evenement.jpg" class="w-full h-[477px] object-cover " />
+<img src="/public/images/image_accueil_evenement.jpg" class="w-full h-[477px] object-cover " />
 
 
       </div>
@@ -222,7 +222,7 @@ exclusifs !
 
     <div class="flex justify-center mb-14">
 
-      <img src="../../public/images/accueil_don.webp" alt="image de defi en exemple">
+      <img src="/public/images/accueil_don.webp" alt="image de defi en exemple">
 
       </div>
         <div>

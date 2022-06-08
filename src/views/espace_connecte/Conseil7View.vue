@@ -16,7 +16,7 @@
              des supermarchés et des commerces autour de chez nous. En effet, dès qu’il nous manque de la nourriture ou encore des produits ménagers nous nous rendons dans la plupart des cas au 
             <span class="font-medium text-vert-kaki-elements-importants">supermarché</span></p>
         <div class="flex justify-center">
-        <img class="mt-8 " src="/images/autosuffisance1.webp" alt="">
+        <img class="mt-8 " src="/public/images/autosuffisance1.webp" alt="">
         </div>
         <p class="mt-8 ml-5 mr-6 font-poppins text-xs ">
             Dans ces supermarchés, on adopte un comportement de  
@@ -24,7 +24,7 @@
               en achetant des produits polluants (emballage plastique) et qui sont souvent des choses 
             <span class="font-medium text-vert-kaki-elements-importants">non essentielles.</span></p>
         <div class="flex justify-center">
-        <img class="mt-8 " src="/images/autosuffisance2.webp" alt="">
+        <img class="mt-8 " src="/public/images/autosuffisance2.webp" alt="">
         </div>
         <p class="mt-8 ml-5 mr-6 font-poppins text-xs ">
             Pour adopter un comportement  
@@ -35,7 +35,7 @@
             <span class="font-medium text-vert-kaki-elements-importants">minimum d’indépendance</span>
               face à ses grandes surfaces.</p>
         <div class="flex justify-center">
-        <img class="mt-8 " src="/images/autosuffisance3.webp" alt="">
+        <img class="mt-8 " src="/public/images/autosuffisance3.webp" alt="">
         </div>
         <p class="mt-8 ml-5 mr-6 font-poppins text-xs ">
             De plus, il n’y a pas que dans un potager qu’il faudrait investir: 

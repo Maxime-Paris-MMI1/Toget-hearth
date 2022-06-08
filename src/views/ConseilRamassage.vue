@@ -12,9 +12,7 @@
             <p class="w-52 mt-[60px] ml-5 font-poppins leading-6 font-semibold">
                 Triez vos déchets dans plusieurs bacs différents pour faciliter le travail
             </p>
-
-       <img src="../../public\images\conseil_img1.webp" alt="Poubelle">
-            
+            <img src="/public/images/conseil_img1.webp" alt="Poubelle">
         </div>
 
 
@@ -32,7 +30,7 @@
                 Respectez la nature !!
             </h3>
             <div class="flex justify-center">
-                <img class="mt-3" src="../../public\images\conseil_img2.webp" alt="Promeneur">
+                <img class="mt-3" src="/public/images/conseil_img2.webp" alt="Promeneur">
             </div>
             <p class="font-poppins text-xs font-medium ml-5 mt-4 mr-4">
                 Ne dégradez pas la nature! Si vous participez à un rammassage collectif,
@@ -47,7 +45,7 @@
                 Portez des protections 
             </h3>
             <div class="flex justify-center">
-                <img class="mt-3 " src="../../public\images\conseil_img3.webp" alt="Protections">
+                <img class="mt-3 " src="/public/images/conseil_img3.webp" alt="Protections">
             </div>
             
             <p class="font-poppins text-xs font-medium ml-5 mt-4 mr-4">
@@ -62,7 +60,7 @@
                 Ne prenez aucun risque 
             </h3>
             <div class="flex justify-center">
-                <img class="mt-3" src="../../public\images\conseil_img4.webp" alt="Croix">
+                <img class="mt-3" src="/public/images/conseil_img4.webp" alt="Croix">
             </div>
             
             <p class="font-poppins text-xs font-medium ml-5 mt-7 mr-4 mb-14">

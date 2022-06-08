@@ -19,7 +19,7 @@
             <span class="font-medium text-vert-kaki-elements-importants">diminiuer la consommation d'énergie.</span>
              Ce premier point permet de réduire la consommation d’énergie de 10% sur la facture d'électricité. </p>
         <div class="flex justify-center">
-        <img class="mt-8 " src="/images/consommation1.webp" alt="">
+        <img class="mt-8 " src="/public/images/consommation1.webp" alt="">
         </div>
         <p class="mt-8 ml-5 mr-6 font-poppins text-xs ">
             Deuxièmement il faut remplacer toute source de lumières par de 
@@ -31,7 +31,7 @@
              qui varient de 2700 à 3500 kelvins, et surtout acheter des ampoules LED et non LED déco ( qui elle consommes autant qu’une ampoule normal), pour cela il suffit de se fier à 
             <span class="font-medium text-vert-kaki-elements-importants">l’étiquette de classement d’énergie.</span></p>
         <div class="flex justify-center">
-        <img class="mt-8 " src="/images/consommation2.webp" alt="">
+        <img class="mt-8 " src="/public/images/consommation2.webp" alt="">
         </div>
         <p class="mt-8 ml-5 mr-6 font-poppins text-xs ">
             Troisièmement, il vous faut impérativement utiliser 
@@ -42,7 +42,7 @@
             <span class="font-medium text-vert-kaki-elements-importants">un séchage à l'air libre,</span>
              ce qui permet d’économiser 200 kwh par an.</p>
         <div class="flex justify-center">
-        <img class="mt-8 " src="/images/consommation3.webp" alt="">
+        <img class="mt-8 " src="/public/images/consommation3.webp" alt="">
         </div>
         <p class="mt-8 ml-5 mr-6 font-poppins text-xs ">
             Ensuite lorsque vous cuisinez il faut
