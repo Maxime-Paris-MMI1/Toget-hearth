@@ -53,6 +53,10 @@ import RassemblementInfo from '../views/espace_connecte/RassemblementInfo.vue'
 import RassemblementOff from '../views/espace_connecte/RassemblementOff.vue'
 import RemerciementFinal from '../views/espace_connecte/RemerciementFinal.vue'
 import Remerciement from '../views/espace_connecte/Remerciement.vue'
+import news1co from '../views/espace_connecte/News1co.vue'
+import news2co from '../views/espace_connecte/News2co.vue'
+import news3co from '../views/espace_connecte/News3co.vue'
+import Aproposco from '../views/espace_connecte/Aproposco.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -97,6 +101,10 @@ const router = createRouter({
     { path: '/RassemblementOff', name: 'RassemblementOff', component: RassemblementOff, beforeEnter:guard},
     { path: '/RemerciementFinal', name: 'RemerciementFinal', component: RemerciementFinal, beforeEnter:guard},
     { path: '/Remerciement', name: 'Remerciement', component: Remerciement, beforeEnter:guard},
+    { path: '/news1co', name: 'news1co', component: news1co, beforeEnter:guard},
+    { path: '/news2co', name: 'news2co', component: news2co, beforeEnter:guard},
+    { path: '/news3co', name: 'news3co', component: news3co, beforeEnter:guard},
+    { path: '/Aproposco', name: 'Aproposco', component: Aproposco, beforeEnter:guard},
 
   ]
 })

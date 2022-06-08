@@ -42,8 +42,8 @@
            <RouterLink :class="{' motion-safe:animate-[Depart_0.6s_cubic-bezier(.5,.5,.5,.5)]' : menuOuvert}" to="/profil">Mon compte</RouterLink>
           </ul>
           <div class="flex flex-row justify-between ">
-            <RouterLink to="/dons_co"><PieceDon class="mt-[127px]"/></RouterLink>
-            <DecoHG class="rotate-180 h-56 -mt-[10px] -mr-[1px]"/>
+            <RouterLink to="/dons_co"><PieceDon class="mt-[153px]"/></RouterLink>
+            <DecoHG class="rotate-180 h-56 mt-[15px] -mr-[1px]"/>
           </div>
           
           

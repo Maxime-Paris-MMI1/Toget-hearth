@@ -33,16 +33,19 @@
         <BoutonAction
         :kaki="true"
         titrebouton="Se faire un repas 100% bio"
+        lien="/accueilco"
         />
 
         <BoutonAction
         :kaki="true"
         titrebouton="Supprimer des mails inutiles"
+        lien="/accueilco"
         />
 
         <BoutonAction
         :kaki="true"
         titrebouton="Sécher ses vêtements à l’air"
+        lien="/accueilco"
         />
 
 

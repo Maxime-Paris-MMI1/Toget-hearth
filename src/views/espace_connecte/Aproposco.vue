@@ -3,7 +3,7 @@
 
 
 <header>
-    <HeaderClair/>
+    <HeadercoClair/>
 </header>
 
 
@@ -43,7 +43,7 @@
 
 
 <footer>
-    <FooterPage/>
+    <FootercoPage/>
 </footer>
 
 
@@ -52,13 +52,13 @@
 
 <script>
 import { RouterLink, RouterView } from "vue-router";
-import HeaderClair from "../components/HeaderClair.vue"  
+import HeadercoClair from "../../components/HeadercoClair.vue"  
 
-import FooterPage from "../components/FooterPage.vue" 
-import AProposCard from "../components/AProposCard.vue" 
+import FootercoPage from "../../components/FootercoPage.vue" 
+import AProposCard from "../../components/AProposCard.vue" 
 
 
 export default {
-  components: {HeaderClair, FooterPage, AProposCard,  }
+  components: {HeadercoClair, FootercoPage, AProposCard,  }
 };
 </script>
