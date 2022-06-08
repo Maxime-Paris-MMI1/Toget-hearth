@@ -20,7 +20,7 @@
         bg-vert-moyen-deco ">
         <RouterLink to="/listeDefis">Défis</RouterLink>
         <RouterLink to="/accueilco">Accueil</RouterLink>
-        <RouterLink to="/accueilco">À propos</RouterLink>
+        <RouterLink to="/Aproposco">À propos</RouterLink>
         <RouterLink to="/nouscontacterco">Nous contacter</RouterLink>
         <RouterLink class="text-sm pt-2" to="/mentionlegalesco">Mention légales/politique de confidentialité</RouterLink>
         </div>
