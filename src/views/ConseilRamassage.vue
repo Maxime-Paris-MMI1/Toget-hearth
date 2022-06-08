@@ -6,12 +6,20 @@
         <h2 class="font-asap text-lg font-semibold ml-14 mr-12 mt-12 leading-5">
             Les précautions à adopter avant et pendant la récolte de déchets 
         </h2>
+
+
         <div class="flex flex-row gap-4 mt-6">
             <p class="w-52 mt-[60px] ml-5 font-poppins leading-6 font-semibold">
-                Triez vos déchets dans plusieurs bacs différents pour faciliter le travail
+                Triez vos déchets dans plusieurs bacs différents pour faciliter le travail 
             </p>
-            <img src="../../public\images\conseil_img1.webp" alt="Poubelle">
+
+            <img src="../../public/images/Validation.svg" alt=" check validation">
+            
         </div>
+
+<img src="../../public\images\conseil_img1.webp" alt="Poubelle">
+
+
         <div>
             <p class="font-poppins text-xs font-medium ml-5 mr-14 mt-7">
                 En effet lors d’un ramassage vous allez être confronter a plusieurs type de dechets
