@@ -1,6 +1,6 @@
 <template>
     <div class="p-5 flex flex-row justify-between gap-8">
-        <div class="flex flex-col font-poppins text-vert-fonce-typographie mt-4 mb-2">
+        <div class="flex flex-col font-poppins text-vert-fonce-typographie mt-4 mb-2 gap-1">
             <h3 class="text-xs font-medium">{{titre}}</h3>
             <p class="text-[10px]">{{intro}}</p>
             <RouterLink class="mt-2 font-medium text-vert-fluo-bouton text-[10px] underline text-right" :to="lien">
