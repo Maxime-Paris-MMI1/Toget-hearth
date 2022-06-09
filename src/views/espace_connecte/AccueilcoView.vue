@@ -90,10 +90,17 @@
 <div class="flex flex-col items-center mb-16">
   <div class="flex flex-col items-center">
     <div class=" flex overflow-x-scroll  gap-5 ">
+      <RouterLink to="/conseil2co">
+        <a href=""> <img class="w-full  object-cover" src="/public/images/accueil_conseil1.webp" id="slide1"></a>
+      </RouterLink>
 
-     <a href="./conseil2co"> <img class="w-full  object-cover" src="/public/images/accueil_conseil1.webp" id="slide1"></a>
-      <a href="./conseil3"> <img class="w-full  object-cover" src="/public/images/accueil_conseil2.webp" id="slide2"> </a>
-      <a href="./conseil5"> <img class="w-full  object-cover" src="/public/images/accueil_conseil3.webp" id="slide3"></a>
+      <RouterLink to="/conseil3">
+        <a href=""> <img class="w-full  object-cover" src="/public/images/accueil_conseil2.webp" id="slide2"> </a>
+      </RouterLink>
+
+      <RouterLink to="/conseil5">
+        <a href=""> <img class="w-full  object-cover" src="/public/images/accueil_conseil3.webp" id="slide3"></a>
+      </RouterLink>
     </div>
   </div>
 
