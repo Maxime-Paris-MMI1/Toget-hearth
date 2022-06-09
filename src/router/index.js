@@ -122,8 +122,8 @@ const router = createRouter({
 
     
     { path: '/gestionramassage', name: 'gestionramassage', component: gestionramassage, beforeEnter:guardadmin},
-    { path: '/deleteramassage', name: 'deleteramassage', component: deleteramassage, beforeEnter:guardadmin},
-    { path: '/modiframassage', name: 'modiframassage', component: modiframassage, beforeEnter:guardadmin},
+    { path: '/deleteramassage/:id', name: 'deleteramassage', component: deleteramassage, beforeEnter:guardadmin},
+    { path: '/modiframassage/:id', name: 'modiframassage', component: modiframassage, beforeEnter:guardadmin},
     //Appel de la fonction guard admin, pour que les personnes admin puissent accéder aux pages.
   ]
 })
