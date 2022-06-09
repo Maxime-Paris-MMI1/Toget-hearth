@@ -15,6 +15,10 @@ Grâce à vous vous aider un peu plus la planète à se sentir mieux !</h4>
 </div>
 
 <h4 class="font-asap text-lg p-11">Votre date est désormais inscrite dans le calendrier ainsi que le lieu. En ésperant que beaucoup de monde participent à votre rammassage !</h4>
+<h4 class="font-asap text-lg text-center">Vous pouvez la consulter</h4> <br>
+<RouterLink to="/calendrier">
+    <h4 class="underline text-center font-asap text-lg ">sur ce lien</h4>
+</RouterLink>
 
 
 

@@ -27,7 +27,7 @@ sois publié 💚</h2>
           <div class="box-border rounded-10xl bg-vert-moyen-deco p-8  w-full max-w-lg shadow-lg ">
 
 
-            <form method="post" class=" font-poppins font-medium" id="form">
+            <form @submit.prevent="createRamassage" method="post" class=" font-poppins font-medium" id="form">
               <label for="firstname" class="ml-0 mr-0 w-full font-poppins font-medium text-lg">Nom </label>
               <input required type="text" id="firstname" name="name" placeholder="Nom" class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-4 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl">
 
@@ -38,21 +38,21 @@ sois publié 💚</h2>
               <input id="email" type="email" name="email" placeholder="Email" required class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-5 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl">
 
 
-          <hr class=" h-0 border-0 border-t-2 border-dashed border-black mb-7  ">
+              <hr class=" h-0 border-0 border-t-2 border-dashed border-black mb-7  ">
 
-     <label for="lieu" class="ml-0 mr-0 w-full font-poppins font-medium text-lg">Où souhaitez vous organiser cet évènement ?</label>
-              <input id="lieu" type="lieu" name="lieu" placeholder="Lieu" required class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-5 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl">
+              <label for="lieu" class="ml-0 mr-0 w-full font-poppins font-medium text-lg">Où souhaitez vous organiser cet évènement ?</label>
+              <input id="lieu" type="lieu" name="lieu" placeholder="Lieu" v-model="ramassage.lieu" required class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-5 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl">
         
-       <label for="lieu" class="ml-0 mr-0 w-full font-poppins font-medium text-lg">Date de l’évènement</label>
-              <input id="lieu" type="lieu" name="lieu" placeholder="jj / mm / aaaa" required class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-5 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl">   
+              <label for="lieu" class="ml-0 mr-0 w-full font-poppins font-medium text-lg">Date de l’évènement</label>
+              <input id="lieu" type="lieu" name="lieu" placeholder="jj / mm / aaaa" v-model="ramassage.date" required class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-5 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl">   
 
-     <label for="heure" class="ml-0 mr-0 w-full font-poppins font-medium text-lg">Heure du début de l’évènement</label>
-              <input id="heure" type="heure" name="heure" placeholder="hh : mm" required class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-5 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl">   
+              <label for="heure" class="ml-0 mr-0 w-full font-poppins font-medium text-lg">Heure du début de l’évènement</label>
+              <input id="heure" type="heure" name="heure" placeholder="hh : mm" v-model="ramassage.heure" required class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-5 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl">   
 
 
 
               <label for="subject" class="ml-0 mr-0 w-full font-poppins font-medium text-lg ">Description de l'évènement</label>
-              <textarea id="subject" name="message" placeholder="Description" style="height:150px" class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-4 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl"></textarea>
+              <textarea id="subject" name="message" placeholder="Description" v-model="ramassage.description" style="height:150px" class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-4 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl"></textarea>
 
               <input class="mb-7" type="checkbox" required> 
               <RouterLink to="mentionlegalesco">
@@ -79,7 +79,52 @@ import HeadercoClair from "../../components/HeadercoClair.vue"
 import FootercoPage from "../../components/FootercoPage.vue"
 import BoutonAction from "../../components/BoutonAction.vue"
 
+import { 
+    getFirestore, 
+    collection, 
+    doc, 
+    getDoc,
+    addDoc,
+    updateDoc, 
+    onSnapshot, 
+    query,
+    orderBy
+    } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js'
+import { 
+    getStorage, 
+    ref, 
+    getDownloadURL,
+    uploadString,
+    } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js'
+
+
 export default {
-   components: { HeadercoClair, FootercoPage,BoutonAction } 
+
+   components: { HeadercoClair, FootercoPage,BoutonAction },
+
+    data(){
+        return{
+            ramassage:{   
+                date:null,   
+                description:null, 
+                heure:null,
+                lieu:null,
+            },  
+        }
+    },
+    mounted(){
+        
+    },
+    methods:{
+
+      async createRamassage(){
+          const db = getFirestore();
+          const docRef = addDoc(collection(db, 'ramassage'), this.ramassage );
+          this.$router.push('/Precaution');
+          this.$router.push('../Precaution');
+      }
+    },
+
 }
+
 </script>

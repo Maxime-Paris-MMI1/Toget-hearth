@@ -26,7 +26,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr v-for="ramassage in searchByName" :key="ramassage.id" class="mt-2">
+                <tr v-for="ramassage in searchByName" :key="ramassage.id" class="mt-2 mb-5">
                     <td class="text-center font-poppins ">{{ramassage.date}}</td>
                     <td class="text-center font-poppins ">{{ramassage.lieu}}</td>
                     <td class="text-center font-poppins ">{{ramassage.heure}}</td>

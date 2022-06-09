@@ -87,7 +87,8 @@
 
               <BoutonAction 
                 :fluo="true"
-                titrebouton= "En savoir plus "/>
+                titrebouton= "En savoir plus "
+                lien="/conseilramassageco"/>
 
 
 <div class=" flex justify-center items-center p-7 mt-6 mb-16">
@@ -95,16 +96,15 @@
     <p class="font-poppins font-light text-xs ">
         J’ai pris connaissance des conditions avant le ramassage et je m’engage à les respecter 
     </p>
-<input type="checkbox" required >
+    <input type="checkbox" required >
     
 </div>
 
 
-              <BoutonAction 
+              <BoutonAction
                 :fluo="true"
                 titrebouton= "Organiser un rendez-vous "
                 lien="/RemerciementFinal"
-                
                 />
 
 
