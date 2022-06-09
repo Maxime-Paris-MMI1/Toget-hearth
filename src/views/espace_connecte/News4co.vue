@@ -8,7 +8,7 @@
             image="/images/newsenvironnement.webp"
             titre1="La journée mondiale"
             titre2="de l'environnement"
-            intro="Lajournée de l'environnement voir la semaine de l'environnement pour certaines marques"/>
+            intro="Une journée de l'environnement de plus en plus importante."/>
         </div>
         <div class="mt-[370px]">
             <p class="mt-6 mx-5 font-poppins text-base font-normal text-vert-fonce-typographie">
