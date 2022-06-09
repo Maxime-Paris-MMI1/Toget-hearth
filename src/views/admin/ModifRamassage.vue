@@ -82,7 +82,7 @@ export default {
           }
       },
 
-      async updateArtiste(){
+      async updateRamassage(){
           const firestore = getFirestore();
           await updateDoc(doc(firestore, "ramassage", this.$route.params.id), this.ramassage);
           this.$router.push('/gestionramassage');
