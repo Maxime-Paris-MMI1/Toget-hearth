@@ -1,7 +1,7 @@
 <template>
 <div class=" bg-vert-moyen-deco">
     <header>
-        <HeaderClair/>
+        <HeadercoClair/>
     </header>
 <div class=" flex mt-10">
                   <BoutonAction 
@@ -244,7 +244,7 @@
 <!-- fin calendrier pour un mois -->
 
 <footer>
-    <FooterPage/>
+    <FootercoPage/>
 </footer>
 </div>
 </div>
@@ -252,11 +252,11 @@
 
 
 <script>
-import HeaderClair from "../../components/HeaderClair.vue"
-import FooterPage from "../../components/FooterPage.vue"
+import HeadercoClair from "../../components/HeadercoClair.vue"
+import FootercoPage from "../../components/FootercoPage.vue"
 import BoutonAction from "../../components/BoutonAction.vue"
 
 export default {
-   components: { HeaderClair, FooterPage,BoutonAction } 
+   components: { HeadercoClair, FootercoPage,BoutonAction } 
 }
 </script>
