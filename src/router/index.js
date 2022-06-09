@@ -60,6 +60,9 @@ import Aproposco from '../views/espace_connecte/Aproposco.vue'
 import Precaution from '../views/espace_connecte/Precaution.vue'
 import conseilramassageco from '../views/espace_connecte/Conseilramassageco.vue'
 import organisationramassage from '../views/espace_connecte/OrganisationRamassage.vue'
+import gestionramassage from '../views/espace_connecte/GestionRamassage.vue'
+import deleteramassage from '../views/espace_connecte/DeleteRamassage.vue'
+import modiframassage from '../views/espace_connecte/ModifRamassage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -111,7 +114,10 @@ const router = createRouter({
     { path: '/Precaution', name: 'Precaution', component: Precaution, beforeEnter:guard},
     { path: '/conseilramassageco', name: 'conseilramassageco', component: conseilramassageco, beforeEnter:guard},
     { path: '/organisationramassage', name: 'organisationramassage', component: organisationramassage, beforeEnter:guard},
-
+    { path: '/gestionramassage', name: 'gestionramassage', component: gestionramassage, beforeEnter:guardadmin},
+    { path: '/deleteramassage', name: 'deleteramassage', component: deleteramassage, beforeEnter:guardadmin},
+    { path: '/modiframassage', name: 'modiframassage', component: modiframassage, beforeEnter:guardadmin},
+    //Appel de la fonction guard admin, pour que les personnes admin et que ces personnes puissent accéder à la page.
   ]
 })
 
@@ -133,6 +139,42 @@ function guard(to, from, next) {
           // ses informations dans la 1° cellule du tableau : 0
           let isConnecte=userInfo[0].connecte;
             if(isConnecte){
+            // Utilisateur administrateur, on autorise la page/vue
+            next(to.params.name);
+            return;
+          }else{
+            // Utilisateur non administrateur, renvoi sur accueil
+            alert("Vous n'avez pas l'autorisation pour cette fonction");
+            next({name: ""});
+            return;
+          }
+      })
+    }else {
+      // Utilisateur non connecté, renvoi sur accueil
+      console.log('router NOK => user ', user);
+      next({name: ""});
+    }
+  });
+}
+
+function guardadmin(to, from, next) {
+  // recherche utilisateur connecté
+  getAuth().onAuthStateChanged(function(user) {
+    if(user) {
+      // User connecté
+      console.log('router OK => user ', user);
+      // Obtenir Firestore
+      const firestore = getFirestore();
+      // Base de données (collection)  document participant
+      const dbUsers = collection(firestore, "users");
+      // Recherche du user par son uid
+      const q = query(dbUsers, where("uid", "==", user.uid));
+      onSnapshot(q, (snapshot) => {
+          let userInfo = snapshot.docs.map(doc => ( {id:doc.id, ...doc.data()}));
+          // userInfo étant un tableau, on récupère
+          // ses informations dans la 1° cellule du tableau : 0
+          let isAdmin=userInfo[0].admin;
+            if(isAdmin){
             // Utilisateur administrateur, on autorise la page/vue
             next(to.params.name);
             return;
