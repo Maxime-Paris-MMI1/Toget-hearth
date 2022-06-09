@@ -55,7 +55,9 @@ sois publié 💚</h2>
               <textarea id="subject" name="message" placeholder="Description" style="height:150px" class="w-full p-3 border border-b-vert-moyen-deco  box-border mt-1.5 mb-4 mr-0 ml-0 resize-y font-poppins font-light text-xs rounded-8xl"></textarea>
 
               <input class="mb-7" type="checkbox" required> 
-              <span class="font-poppins font-normal text-sm"> J’accepte les conditions </span>
+              <RouterLink to="mentionlegalesco">
+                <span class="font-poppins font-normal text-sm underline"> J’accepte les conditions générales d'utilisations </span>
+              </RouterLink>
               <div class=" text-center">
               <input type="submit" value="Envoyer" name="submit" class=" bg-vert-fluo-bouton text-white px-16 py-3 rounded-full border-none cursor-pointer shadow-lg text-lg font-poppins font-medium hover:bg-[#1fa126]">
               </div>
