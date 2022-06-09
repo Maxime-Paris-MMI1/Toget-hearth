@@ -102,7 +102,7 @@
 
               <BoutonAction 
                 :fluo="true"
-                titrebouton= "Organiser un rendez-vous "
+                titrebouton= "Participer au rendez-vous "
                 
                 />
 
