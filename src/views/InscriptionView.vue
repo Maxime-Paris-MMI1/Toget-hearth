@@ -109,7 +109,6 @@ export default {
             .catch((error)=>{
                 console.log('erreur connexion', error);
                 this.message = "erreur d'authentification";
-                this.$router.push('/accueilco');
             })
         },
         onDcnx(){

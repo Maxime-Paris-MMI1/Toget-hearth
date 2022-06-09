@@ -79,8 +79,8 @@ const router = createRouter({
     { path: '/newsletter', name: 'Newsletter', component: Newsletter, beforeEnter:basic  },
     { path: '/news2', name: 'News2', component: News2, beforeEnter:basic  },
     { path: '/news3', name: 'News3', component: News3, beforeEnter:basic  },
-    { path: '/connexion', name: 'Connexion', component: Connexion, beforeEnter:basic },
-    { path: '/inscription', name: 'Inscription', component: Inscription, beforeEnter:basic },
+    { path: '/connexion', name: 'Connexion', component: Connexion },
+    { path: '/inscription', name: 'Inscription', component: Inscription },
     { path: '/dons', name: 'Dons', component: Dons, beforeEnter:basic },
     { path: '/NousContacter', name: 'NousContacter', component: NousContacter, beforeEnter:basic },
     { path: '/APropos', name: 'APropos', component: APropos, beforeEnter:basic },
@@ -88,7 +88,7 @@ const router = createRouter({
 
 
 
-    { path: '/accueilco', name: 'Accueilco', component: Accueilco, beforeEnter:guard  },
+    { path: '/accueilco', name: 'Accueilco', component: Accueilco, beforeEnter:guard },
     { path: '/conseil1co', name: 'Conseil1Co', component: Conseil1Co, beforeEnter:guard  },
     { path: '/conseilecoco', name: 'ConseilEcoCo', component: ConseilEcoCo, beforeEnter:guard },
     { path: '/conseil2co', name: 'Conseil2Co', component: Conseil2Co, beforeEnter:guard },
@@ -227,7 +227,7 @@ function basic(to, from, next) {
           else{
             // Utilisateur connecté mais qui veut rejoindre l'espace "basic", renvoi sur accueilco
             alert("Vous êtes déja connecté");
-            next("/accueilco");
+            next('/accueilco');
             return;
           }
       })

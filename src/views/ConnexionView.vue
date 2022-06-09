@@ -71,6 +71,7 @@ export default {
             signInWithEmailAndPassword(getAuth(), this.user.email, this.user.password)
             .then((response)=>{
                 // Connexion OK - mise à jour du user
+                this.$router.push('/accueilco');
                 console.log('user connecté', response.user);
                 this.user = response.user;
                 // Emission evenement de connexion
@@ -78,7 +79,6 @@ export default {
                 console.log("user",this.user);                
                 // Mise à jour du message
                 this.message = "User connecté : "+this.user.email;
-                this.$router.push('/accueilco');
             })
             .catch((error) =>{
                 // Erreur de connexion
