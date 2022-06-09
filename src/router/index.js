@@ -229,6 +229,7 @@ function basic(to, from, next) {
       })
     }else {
       //Si l'utilisateur n'est pas connecté il peut naviguer sur les pages non connectés
+      next(to.params.name);
     }
   });
 }
