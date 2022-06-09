@@ -22,9 +22,31 @@ age="25 ans"
 /> 
 
 
-<div class=" bg-base-vert pt-6 font-poppins text-lg">
+<div class=" bg-base-vert pt-6 font-poppins text-lg mb-5">
 <p>Défis réalisés :</p>
 <!-- faire carroussel ici -->
+</div>
+
+<div class="w-full flex gap-5 snap-x overflow-x-auto lg:hidden">
+    <div class="snap-center shrink-0 first:pl-5 last:pr-5">
+        <img src="public/images/vignette_profil_0.webp" alt="Vignette profil">
+    </div>
+
+    <div class="snap-center shrink-0 first:pl-5 last:pr-5">
+        <img src="/public/images/vignette_profil_1.webp" alt="Vignette profil">
+    </div>
+
+    <div class="snap-center shrink-0 first:pl-5 last:pr-5">
+        <img src="/public/images/vignette_profil_2.webp" alt="Vignette profil">
+    </div>
+
+    <div class="snap-center shrink-0 first:pl-5 last:pr-5">
+        <img src="/public/images/vignette_profil_3.webp" alt="Vignette profil">
+    </div>
+
+    <div class="snap-center shrink-0 first:pl-5 last:pr-5">
+        <img src="/public/images/vignette_profil_4.webp" alt="Vignette profil">
+    </div>
 </div>
 
 <div class="font-poppins text-lg p-7">

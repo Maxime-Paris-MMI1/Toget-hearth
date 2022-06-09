@@ -4,7 +4,7 @@
         <HeadercoClair/>
     </header>
     <main>
-<div class=" flex mt-10">
+<div class=" flex justify-center mt-10">
                   <BoutonAction 
                 :fluo="true"
                 titrebouton= "Organiser un ramassage "
