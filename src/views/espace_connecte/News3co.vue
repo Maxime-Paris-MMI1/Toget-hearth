@@ -30,7 +30,7 @@
 
 <script>
 import HeadercoFonce from "../../components/HeadercoFonce.vue"
-import VignetteArticle from "../components/VignetteArticle.vue"
+import VignetteArticle from "../../components/VignetteArticle.vue"
 import FootercoPage from "../../components/FootercoPage.vue"
 
 export default {
