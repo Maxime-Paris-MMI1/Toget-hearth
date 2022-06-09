@@ -48,7 +48,14 @@
         lien="/accueilco"
         />
 
-
+<div class=" mt-24">
+        <BoutonAction
+        
+        :fluo="true"
+        titrebouton="Liste des trophées"
+        lien="/trophy"
+        />
+</div>
   </div>
 
         

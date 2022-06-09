@@ -3,6 +3,7 @@
     <header>
         <HeadercoClair/>
     </header>
+    <main>
 <div class=" flex mt-10">
                   <BoutonAction 
                 :fluo="true"
@@ -247,6 +248,8 @@
     <FootercoPage/>
 </footer>
 </div>
+
+</main>
 </div>
 </template>
 
