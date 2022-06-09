@@ -1,5 +1,21 @@
 <template>
-<Vignette
+<header>
+    <div class="flex flex-row justify-between" >
+        <div class="pt-8 pl-5">
+            <a href="javascript:history.back()"><ArrowLeftIcon class="text-black w-[34px] relative z-40"/></a>
+        </div>
+        <div class="flex flex-col gap-3 mt-8 mr-8">
+            <RouterLink to="/"><PencilAltIcon class="w-[32px]  text-black relative z-40"/></RouterLink>
+            <div>
+                <button type="button"
+                @click="onDcnx()" >
+                <LogoutIcon class="w-[32px]  text-black relative z-40"/>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<Vignette class="-mt-[115px]"
 image="/images/profil.webp"
 nom="Clara Gomez"
 age="25 ans"
@@ -7,12 +23,7 @@ age="25 ans"
 
 
 
-<div>
-    <button type="button"
-    @click="onDcnx()" >
-    Deconnexion
-    </button>
-</div>
+
 
 </template>
 
@@ -28,9 +39,10 @@ import {
 import { emitter } from '../../main.js';
 
 import Vignette from '../../components/VignetteProfil.vue'
+import { ArrowLeftIcon, LogoutIcon, PencilAltIcon } from "@heroicons/vue/outline";
 
 export default {
-    components: {Vignette},
+    components: {Vignette, ArrowLeftIcon, LogoutIcon, PencilAltIcon},
 
     methods:{
         onDcnx(){
