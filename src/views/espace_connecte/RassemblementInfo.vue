@@ -31,7 +31,7 @@
         <BoutonAction
         :vertmoyen="true"
         titrebouton="Lyon"
-        lien= "/" />
+        lien= "/rassemblementoff" />
 
 </div>
 

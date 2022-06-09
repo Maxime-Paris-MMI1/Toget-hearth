@@ -45,7 +45,7 @@
         <BoutonAction
         :vertmoyen="true"
         titrebouton="Rejoindre"
-        lien= "/" />
+        lien= "/remerciement" />
 
 </div>
 
