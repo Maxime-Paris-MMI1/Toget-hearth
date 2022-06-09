@@ -1,3 +1,99 @@
 <template>
-    
+    <span class="flex flex-row justify-center gap-3 mt-16">
+        <span class="font-lato lg:text-xl ">Filtrage</span>
+        <input type="search" class="border-2 pl-2" v-model="query"/>
+
+        <button class="font-montserrat py-2 px-3 bg-[#0369A1] rounded-2xl text-white hover:bg-violet-800  hover:-translate-y-0.5 hidden lg:flex"
+         type="button"  title="Filtrage">
+            Filtrer
+        </button>
+    </span>
+    <div class="ml-8 mt-10">
+            <Composantramassage v-for="ramassage in searchByName" :key="ramassage.id"
+        :date="ramassage.date"
+        :lieu="ramassage.lieu"
+        :heure="ramassage.heure"
+        :description="ramassage.description"
+
+        />
+    </div>
+
+
 </template>
+
+<script>
+import Composantramassage from '../../components/ComposantRamassage.vue'
+
+import { 
+    getFirestore,
+    collection,
+    doc,
+    query,
+    orderBy,
+    getDocs,
+    addDoc,
+    updateDoc,
+    deleteDoc,
+    onSnapshot
+} from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-firestore.js'
+
+// Fonctions Storage
+import { 
+    getStorage,             // Obtenir le Cloud Storage
+    ref,                    // Pour créer une référence à un fichier à uploader
+    getDownloadURL,         // Permet de récupérer l'adress complète d'un fichier du Storage
+    uploadString,
+} from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js'
+
+// Fonction authentification
+import { getAuth } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js'
+
+// Import emetteur de main.js
+import { emitter } from '../../main.js'
+
+
+export default {
+
+    components:{Composantramassage,},
+
+    data(){
+        return{
+            artiste:null, //pour la création
+            listRam:[],
+            query:'',
+
+        }
+    },
+    computed:{
+        searchByName(){
+            console.log("search");
+            let query = this.query;
+                return this.listRam.filter(function(ramassage){
+                    return ramassage.lieu.includes(query);
+            })    
+        },
+
+    },
+
+    mounted(){
+      this.getRamassage();
+    },
+
+    methods:{
+        async getRamassage(){
+            // Obtenir Firestore
+            const firestore = getFirestore();
+            // Base de données (collection)  document ramassage
+            const dbRam = collection(firestore, "ramassage");
+            const q = query(dbRam, orderBy('lieu', 'asc'));
+            await onSnapshot(q, (snapshot) => {
+                this.listRam = snapshot.docs.map(doc => (
+                    {id:doc.id, ...doc.data()}
+                ))
+            })      
+        },
+    },
+
+    
+  }
+</script>
