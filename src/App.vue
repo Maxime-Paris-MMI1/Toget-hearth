@@ -1,5 +1,11 @@
 <template>
-  <RouterLink to="/">{{name}}</RouterLink>
+  <div v-if="isAdmin">
+    <ul class="flex justify-center">
+      <RouterLink to="/gestionramassage">
+      <li class="font-poppins text-lg">Gestion ramassage</li>
+      </RouterLink>
+    </ul>
+  </div>
   <RouterView />
 </template>
 

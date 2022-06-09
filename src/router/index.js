@@ -116,8 +116,6 @@ const router = createRouter({
     { path: '/Aproposco', name: 'Aproposco', component: Aproposco, beforeEnter:guard},
     { path: '/Precaution', name: 'Precaution', component: Precaution, beforeEnter:guard},
     { path: '/PrecautionParticip', name: 'PrecautionParticip', component: PrecautionParticip, beforeEnter:guard},
-
-
     { path: '/conseilramassageco', name: 'conseilramassageco', component: conseilramassageco, beforeEnter:guard},
     { path: '/organisationramassage', name: 'organisationramassage', component: organisationramassage, beforeEnter:guard},
     { path: '/gestionramassage', name: 'gestionramassage', component: gestionramassage, beforeEnter:guardadmin},
