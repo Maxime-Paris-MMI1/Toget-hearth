@@ -148,6 +148,7 @@ export default {
                         uid: uid,
                         admin: false,
                         connecte: true,
+                        basic: false,
                         login: this.user.login
                 })
                 console.log('document créé avec le id : ', docRef.id);
