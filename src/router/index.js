@@ -62,9 +62,9 @@ import Precaution from '../views/espace_connecte/Precaution.vue'
 import PrecautionParticip from '../views/espace_connecte/PrecautionParticip.vue'
 import conseilramassageco from '../views/espace_connecte/Conseilramassageco.vue'
 import organisationramassage from '../views/espace_connecte/OrganisationRamassage.vue'
-import gestionramassage from '../views/espace_connecte/GestionRamassage.vue'
-import deleteramassage from '../views/espace_connecte/DeleteRamassage.vue'
-import modiframassage from '../views/espace_connecte/ModifRamassage.vue'
+import gestionramassage from '../views/admin/GestionRamassage.vue'
+import deleteramassage from '../views/admin/DeleteRamassage.vue'
+import modiframassage from '../views/admin/ModifRamassage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
