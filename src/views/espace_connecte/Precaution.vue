@@ -103,6 +103,7 @@
               <BoutonAction 
                 :fluo="true"
                 titrebouton= "Organiser un rendez-vous "
+                lien="/RemerciementFinal"
                 
                 />
 
