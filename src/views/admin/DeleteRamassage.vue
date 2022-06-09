@@ -56,7 +56,9 @@ export default {
                 description:null, 
                 heure:null,
                 lieu:null,
-            },     
+            },
+
+            refRamassage:null,      
         }
     },
     mounted(){
@@ -67,6 +69,12 @@ export default {
       async getRamassage(id){
           const firestore = getFirestore();
           const docRef = doc(firestore, "ramassage", id);
+          this.refRamassage = await getDoc(docRef);
+          if(this.refRamassage.exists()){
+              this.ramassage = this.refRamassage.data();
+          }else{
+              this.console.log("artiste inexistant");
+          }
       },
 
       async deleteRamassage(){
