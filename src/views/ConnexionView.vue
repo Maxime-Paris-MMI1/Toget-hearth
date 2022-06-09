@@ -36,6 +36,11 @@
             <p class="text-vert-moyen-deco font-poppins text-center font-medium mt-10">S’inscrire</p>
         </RouterLink>
     </div>
+    <div class="ml-10 mt-10 font-asap">
+        <p class="">Compte admin:</p> <br>
+        <p>testadmin@gmail.com</p> <b></b>
+        <p>mot de passe: 123456</p>
+    </div>
 </template>
 <script>
 import { RouterLink, RouterView } from "vue-router";
