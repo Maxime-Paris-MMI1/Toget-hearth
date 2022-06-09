@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white rounded-18xl p-10 opacity-80 ">
 
-        <div class="flex gap-10 justify-center text-white font-poppins font-light text-sm mb-10">
+        <div class="flex gap-4 justify-center text-white font-poppins font-light text-sm mb-10">
 
             <div class="bg-vert-fonce-typographie shadow-lg p-4  rounded-14xl">
                 <p>{{stat1}}</p>
@@ -37,7 +37,7 @@
 
 
 <div
-  class=" flex justify-center p-5 mr-32 ml-32 m rounded-[48px] bg-[#6f934d] mt-10 focus:bg-zinc-600 mb-10"
+  class=" flex justify-center p-5 mr-24 ml-24 m rounded-[48px] bg-[#6f934d] mt-10 focus:bg-zinc-600 mb-10"
   
   style="box-shadow: 0px 3.8399999141693115px 3.8399999141693115px 0 rgba(0,0,0,0.25);"
 >
