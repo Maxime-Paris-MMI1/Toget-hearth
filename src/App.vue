@@ -1,8 +1,8 @@
 <template>
   <div v-if="isAdmin">
-    <ul class="flex justify-center">
+    <ul class="flex justify-center mt-3 mb-3 bg-vert-pastel-deco">
       <RouterLink to="/gestionramassage">
-      <li class="font-poppins text-lg">Gestion ramassage</li>
+      <li class="font-poppins text-lg px-3 py-2 bg-vert-moyen-deco rounded-5xl text-white">Gestion ramassage</li>
       </RouterLink>
     </ul>
   </div>
