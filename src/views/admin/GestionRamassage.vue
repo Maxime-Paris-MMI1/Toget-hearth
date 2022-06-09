@@ -1,5 +1,11 @@
 <template>
-    <h1 class="font-lato text-2xl text-center border-b-2 mt-10">Gérer l'évenement</h1>
+    <div class="flex justify-center">
+        <RouterLink to="/accueilco">
+            <LogoGrand/>
+        </RouterLink>
+    </div>
+
+    <h1 class="font-lato text-2xl text-center border-b-2">Gérer l'évenement</h1>
   <div class="mt-12 px-5 flex flex-col gap-20 relative">
       <div class="flex justify-center">
         <RouterLink to="/organisationramassage"> <div class=" bg-violet-700 text-white font-lato px-10 py-4 rounded-2xl hover:bg-violet-900"><p class="effet-shadowblanc">Créer +</p></div> </RouterLink>
@@ -67,9 +73,14 @@ import {
     uploadString,           // Permet d'uploader sur le Cloud Storage une image en Base64
 } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-storage.js'
 
+import LogoGrand from "../../components/icons/LogoGrand.vue" 
 
 export default {
    
+   components:{
+       LogoGrand,
+   },
+
     data(){
         return{
             listRam:[],
