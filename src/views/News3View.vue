@@ -5,22 +5,19 @@
     <main>
         <div>
             <VignetteArticle class="-mt-8" 
-            image="/images/newseurope.webp"
-            titre1="L’Europe"
-            titre2="et la biodiversité"
-            intro="L’Europe s’engage à renforcer la protection de la biodiversité."/>
+            image="/images/newsenvironnement.webp"
+            titre1="La journée mondiale"
+            titre2="de l'environnement"
+            intro="Une journée de l'environnement de plus en plus importante."/>
         </div>
         <div class="mt-[370px]">
             <p class="mt-6 mx-5 font-poppins text-base font-normal text-vert-fonce-typographie">
-                Le 24 et 25 février à Strasbourg la présidence française du Conseil de l'union européenne ont adopté la déclaration de Strasbourg qui met en avant l’extension du réseau Natura 200 dans le but d’atteindre 30% d’aires protégées d’ici 2030. 
+                La journée mondiale de l’environnement a eu lieu ce dimanche 5 juin 2022, avec de nombreuses actions dans le monde entier. Même des marques ont mis en avant des actions pour montrer leurs implications dans la sauvegarde de l’environnement.  
             </p>
             <p class="mt-4 mx-5 font-poppins text-base font-normal text-vert-fonce-typographie">
-                Aujourd’hui, nous avons seulement 18 % de terres protégées. De plus, lors de cette déclaration la Commission européenne évoque des plans de restauration des écosystèmes terrestres et marins notamment en simplifiant l’accès aux financement en consacrant dès 2024, 7,5% des dépenses annuelles de l’union aux objectifs de protection de la biodiversité. 
+                C’est le cas de Etam, une marque de vêtements notamment connue pour sa lingerie. En effet, lors de ce jour, cette marque à célébrer sa “WeeCare Week” qui est une semaine où elle a sensibilisé le public sur ses engagements pour la planète, la transparence et les femmes. Etam a sorti un nouveau concept, que nous pouvons trouver dans ses magasins qui sont des bornes de collecte d’anciens soutiens-gorge qui seront redistribué à des femmes en situations de précarité via des associations partenaires. 
             </p>
-            <p class="mt-4 mx-5 font-poppins text-base font-normal text-vert-fonce-typographie">
-                L’action la plus concrète de cette déclaration concerne la région du Grand Est avec l’élaboration du projet “Life Biodiv’Est” qui est de consacrer 26, 1 millions d’euros sur dix ans à la création de nouvelles réserves naturelles régionales notamment avec la plantation de 1000 km de haies ainsi que plusieurs plans d’actions pour protéger des espèces locales menacées. 
-            </p>
-            <p class="ml-44 font-poppins text-xs font-normal text-vert-fonce-typographie">(Source : Actu Environnement)</p>
+            <p class="ml-44 font-poppins text-xs font-normal text-vert-fonce-typographie">(Source : Etam.ch)</p>
         </div>
     </main>
     <footer>

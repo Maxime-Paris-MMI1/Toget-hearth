@@ -10,12 +10,12 @@
         image="/images/news_carroussel3.webp"
         title="La journée de l'environnement"
         intro="La journée mondiale de l'environnement de plus en plus importante."
-        lien="/"/>
+        lien="/news3"/>
         <CarrouselNews  
         image="/images/news_carroussel1.webp"
         title="L’Australie sous les inondations"
         intro="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        lien="/news1"/>
+        lien="/"/>
         <CarrouselNews  
         image="/images/news_carroussel2.webp"
         title="Pic de pollution à Paris"
