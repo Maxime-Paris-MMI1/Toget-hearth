@@ -20,6 +20,7 @@ import Conseil2 from  '../views/Conseil2View.vue'
 import Conseilramassage from '../views/ConseilRamassage.vue'
 import MentionLegales from '../views/MentionLegales.vue'
 import Newsletter from '../views/NewsletterView.vue'
+import News1 from '../views/News1View.vue'
 import News2 from '../views/News2View.vue'
 import News3 from '../views/News3View.vue'
 import Connexion from '../views/ConnexionView.vue'
@@ -79,6 +80,7 @@ const router = createRouter({
     { path: '/ConseilRamassage', name: 'Conseilramassage', component: Conseilramassage, beforeEnter:basic  },
     { path: '/MentionLegales', name: 'Mentionlegales', component: MentionLegales, beforeEnter:basic  },
     { path: '/newsletter', name: 'Newsletter', component: Newsletter, beforeEnter:basic  },
+    { path: '/news1', name: 'News1', component: News1, beforeEnter:basic  },
     { path: '/news2', name: 'News2', component: News2, beforeEnter:basic  },
     { path: '/news3', name: 'News3', component: News3, beforeEnter:basic  },
     { path: '/connexion', name: 'Connexion', component: Connexion },
