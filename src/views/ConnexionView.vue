@@ -29,12 +29,6 @@
                 Se connecter
             </button>
         </div>
-        <div>
-            <button type="button"
-            @click="onDcnx()" >
-            Deconnexion
-            </button>
-        </div>
     </form>
     <div class="flex flex-row justify-center gap-1">
         <p class="font-poppins text-center font-medium mt-10">Pas encore inscrit ?</p>
