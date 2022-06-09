@@ -27,6 +27,7 @@ import Inscription from '../views/InscriptionView.vue'
 import Dons from '../views/DonsView.vue'
 import NousContacter from '../views/NousContacter.vue'
 import APropos from '../views/APropos.vue'
+import View404 from      '../views/View404.vue'
 
 
 
@@ -84,6 +85,7 @@ const router = createRouter({
     { path: '/dons', name: 'Dons', component: Dons, beforeEnter:basic },
     { path: '/NousContacter', name: 'NousContacter', component: NousContacter, beforeEnter:basic },
     { path: '/APropos', name: 'APropos', component: APropos, beforeEnter:basic },
+    { path: '/:pathMatch(.*)*', name: 'View404', component: View404 },
     //Appel de la fonction guard basic , pour que les personnes connecté ne puissent pas accéder aux pages non connecté.
 
 
