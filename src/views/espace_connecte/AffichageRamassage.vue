@@ -4,10 +4,6 @@
         <span class="font-lato text-center ">Cherchez le nom de votre ville</span>
         <input type="search" class="border-2 pl-2 w-[350px] ml-8 rounded-xl " v-model="query"/>
 
-        <button class="font-montserrat py-2 px-3 bg-[#0369A1] rounded-2xl text-white hover:bg-violet-800  hover:-translate-y-0.5 hidden lg:flex"
-         type="button"  title="Filtrage">
-            
-        </button>
     </span>
     <div class="ml-8 mt-10">
             <Composantramassage v-for="ramassage in searchByName" :key="ramassage.id"
