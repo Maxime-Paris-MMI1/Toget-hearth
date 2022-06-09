@@ -8,7 +8,7 @@
                   <BoutonAction 
                 :fluo="true"
                 titrebouton= "Organiser un ramassage "
-                lien="/"
+                lien="/organisationramassage"
                 
                 />
                 </div>

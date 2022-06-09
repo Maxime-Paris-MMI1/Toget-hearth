@@ -67,6 +67,7 @@ import gestionramassage from '../views/admin/GestionRamassage.vue'
 import deleteramassage from '../views/admin/DeleteRamassage.vue'
 import modiframassage from '../views/admin/ModifRamassage.vue'
 import trophy from '../views/espace_connecte/trophy.vue'
+import affichageramassage from '../views/espace_connecte/AffichageRamassage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -123,6 +124,7 @@ const router = createRouter({
     { path: '/conseilramassageco', name: 'conseilramassageco', component: conseilramassageco, beforeEnter:guard},
     { path: '/organisationramassage', name: 'organisationramassage', component: organisationramassage, beforeEnter:guard},
     { path: '/trophy', name: 'trophy', component: trophy, beforeEnter:guard},
+    { path: '/affichageramassage', name: 'affichageramassage', component: affichageramassage, beforeEnter:guard},
 
     
     { path: '/gestionramassage', name: 'gestionramassage', component: gestionramassage, beforeEnter:guardadmin},
