@@ -1,4 +1,5 @@
 <template>
+    <HeadercoClair/>
     <span class="flex flex-row justify-center gap-3 mt-16">
         <span class="font-lato lg:text-xl ">Filtrage</span>
         <input type="search" class="border-2 pl-2" v-model="query"/>
@@ -17,7 +18,9 @@
 
         />
     </div>
-
+    <footer>
+        <FootercoPage/>
+    </footer>
 
 </template>
 
@@ -50,11 +53,13 @@ import { getAuth } from 'https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.
 
 // Import emetteur de main.js
 import { emitter } from '../../main.js'
+import HeadercoClair from '../../components/HeadercoClair.vue'
+import FootercoPage from '../../components/FootercoPage.vue'
 
 
 export default {
 
-    components:{Composantramassage,},
+    components:{Composantramassage, HeadercoClair, FootercoPage},
 
     data(){
         return{
