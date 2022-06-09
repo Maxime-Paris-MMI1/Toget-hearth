@@ -69,20 +69,21 @@ import modiframassage from '../views/admin/ModifRamassage.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/', name: 'Accueil', component: AccueilView },
-    { path: '/conseil1', name: 'Conseil1', component: Conseil1 },
-    { path: '/conseileco', name: 'ConseilEco', component: ConseilEco },
-    { path: '/conseil2', name: 'Conseil2', component: Conseil2 },
-    { path: '/ConseilRamassage', name: 'Conseilramassage', component: Conseilramassage },
-    { path: '/MentionLegales', name: 'Mentionlegales', component: MentionLegales },
-    { path: '/newsletter', name: 'Newsletter', component: Newsletter },
-    { path: '/news2', name: 'News2', component: News2 },
-    { path: '/news3', name: 'News3', component: News3 },
-    { path: '/connexion', name: 'Connexion', component: Connexion},
-    { path: '/inscription', name: 'Inscription', component: Inscription},
-    { path: '/dons', name: 'Dons', component: Dons},
-    { path: '/NousContacter', name: 'NousContacter', component: NousContacter},
-    { path: '/APropos', name: 'APropos', component: APropos},
+    { path: '/', name: 'Accueil', component: AccueilView, beforeEnter:basic  },
+    { path: '/conseil1', name: 'Conseil1', component: Conseil1, beforeEnter:basic  },
+    { path: '/conseileco', name: 'ConseilEco', component: ConseilEco, beforeEnter:basic  },
+    { path: '/conseil2', name: 'Conseil2', component: Conseil2, beforeEnter:basic  },
+    { path: '/ConseilRamassage', name: 'Conseilramassage', component: Conseilramassage, beforeEnter:basic  },
+    { path: '/MentionLegales', name: 'Mentionlegales', component: MentionLegales, beforeEnter:basic  },
+    { path: '/newsletter', name: 'Newsletter', component: Newsletter, beforeEnter:basic  },
+    { path: '/news2', name: 'News2', component: News2, beforeEnter:basic  },
+    { path: '/news3', name: 'News3', component: News3, beforeEnter:basic  },
+    { path: '/connexion', name: 'Connexion', component: Connexion, beforeEnter:basic },
+    { path: '/inscription', name: 'Inscription', component: Inscription, beforeEnter:basic },
+    { path: '/dons', name: 'Dons', component: Dons, beforeEnter:basic },
+    { path: '/NousContacter', name: 'NousContacter', component: NousContacter, beforeEnter:basic },
+    { path: '/APropos', name: 'APropos', component: APropos, beforeEnter:basic },
+    //Appel de la fonction guard basic , pour que les personnes connecté ne puissent pas accéder aux pages non connecté.
 
 
 
@@ -118,10 +119,12 @@ const router = createRouter({
     { path: '/PrecautionParticip', name: 'PrecautionParticip', component: PrecautionParticip, beforeEnter:guard},
     { path: '/conseilramassageco', name: 'conseilramassageco', component: conseilramassageco, beforeEnter:guard},
     { path: '/organisationramassage', name: 'organisationramassage', component: organisationramassage, beforeEnter:guard},
+
+    
     { path: '/gestionramassage', name: 'gestionramassage', component: gestionramassage, beforeEnter:guardadmin},
     { path: '/deleteramassage', name: 'deleteramassage', component: deleteramassage, beforeEnter:guardadmin},
     { path: '/modiframassage', name: 'modiframassage', component: modiframassage, beforeEnter:guardadmin},
-    //Appel de la fonction guard admin, pour que les personnes admin et que ces personnes puissent accéder à la page.
+    //Appel de la fonction guard admin, pour que les personnes admin puissent accéder aux pages.
   ]
 })
 
@@ -143,11 +146,11 @@ function guard(to, from, next) {
           // ses informations dans la 1° cellule du tableau : 0
           let isConnecte=userInfo[0].connecte;
             if(isConnecte){
-            // Utilisateur administrateur, on autorise la page/vue
+            // Utilisateur connecté, on autorise la page/vue
             next(to.params.name);
             return;
           }else{
-            // Utilisateur non administrateur, renvoi sur accueil
+            // Utilisateur non connecté, renvoi sur accueil
             alert("Vous n'avez pas l'autorisation pour cette fonction");
             next({name: ""});
             return;
@@ -193,6 +196,39 @@ function guardadmin(to, from, next) {
       // Utilisateur non connecté, renvoi sur accueil
       console.log('router NOK => user ', user);
       next({name: ""});
+    }
+  });
+}
+
+function basic(to, from, next) {
+  // recherche utilisateur connecté
+  getAuth().onAuthStateChanged(function(user) {
+    if(user) {
+      // User connecté
+      console.log('router OK => user ', user);
+      // Obtenir Firestore
+      const firestore = getFirestore();
+      // Base de données (collection)  document participant
+      const dbUsers = collection(firestore, "users");
+      // Recherche du user par son uid
+      const q = query(dbUsers, where("uid", "==", user.uid));
+      onSnapshot(q, (snapshot) => {
+          let userInfo = snapshot.docs.map(doc => ( {id:doc.id, ...doc.data()}));
+          // userInfo étant un tableau, on récupère
+          // ses informations dans la 1° cellule du tableau : 0
+          let isBasic=userInfo[0].basic;
+            if(isBasic){
+            // Utilisateur basic il peut accéder aux pages non connecté
+            next(to.params.name);
+            return;
+          }
+          // Utilisateur connecté mais qui veut rejoindre l'espace "basic", renvoi sur accueilco
+          alert("Vous êtes déja connecté");
+          next("/accueilco");
+          return;
+      })
+    }else {
+      //Si l'utilisateur n'est pas connecté il peut naviguer sur les pages non connectés
     }
   });
 }
