@@ -1,6 +1,6 @@
 <template>
     <header>
-        <HeadercoFonce/>
+        <HeaderFonce/>
     </header>
     <main>
         <div>
@@ -20,16 +20,16 @@
         </div>
     </main>
     <footer>
-      <FootercoPage/>
+      <FooterPage/>
     </footer>
 </template>
 
 <script>
-import HeadercoFonce from "../../components/HeadercoFonce.vue"
-import VignetteArticle from "../../components/VignetteArticle.vue"
-import FootercoPage from "../../components/FootercoPage.vue"
+import HeaderFonce from "../components/HeadercoFonce.vue"
+import VignetteArticle from "../components/VignetteArticle.vue"
+import FooterPage from "../components/FootercoPage.vue"
 
 export default {
-   components: { HeadercoFonce, FootercoPage, VignetteArticle } 
+   components: { HeaderFonce, FooterPage, VignetteArticle } 
 }
 </script>

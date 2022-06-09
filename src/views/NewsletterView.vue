@@ -19,7 +19,7 @@
         image="/images/news_carroussel1.webp"
         title="L’Australie sous les inondations"
         intro="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        lien="/"/>
+        lien="/news1"/>
          </div>
       <div class="snap-center shrink-0 first:pl-5 last:pr-5">
         <CarrouselNews  
