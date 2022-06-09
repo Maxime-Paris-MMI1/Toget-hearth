@@ -222,10 +222,12 @@ function basic(to, from, next) {
             next(to.params.name);
             return;
           }
-          // Utilisateur connecté mais qui veut rejoindre l'espace "basic", renvoi sur accueilco
-          alert("Vous êtes déja connecté");
-          next("/accueilco");
-          return;
+          else{
+            // Utilisateur connecté mais qui veut rejoindre l'espace "basic", renvoi sur accueilco
+            alert("Vous êtes déja connecté");
+            next("/accueilco");
+            return;
+          }
       })
     }else {
       //Si l'utilisateur n'est pas connecté il peut naviguer sur les pages non connectés
