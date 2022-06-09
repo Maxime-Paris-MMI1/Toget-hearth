@@ -50,7 +50,7 @@
 
 <div class=" bg-vert-pastel-deco p-10 ">
     <h2 class=" font-poppins  font-medium text-2xl mb-10">Janvier</h2>
-    <p class=" font-asap text-xl tracking-widest"> <span class=" ml-16">1 2 <RouterLink to="/RassemblementInfo" class=" bg-vert-fluo-bouton p-2 rounded-full text-white">3</RouterLink>  4 5 6 </span>  <br class=" mb-4"> 7 8 9  10 11 12 13 <br class=" mb-4"> 14 15 16 17 18 19 <br class=" mb-4"> 20 21 22 23 24 25 <br class=" mb-4"> 26 27 28 29 30 31</p>
+    <p class=" font-asap text-xl tracking-widest"> <span class=" ml-16">1 2 <RouterLink to="/RassemblementInfo" class=" bg-vert-fluo-bouton p-1 rounded-full text-white">3</RouterLink>  4 5 6 </span>  <br class=" mb-4"> 7 8 9  10 11 12 13 <br class=" mb-4"> 14 15 16 17 18 19 <br class=" mb-4"> 20 21 22 23 24 25 <br class=" mb-4"> 26 27 28 29 30 31</p>
 </div>
 
 </div>
@@ -62,14 +62,14 @@
 <!-- fin calendrier pour un mois -->
 
 
-<!-- <RouterLink to="/RassemblementInfo" class=" bg-vert-fluo-bouton p-2 rounded-full text-white">   </RouterLink> -->
+<!-- <RouterLink to="/RassemblementInfo" class=" bg-vert-fluo-bouton p-1 rounded-full text-white">   </RouterLink> -->
 
 <!-- debut calendrier -->
 <div class="  absolute mt-[50px] leading-6 p-10 z-10 items-center gap-3">
 
 <div class=" bg-vert-pastel-deco p-10 ">
     <h2 class=" font-poppins  font-medium text-2xl mb-10">Février</h2>
-    <p class=" font-asap text-xl tracking-widest"> <span class=" ml-16">1 2 3 4 5 6 </span>  <br class=" mb-4"> 7 8 9 <RouterLink to="/RassemblementInfo" class=" bg-vert-fluo-bouton p-2 rounded-full text-white"> 10</RouterLink>11 12 13 <br class=" mb-4"> 14 15 16 17 18 19 <br class=" mb-4"> 20 21 22 23 24 25 <br class=" mb-4"> 26 27 28 </p>
+    <p class=" font-asap text-xl tracking-widest"> <span class=" ml-16">1 2 3 4 5 6 </span>  <br class=" mb-4"> 7 8 9 <RouterLink to="/RassemblementInfo" class=" bg-vert-fluo-bouton p-1 rounded-full text-white"> 10</RouterLink>11 12 13 <br class=" mb-4"> 14 15 16 17 18 19 <br class=" mb-4"> 20 21 22 23 24 25 <br class=" mb-4"> 26 27 28 </p>
 </div>
 
 </div>
@@ -104,7 +104,7 @@
 
 <div class=" bg-vert-pastel-deco p-10 ">
     <h2 class=" font-poppins  font-medium text-2xl mb-10">Avril</h2>
-    <p class=" font-asap text-xl tracking-widest"> <span class=" ml-16">1 2 3 4 5 6 </span>  <br class=" mb-4"> 7 8 9 10 11 12 13 <br class=" mb-4"> 14 15 16 17 18 19 <br class=" mb-4"> 20 21 22 23 24 25 <br class=" mb-4"> 26 27 28 29 30 31 </p>
+    <p class=" font-asap text-xl tracking-widest"> <span class=" ml-16">1 2 3 4 5 6 </span>  <br class=" mb-4"> 7 8 9 10 11 12 13 <br class=" mb-4"> 14 15 16 <RouterLink to="/RassemblementInfo" class=" bg-vert-fluo-bouton p-1 rounded-full text-white"> 17</RouterLink>18 19 <br class=" mb-4"> 20 21 22 23 24 25 <br class=" mb-4"> 26 <RouterLink to="/RassemblementInfo" class=" bg-vert-fluo-bouton p-1 rounded-full text-white">27</RouterLink>28 29 30 31 </p>
 </div>
 
 </div>
@@ -120,7 +120,7 @@
 
 <div class=" bg-vert-pastel-deco p-10 ">
     <h2 class=" font-poppins  font-medium text-2xl mb-10">Mai</h2>
-    <p class=" font-asap text-xl tracking-widest"> <span class=" ml-16">1 2 3 4 5 6 </span>  <br class=" mb-4"> 7 8 9 10 11 12 13 <br class=" mb-4"> 14 15 16 17 18 19 <br class=" mb-4"> 20 21 22 23 24 25 <br class=" mb-4"> 26 27 28 29 30 31 </p>
+    <p class=" font-asap text-xl tracking-widest"> <span class=" ml-16">1 2 3 4 5 6 </span>  <br class=" mb-4"> 7 8 9 10 11 12 13 <br class=" mb-4"> 14 15 16<RouterLink to="/RassemblementInfo" class=" bg-vert-fluo-bouton p-1 rounded-full text-white">17</RouterLink> 18 19 <br class=" mb-4"> 20 21 22 23 24 25 <br class=" mb-4"> 26 27 28 29 30 31 </p>
 </div>
 
 </div>
@@ -152,7 +152,7 @@
 
 <div class=" bg-vert-pastel-deco p-10 ">
     <h2 class=" font-poppins  font-medium text-2xl mb-10">Juillet</h2>
-    <p class=" font-asap text-xl tracking-widest"> <span class=" ml-16">1 2 3 4 5 6 </span>  <br class=" mb-4"> 7 8 9 10 11 12 13 <br class=" mb-4"> 14 15 16 17 18 19 <br class=" mb-4"> 20 21 22 23 24 25 <br class=" mb-4"> 26 27 28 29 30 31 </p>
+    <p class=" font-asap text-xl tracking-widest"> <span class=" ml-16">1 2 3 4 5 6 </span>  <br class=" mb-4"> 7 8 9 10 11 12 13 <br class=" mb-4"> 14 15<RouterLink to="/RassemblementInfo" class=" bg-vert-fluo-bouton p-1 rounded-full text-white">16</RouterLink> 17 18 19 <br class=" mb-4"> 20 21 22 23 24 25 <br class=" mb-4"> 26 27 28 29 30 31 </p>
 </div>
 
 </div>
