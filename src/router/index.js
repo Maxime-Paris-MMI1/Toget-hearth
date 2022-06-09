@@ -56,11 +56,15 @@ import Remerciement from '../views/espace_connecte/Remerciement.vue'
 import news1co from '../views/espace_connecte/News1co.vue'
 import news2co from '../views/espace_connecte/News2co.vue'
 import news3co from '../views/espace_connecte/News3co.vue'
+import news4co from '../views/espace_connecte/News4co.vue'
 import Aproposco from '../views/espace_connecte/Aproposco.vue'
 import Precaution from '../views/espace_connecte/Precaution.vue'
 import PrecautionParticip from '../views/espace_connecte/PrecautionParticip.vue'
 import conseilramassageco from '../views/espace_connecte/Conseilramassageco.vue'
 import organisationramassage from '../views/espace_connecte/OrganisationRamassage.vue'
+import gestionramassage from '../views/espace_connecte/GestionRamassage.vue'
+import deleteramassage from '../views/espace_connecte/DeleteRamassage.vue'
+import modiframassage from '../views/espace_connecte/ModifRamassage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -108,6 +112,7 @@ const router = createRouter({
     { path: '/news1co', name: 'news1co', component: news1co, beforeEnter:guard},
     { path: '/news2co', name: 'news2co', component: news2co, beforeEnter:guard},
     { path: '/news3co', name: 'news3co', component: news3co, beforeEnter:guard},
+    { path: '/news4co', name: 'news4co', component: news4co, beforeEnter:guard},
     { path: '/Aproposco', name: 'Aproposco', component: Aproposco, beforeEnter:guard},
     { path: '/Precaution', name: 'Precaution', component: Precaution, beforeEnter:guard},
     { path: '/PrecautionParticip', name: 'PrecautionParticip', component: PrecautionParticip, beforeEnter:guard},
@@ -115,7 +120,10 @@ const router = createRouter({
 
     { path: '/conseilramassageco', name: 'conseilramassageco', component: conseilramassageco, beforeEnter:guard},
     { path: '/organisationramassage', name: 'organisationramassage', component: organisationramassage, beforeEnter:guard},
-
+    { path: '/gestionramassage', name: 'gestionramassage', component: gestionramassage, beforeEnter:guardadmin},
+    { path: '/deleteramassage', name: 'deleteramassage', component: deleteramassage, beforeEnter:guardadmin},
+    { path: '/modiframassage', name: 'modiframassage', component: modiframassage, beforeEnter:guardadmin},
+    //Appel de la fonction guard admin, pour que les personnes admin et que ces personnes puissent accéder à la page.
   ]
 })
 
@@ -137,6 +145,42 @@ function guard(to, from, next) {
           // ses informations dans la 1° cellule du tableau : 0
           let isConnecte=userInfo[0].connecte;
             if(isConnecte){
+            // Utilisateur administrateur, on autorise la page/vue
+            next(to.params.name);
+            return;
+          }else{
+            // Utilisateur non administrateur, renvoi sur accueil
+            alert("Vous n'avez pas l'autorisation pour cette fonction");
+            next({name: ""});
+            return;
+          }
+      })
+    }else {
+      // Utilisateur non connecté, renvoi sur accueil
+      console.log('router NOK => user ', user);
+      next({name: ""});
+    }
+  });
+}
+
+function guardadmin(to, from, next) {
+  // recherche utilisateur connecté
+  getAuth().onAuthStateChanged(function(user) {
+    if(user) {
+      // User connecté
+      console.log('router OK => user ', user);
+      // Obtenir Firestore
+      const firestore = getFirestore();
+      // Base de données (collection)  document participant
+      const dbUsers = collection(firestore, "users");
+      // Recherche du user par son uid
+      const q = query(dbUsers, where("uid", "==", user.uid));
+      onSnapshot(q, (snapshot) => {
+          let userInfo = snapshot.docs.map(doc => ( {id:doc.id, ...doc.data()}));
+          // userInfo étant un tableau, on récupère
+          // ses informations dans la 1° cellule du tableau : 0
+          let isAdmin=userInfo[0].admin;
+            if(isAdmin){
             // Utilisateur administrateur, on autorise la page/vue
             next(to.params.name);
             return;
