@@ -122,9 +122,15 @@
   <div class="flex flex-col items-center">
     <div class=" flex overflow-x-scroll  gap-5  ">
 
-     <a href="./Conseil2View.vue"> <img class=" object-cover w-screen" src="/public/images/newsletter_accueil1.webp" id="slide1"> </a>
-      <a href="./Conseil3View.vue"> <img class="  object-cover w-screen" src="/public/images/newsletter_accueil2.webp" id="slide2"> </a>
-      <a href="./Conseil5View.vue"> <img class="  object-cover w-screen" src="/public/images/newsletter_accueil3.webp" id="slide3"> </a>
+        <img class=" object-cover w-screen" src="/public/images/newsletter_accueil1.webp" id="slide1"> 
+      <RouterLink to="/news2">
+        <a href=""> <img class="  object-cover w-screen" src="/public/images/newsletter_accueil2.webp" id="slide2"> </a>
+      </RouterLink>
+
+      <RouterLink to="/connexion">
+        <a href=""> <img class="  object-cover w-screen" src="/public/images/newsletter_accueil3.webp" id="slide3"> </a>
+      </RouterLink>
+
     </div>
   </div>
     </div>
@@ -203,7 +209,8 @@ exclusifs !
         <div class=" mt-60 absolute">
         <BoutonAction
         :fluo="true"
-        titrebouton="Trouver un évènement" />
+        titrebouton="Trouver un évènement"
+        lien="/connexion" />
         </div>
         </div>
 

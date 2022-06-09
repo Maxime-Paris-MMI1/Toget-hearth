@@ -27,14 +27,14 @@
         titre1="Adopter un"
         titre2="transport écologique"
         intro="D’après une étude de l'ADEME, le moyen de transport le plus écologique et le moins polluant est le train." 
-        lien="/conseileco"/>
+        lien="/connexion"/>
       </div>
       <div class="snap-center shrink-0 first:pl-5 last:pr-5">
         <CarrouselConseil class="mt-16"  id="4"
         image="/images/carroussel4.webp"
         titre2="Éviter le gaspillage"
         intro="10 millions de tonnes de nourriture sont gaspillées chaque année en France ! "
-        lien="/conseileco"/>
+        lien="/connexion"/>
       </div>
       <div class="snap-center shrink-0 first:pl-5 last:pr-5">
         <CarrouselConseil class="mt-16" id="5"
@@ -42,14 +42,14 @@
         titre1="Réduire sa"
         titre2="consommation d'énergie"
         intro="De nos jours la consommation d’énergie impacte très fortement l’écologie et pourtant c’est elle qui est la plus simple à corriger !"
-        lien="/conseileco"/>
+        lien="/connexion"/>
       </div>
       <div class="snap-center shrink-0 first:pl-5 last:pr-5">
         <CarrouselConseil class="mt-16" id="6"
         image="/images/carroussel6.webp"
         titre2="Recycler"
         intro="90% de la faune marine est impactée par la pollution du plastique !"
-        lien="/conseileco"/>
+        lien="/connexion"/>
       </div>
       <div class="snap-center shrink-0 first:pl-5 last:pr-5">
         <CarrouselConseil class="mt-16 " id="7"
@@ -57,22 +57,8 @@
         titre1="Autosuffisance"
         titre2="individuelle"
         intro="En 2020, notre consommation individuelle a été multiplié par 7 ! "
-        lien="/conseileco"/>
+        lien="/connexion"/>
       </div>
-    </div>
-    <div class="motion-safe:animate-bounce ">
-      <a  href="#7">
-        <svg
-  width="11"
-  height="11"
-  viewBox="0 0 11 11"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="xMidYMid meet"
->
-  <circle cx="5.5" cy="5.5" r="5.5" fill="black"></circle>
-</svg>
-      </a>
     </div>
     
   </main>
