@@ -22,10 +22,10 @@ age="25 ans"
 /> 
 
 
-<div class=" bg-base-vert pt-6 font-poppins text-lg mb-5">
-<p>Défis réalisés :</p>
+<div class=" bg-base-vert pt-6 font-poppins text-lg mb-5 pb-3">
+<p class="mb-3 ml-2">Défis réalisés :</p>
 <!-- faire carroussel ici -->
-</div>
+
 
 <div class="w-full flex gap-5 snap-x overflow-x-auto lg:hidden">
     <div class="snap-center shrink-0 first:pl-5 last:pr-5">
@@ -47,6 +47,7 @@ age="25 ans"
     <div class="snap-center shrink-0 first:pl-5 last:pr-5">
         <img src="/images/vignette_profil_4.webp" alt="Vignette profil">
     </div>
+</div>
 </div>
 
 <div class="font-poppins text-lg p-7">
