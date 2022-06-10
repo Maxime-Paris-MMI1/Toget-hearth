@@ -33,7 +33,7 @@
     <h2 class="mt-9 ml-5 font-poppins text-sm font-medium text-vert-fonce-typographie">D’autres articles :</h2>
     <p class="mt-4 mx-5 font-poppins text-sm font-light text-vert-fonce-typographie">Pour pouvoir accéder aux autres articles veuillez-vous inscrire.</p>
     <div>
-         <RouterLink to="/">
+         <RouterLink to="/connexion">
                 <button class="w-[273px] h-12 mt-8 mx-[51px] rounded-6xl bg-vert-fluo-bouton">
                   <p class="my-3 mx-[60px] font-poppins text-base drop-shadow-sm text-blanc-background">Créer mon compte</p>
                 </button>
